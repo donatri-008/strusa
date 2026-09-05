@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "882211383653",
+    "project_id": "dstore-strusa",
+    "storage_bucket": "dstore-strusa.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882211383653:android:e4655fa2bed914c462598c",
+        "android_client_info": {
+          "package_name": "com.example.strusa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882211383653-1sc3nruepvu3em6dhurecn6qugu4ugoa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWuv3CfbBC17ETOCAGxeVvH8Y7AqHx9EI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882211383653-1sc3nruepvu3em6dhurecn6qugu4ugoa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
