@@ -18,7 +18,7 @@
 /// These 9 datasets specifically target common real-world CSV robustness
 /// problems seen in OrderKuota / AgenPulsa exports, for use in the
 /// edge-case batch runner (`edge_case_batch_runner.dart`).
-library ground_truth_mapping;
+library;
 
 /// The 18 canonical target schema fields, in the reporting order used
 /// throughout the evaluation pipeline.

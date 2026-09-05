@@ -49,7 +49,7 @@ class ImportService {
 
       // Use Gemini AI to analyze headers
       final model = GenerativeModel(
-        model: 'gemini-3-flash-preview',
+        model: 'gemini-3.5-flash-lite',
         apiKey: Env.geminiApiKey,
       );
 

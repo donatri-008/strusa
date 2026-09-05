@@ -3,8 +3,6 @@ import 'dart:io';
 import 'dart:convert';
 import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:csv/csv.dart';
-import 'package:strusa/models/transaction.dart';
-import 'package:strusa/models/product.dart';
 
 class AIGeminiService {
   late GenerativeModel _model;
@@ -73,58 +71,6 @@ Berikan hasil mapping dalam format JSON seperti ini:
 Jika field tidak ada di CSV, isi dengan null.
 Hanya berikan JSON, tanpa penjelasan tambahan.
 ''';
-  }
-
-  Future<List<Transaction>> mapCsvToTransactions(
-    File csvFile,
-    String userId, {
-    String Function(List<String> headers)? promptBuilder,
-  }) async {
-    try {
-      final input = csvFile.readAsStringSync();
-      final normalizedInput = input.replaceAll('\r\n', '\n').replaceAll('\r', '\n');
-      final fields = const CsvToListConverter(eol: '\n', shouldParseNumbers: false).convert(normalizedInput);
-
-      if (fields.isEmpty) throw Exception('File CSV kosong');
-
-      // FIX: Trim header untuk menghindari masalah whitespace/casing
-      List<String> headers = fields[0].map((e) => e.toString().trim()).toList();
-      String prompt = (promptBuilder ?? buildDefaultPrompt)(headers);
-
-      final content = [Content.text(prompt)];
-      final response = await _model.generateContent(content);
-
-      if (response.candidates.isEmpty) {
-        throw Exception('Gemini tidak mengembalikan candidate. promptFeedback: ${response.promptFeedback}');
-      }
-
-      final responseText = response.text ?? '';
-      if (responseText.trim().isEmpty) {
-        throw Exception('Response Gemini kosong.');
-      }
-
-      Map<String, dynamic> mappings = _parseAIResponse(responseText);
-      List<Transaction> transactions = [];
-
-      for (int i = 1; i < fields.length; i++) {
-        List<dynamic> row = fields[i];
-        Map<String, dynamic> rowData = {};
-        for (int j = 0; j < headers.length && j < row.length; j++) {
-          rowData[headers[j]] = row[j];
-        }
-
-        try {
-          Transaction transaction = _buildTransactionFromRow(rowData, mappings, userId, i);
-          transactions.add(transaction);
-        } catch (e) {
-          print('Error parsing row $i: $e');
-        }
-      }
-      return transactions;
-    } catch (e) {
-      print('Error in AI CSV mapping: $e');
-      rethrow;
-    }
   }
 
   Future<List<Map<String, String?>>> mapCsvToFieldMaps(
@@ -200,9 +146,12 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
       var match = phoneRegex.firstMatch(name);
       if (match != null) {
         String extractedPhone = match.group(0)!;
-        if (extractedPhone.startsWith('62')) extractedPhone = '0' + extractedPhone.substring(2);
-        else if (extractedPhone.startsWith('8')) extractedPhone = '0' + extractedPhone;
-        
+        if (extractedPhone.startsWith('62')) {
+          extractedPhone = '0${extractedPhone.substring(2)}';
+        } else if (extractedPhone.startsWith('8')) {
+          extractedPhone = '0$extractedPhone';
+        }
+
         mappedRow['customerPhone'] = extractedPhone;
         mappedRow['customerName'] = name.replaceAll(match.group(0)!, '').replaceAll(RegExp(r'[\s\-\(\)\|,]+'), ' ').trim();
       }
@@ -253,8 +202,11 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
     // 1. Normalisasi Nomor HP (hapus simbol, pastikan awalan 0)
     if (key == 'customerPhone') {
       String digits = val.replaceAll(RegExp(r'[^0-9]'), '');
-      if (digits.startsWith('62')) digits = '0' + digits.substring(2);
-      else if (digits.startsWith('8')) digits = '0' + digits;
+      if (digits.startsWith('62')) {
+        digits = '0${digits.substring(2)}';
+      } else if (digits.startsWith('8')) {
+        digits = '0$digits';
+      }
       return digits.isEmpty ? null : digits;
     }
 
@@ -370,7 +322,9 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
       if (valLower.contains('transfer') || valLower.contains('bank')) return 'transfer';
       if (valLower.contains('qris')) return 'qris';
       if (valLower.contains('wallet') || valLower.contains('ewallet') || valLower.contains('ovo') || 
-          valLower.contains('gopay') || valLower.contains('dana') || valLower.contains('shopee')) return 'ewallet';
+          valLower.contains('gopay') || valLower.contains('dana') || valLower.contains('shopee')) {
+        return 'ewallet';
+      }
       return 'cash';
     }
 
@@ -403,140 +357,6 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
     } catch (e) {
       print('Error parsing AI response: $e');
       rethrow;
-    }
-  }
-
-  Transaction _buildTransactionFromRow(
-    Map<String, dynamic> rowData, Map<String, dynamic> mappings, String userId, int rowIndex,
-  ) {
-    dynamic getValue(String mappingKey) {
-      String? columnName = mappings[mappingKey];
-      if (columnName == null || columnName == 'null') return null;
-      return rowData[columnName];
-    }
-
-    String productTypeStr = getValue('productType')?.toString().toLowerCase() ?? 'lainnya';
-    ProductType productType = _parseProductType(productTypeStr);
-
-    Product product = Product(
-      name: getValue('productName')?.toString() ?? 'Produk',
-      type: productType,
-      price: _parseDouble(getValue('amount')),
-      adminFee: _parseDouble(getValue('adminFee')),
-    );
-
-    String statusStr = getValue('paymentStatus')?.toString().toLowerCase() ?? 'lunas';
-    PaymentStatus paymentStatus = statusStr.contains('lunas') || statusStr.contains('sukses') || statusStr.contains('berhasil')
-        ? PaymentStatus.lunas : PaymentStatus.belumLunas;
-
-    String methodStr = getValue('paymentMethod')?.toString().toLowerCase() ?? 'cash';
-    PaymentMethod paymentMethod = _parsePaymentMethod(methodStr);
-    DateTime transactionDate = _parseDate(getValue('transactionDate'));
-
-    return Transaction(
-      transactionNumber: getValue('transactionNumber')?.toString() ?? 'TRX${rowIndex.toString().padLeft(5, '0')}',
-      product: product,
-      customerName: getValue('customerName')?.toString() ?? 'Customer',
-      customerPhone: getValue('customerPhone')?.toString(),
-      meterNumber: getValue('meterNumber')?.toString(),
-      customerId: getValue('customerId')?.toString(),
-      tariff: getValue('tariff')?.toString(),
-      period: getValue('period')?.toString(),
-      tokenNumber: getValue('tokenNumber')?.toString(),
-      kwh: _parseDouble(getValue('kwh'), defaultValue: 0),
-      packageInfo: getValue('packageInfo')?.toString(),
-      amount: _parseDouble(getValue('amount')),
-      adminFee: _parseDouble(getValue('adminFee')),
-      totalAmount: _parseDouble(getValue('totalAmount')) != 0
-          ? _parseDouble(getValue('totalAmount'))
-          : (_parseDouble(getValue('amount')) + _parseDouble(getValue('adminFee'))),
-      paymentStatus: paymentStatus,
-      paymentMethod: paymentMethod,
-      transactionDate: transactionDate,
-      userId: userId,
-    );
-  }
-
-  ProductType _parseProductType(String type) {
-    if (type.contains('listrik') && !type.contains('token')) return ProductType.listrik;
-    else if (type.contains('token')) return ProductType.token;
-    else if (type.contains('pulsa')) return ProductType.pulsa;
-    else if (type.contains('paket') || type.contains('data')) return ProductType.paketData;
-    else if (type.contains('bpjs')) return ProductType.bpjs;
-    else if (type.contains('pdam') || type.contains('air')) return ProductType.pdam;
-    else if (type.contains('indihome') || type.contains('internet')) return ProductType.indihome;
-    return ProductType.lainnya;
-  }
-
-  PaymentMethod _parsePaymentMethod(String method) {
-    if (method.contains('cash') || method.contains('tunai')) return PaymentMethod.cash;
-    else if (method.contains('transfer')) return PaymentMethod.transfer;
-    else if (method.contains('qris')) return PaymentMethod.qris;
-    else if (method.contains('wallet') || method.contains('ewallet')) return PaymentMethod.eWallet;
-    return PaymentMethod.cash;
-  }
-
-  double _parseDouble(dynamic value, {double defaultValue = 0}) {
-    if (value == null) return defaultValue;
-    if (value is double) return value;
-    if (value is int) return value.toDouble();
-    if (value is String) {
-      String cleaned = value.replaceAll('Rp', '').replaceAll('.', '').replaceAll(',', '.').trim();
-      return double.tryParse(cleaned) ?? defaultValue;
-    }
-    return defaultValue;
-  }
-
-  DateTime _parseDate(dynamic value) {
-    if (value == null) return DateTime.now();
-    if (value is DateTime) return value;
-    if (value is String) {
-      try { return DateTime.parse(value); } catch (e) {}
-      RegExp dateRegex = RegExp(r'(\d{1,2})[/-](\d{1,2})[/-](\d{4})');
-      var match = dateRegex.firstMatch(value);
-      if (match != null) {
-        int day = int.parse(match.group(1)!);
-        int month = int.parse(match.group(2)!);
-        int year = int.parse(match.group(3)!);
-        return DateTime(year, month, day);
-      }
-    }
-    return DateTime.now();
-  }
-
-  Future<String> generateTransactionInsights(List<Transaction> transactions) async {
-    try {
-      Map<String, int> productTypeCounts = {};
-      double totalRevenue = 0;
-      int lunasCount = 0;
-
-      for (var transaction in transactions) {
-        String type = transaction.product.typeDisplay;
-        productTypeCounts[type] = (productTypeCounts[type] ?? 0) + 1;
-        totalRevenue += transaction.totalAmount;
-        if (transaction.paymentStatus == PaymentStatus.lunas) lunasCount++;
-      }
-
-      String prompt = '''
-Berikan analisis singkat dari data transaksi PPOB berikut:
-- Total Transaksi: ${transactions.length}
-- Total Revenue: Rp ${totalRevenue.toStringAsFixed(0)}
-- Transaksi Lunas: $lunasCount
-- Distribusi Produk: ${productTypeCounts.toString()}
-
-Berikan insight dalam bahasa Indonesia meliputi:
-1. Tren produk terlaris
-2. Performa penjualan
-3. Rekomendasi untuk meningkatkan penjualan
-Jawab dalam 3-4 poin singkat.
-''';
-
-      final content = [Content.text(prompt)];
-      final response = await _model.generateContent(content);
-      return response.text ?? 'Tidak dapat menghasilkan insight';
-    } catch (e) {
-      print('Error generating insights: $e');
-      return 'Error: $e';
     }
   }
 }
