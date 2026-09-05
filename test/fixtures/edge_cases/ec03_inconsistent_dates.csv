@@ -1,0 +1,6 @@
+No Transaksi,Tanggal Transaksi,Nama Pelanggan,Jenis Produk,Nama Produk,Nominal,Biaya Admin,Total,Status,Metode
+TRX-OK-3001,05/01/2025,Fajar Nugroho,Listrik,Listrik PLN R1/900VA,250000,2500,252500,Sukses,Cash
+TRX-OK-3002,2025-01-06,Lina Marlina,Token Listrik,Token PLN 50000,50000,1500,51500,Sukses,Transfer
+TRX-OK-3003,7 Januari 2025,Hendra Gunawan,Pulsa,Tri 15000,15000,500,15500,Sukses,E-Wallet
+TRX-OK-3004,08-01-2025,Putri Ayu,Paket Data,Smartfren 5GB,35000,1000,36000,Gagal,QRIS
+TRX-OK-3005,2025/01/09,Bambang Sutrisno,BPJS,BPJS Kesehatan,180000,2500,182500,Sukses,Cash

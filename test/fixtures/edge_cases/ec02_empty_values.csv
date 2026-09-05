@@ -1,0 +1,5 @@
+No Transaksi,Tanggal,Nama Pelanggan,No HP,Jenis Produk,Nama Produk,Nominal,Biaya Admin,Total,Status,Metode Bayar
+TRX-AP-2001,2025-02-01,,081234567890,Pulsa,Indosat 20000,20000,1000,21000,Lunas,Cash
+TRX-AP-2002,2025-02-01,Dewi Lestari,,BPJS,BPJS Kesehatan,150000,2500,,Lunas,Transfer
+TRX-AP-2003,,Rudi Hartono,081298765432,PDAM,PDAM Bulanan,,2500,102500,,QRIS
+TRX-AP-2004,2025-02-02,Maya Putri,081211112222,Indihome,Indihome 20Mbps,300000,2500,302500,Belum Lunas,

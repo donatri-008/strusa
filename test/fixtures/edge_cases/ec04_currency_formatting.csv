@@ -1,0 +1,5 @@
+No Transaksi,Tanggal,Nama Pelanggan,Jenis Produk,Nama Produk,Nominal,Biaya Admin,Total,Status,Metode
+TRX-AP-4001,2025-03-01,Yusuf Ramadhan,Token Listrik,Token PLN,"Rp100.000","Rp1.500","Rp101.500",Sukses,Cash
+TRX-AP-4002,2025-03-01,Nur Halimah,Pulsa,Axis 25000,25000.00,1000.00,26000.00,Sukses,Transfer
+TRX-AP-4003,2025-03-02,Agus Setiawan,PDAM,PDAM Bulanan,"150,000","2,500","152,500",Lunas,QRIS
+TRX-AP-4004,2025-03-02,Ratna Sari,Indihome,Indihome 30Mbps,"Rp 350.000,-","Rp 2.500,-","Rp 352.500,-",Lunas,E-Wallet

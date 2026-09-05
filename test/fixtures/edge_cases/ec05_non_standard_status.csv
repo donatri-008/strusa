@@ -1,0 +1,6 @@
+No Transaksi,Tanggal,Nama Pelanggan,Jenis Produk,Nama Produk,Nominal,Biaya Admin,Total,Status,Metode
+TRX-OK-5001,2025-04-01,Wahyu Hidayat,Pulsa,Telkomsel 50000,50000,1000,51000,SUCCESS,tunai
+TRX-OK-5002,2025-04-01,Indah Permata,Token Listrik,Token PLN 200000,200000,2500,202500,berhasil,dompet digital
+TRX-OK-5003,2025-04-02,Joko Susilo,BPJS,BPJS Ketenagakerjaan,120000,2500,122500,PENDING,va bank
+TRX-OK-5004,2025-04-02,Sri Wahyuni,Paket Data,Indosat 12GB,55000,1000,56000,FAILED,scan qr
+TRX-OK-5005,2025-04-03,Eko Prasetyo,PDAM,PDAM Bulanan,175000,2500,177500,OK,cash

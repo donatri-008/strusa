@@ -1,0 +1,5 @@
+No Transaksi,Tanggal,Pelanggan,Jenis Produk,Nama Produk,Nominal,Biaya Admin,Total,Status
+TRX-AP-8001,2025-07-01,"Budi Santoso - 081234567890",Pulsa,Telkomsel 25000,25000,1000,26000,Sukses
+TRX-AP-8002,2025-07-01,"Siti Aminah (08129876543)",Token Listrik,Token PLN 100000 / 68.5 kWh,100000,2500,102500,Sukses
+TRX-AP-8003,2025-07-02,"Andi Wijaya | 081211112222",PDAM,PDAM Bulanan - Periode 06/2025,150000,2500,152500,Sukses
+TRX-AP-8004,2025-07-02,"Rina Marlina, 081399998888",Listrik,PLN R1/900VA - Meter 12345678 - Juli 2025,220000,2500,222500,Sukses

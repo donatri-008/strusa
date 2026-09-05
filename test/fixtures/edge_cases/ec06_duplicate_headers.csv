@@ -1,0 +1,4 @@
+ID,Tanggal,Nama,Nominal,Nominal,Keterangan,Keterangan,Status
+TRX-AP-6001,2025-05-01,Anton Wijaya,50000,1500,Pulsa Telkomsel,Cash,Sukses
+TRX-AP-6002,2025-05-01,Melati Sari,100000,2500,Token PLN,Transfer,Sukses
+TRX-AP-6003,2025-05-02,Fitriani,25000,500,Paket Data XL,QRIS,Gagal

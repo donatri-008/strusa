@@ -1,0 +1,4 @@
+  No Transaksi ,TANGGAL, nama pelanggan,Jenis produk , Nama Produk,  Nominal,biaya ADMIN,Total ,status ,Metode
+TRX-OK-7001 ,2025-06-01,  Rangga Saputra,pulsa, Smartfren 20000 , 20000 , 1000,21000,  sukses , cash
+TRX-OK-7002,2025-06-01,Yuni Astuti  , TOKEN LISTRIK,Token PLN 75000,75000,1500 ,76500, Sukses,transfer
+TRX-OK-7003,  2025-06-02 ,Dedi Kurniawan,Bpjs,BPJS Kesehatan ,140000,2500,142500,sukses ,  qris

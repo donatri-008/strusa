@@ -1,0 +1,4 @@
+No Transaksi,Tanggal,Nama Pelanggan,Jenis Produk,Nama Produk,Nominal,Status
+TRX-OK-1001,2025-01-05,Budi Santoso,Pulsa,Telkomsel 25000,25000,Sukses
+TRX-OK-1002,2025-01-05,Siti Aminah,Token Listrik,Token PLN 100000,100000,Sukses
+TRX-OK-1003,2025-01-06,Andi Wijaya,Paket Data,XL 10GB,45000,Gagal
