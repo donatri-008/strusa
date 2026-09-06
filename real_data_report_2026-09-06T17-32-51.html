@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Data Test Report - Strusa</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    .container { max-width: 1200px; margin: 0 auto; }
+    header {
+      background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+      color: white;
+      padding: 40px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(30, 64, 175, 0.2);
+    }
+    header h1 { font-size: 2em; margin-bottom: 8px; }
+    header p { opacity: 0.9; font-size: 0.95em; }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .summary-card {
+      background: white;
+      padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border-left: 4px solid #3b82f6;
+    }
+    .summary-card.highlight { border-left-color: #16a34a; }
+    .summary-card.warning { border-left-color: #ca8a04; }
+    .summary-card.danger { border-left-color: #dc2626; }
+    .summary-card .label {
+      font-size: 0.85em;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    .summary-card .value {
+      font-size: 2em;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .summary-card .sub {
+      font-size: 0.85em;
+      color: #64748b;
+      margin-top: 4px;
+    }
+    .section {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 30px;
+    }
+    .section h2 {
+      font-size: 1.3em;
+      margin-bottom: 20px;
+      color: #0f172a;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #e2e8f0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9em;
+    }
+    thead {
+      background: #f1f5f9;
+    }
+    th {
+      padding: 12px 14px;
+      text-align: left;
+      font-weight: 600;
+      color: #475569;
+      text-transform: uppercase;
+      font-size: 0.75em;
+      letter-spacing: 0.5px;
+    }
+    td {
+      padding: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    tr:hover { background: #f8fafc; }
+    td.num { text-align: right; font-variant-numeric: tabular-nums; }
+    th.num { text-align: right; }
+    .f1-cell {
+      text-align: center;
+      border-radius: 6px;
+      font-variant-numeric: tabular-nums;
+    }
+    code {
+      background: #f1f5f9;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.85em;
+      color: #475569;
+    }
+    footer {
+      text-align: center;
+      color: #64748b;
+      font-size: 0.85em;
+      margin-top: 40px;
+      padding: 20px;
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .section, .summary-card { box-shadow: none; border: 1px solid #e2e8f0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📊 Real Data Batch Test Report</h1>
+      <p>Strusa CSV Mapper Evaluation (Data Riil OrderKuota &amp; AgenPulsa) • Generated: 2026-09-06 17:32:51</p>
+      <p>Mappers Tested: gemini, ruleBased</p>
+    </header>
+
+    <div class="summary-grid">
+      <div class="summary-card highlight">
+        <div class="label">Average F1 Score</div>
+        <div class="value">89.66%</div>
+        <div class="sub">Across 6 runs</div>
+      </div>
+      <div class="summary-card">
+        <div class="label">Total Fields Correct</div>
+        <div class="value">353 / 396</div>
+        <div class="sub">89.1% overall accuracy</div>
+      </div>
+      <div class="summary-card highlight">
+        <div class="label">Perfect Scores (100%)</div>
+        <div class="value">3 / 6</div>
+        <div class="sub">Runs with F1 = 100%</div>
+      </div>
+      <div class="summary-card ">
+        <div class="label">Errors</div>
+        <div class="value">0</div>
+        <div class="sub">Failed test runs</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Detailed Results per Dataset</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Dataset</th>
+            <th>Platform/Kategori</th>
+            <th>Mapper</th>
+            <th class="num">Rows</th>
+            <th class="num">Correct</th>
+            <th class="num">Precision</th>
+            <th class="num">Recall</th>
+            <th class="num">Waktu</th>
+            <th class="num">F1 Score</th>
+          </tr>
+        </thead>
+        <tbody>
+              <tr>
+      <td><strong>agenpulsa_agustus_anonim</strong></td>
+      <td>real_data</td>
+      <td><code>gemini</code></td>
+      <td class="num">5</td>
+      <td class="num">45 / 45</td>
+      <td class="num">100.0%</td>
+      <td class="num">100.0%</td>
+      <td class="num">1576 ms</td>
+      <td class="f1-cell" style="background:#dcfce7;color:#16a34a">
+        <strong>100.0%</strong>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>agenpulsa_agustus_anonim</strong></td>
+      <td>real_data</td>
+      <td><code>ruleBased</code></td>
+      <td class="num">5</td>
+      <td class="num">36 / 45</td>
+      <td class="num">80.0%</td>
+      <td class="num">80.0%</td>
+      <td class="num">28 ms</td>
+      <td class="f1-cell" style="background:#fef9c3;color:#ca8a04">
+        <strong>80.0%</strong>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>agenpulsa_september_anonim</strong></td>
+      <td>real_data</td>
+      <td><code>gemini</code></td>
+      <td class="num">14</td>
+      <td class="num">126 / 126</td>
+      <td class="num">100.0%</td>
+      <td class="num">100.0%</td>
+      <td class="num">1228 ms</td>
+      <td class="f1-cell" style="background:#dcfce7;color:#16a34a">
+        <strong>100.0%</strong>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>agenpulsa_september_anonim</strong></td>
+      <td>real_data</td>
+      <td><code>ruleBased</code></td>
+      <td class="num">14</td>
+      <td class="num">98 / 126</td>
+      <td class="num">79.7%</td>
+      <td class="num">77.8%</td>
+      <td class="num">11 ms</td>
+      <td class="f1-cell" style="background:#fee2e2;color:#dc2626">
+        <strong>78.7%</strong>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>orderkuota_september_anonim</strong></td>
+      <td>real_data</td>
+      <td><code>gemini</code></td>
+      <td class="num">3</td>
+      <td class="num">27 / 27</td>
+      <td class="num">100.0%</td>
+      <td class="num">100.0%</td>
+      <td class="num">1190 ms</td>
+      <td class="f1-cell" style="background:#dcfce7;color:#16a34a">
+        <strong>100.0%</strong>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>orderkuota_september_anonim</strong></td>
+      <td>real_data</td>
+      <td><code>ruleBased</code></td>
+      <td class="num">3</td>
+      <td class="num">21 / 27</td>
+      <td class="num">80.8%</td>
+      <td class="num">77.8%</td>
+      <td class="num">4 ms</td>
+      <td class="f1-cell" style="background:#fee2e2;color:#dc2626">
+        <strong>79.3%</strong>
+      </td>
+    </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <footer>
+      <p>Report generated by <strong>Strusa Real Data Batch Test</strong></p>
+      <p>Rule-based baseline vs Gemini AI-powered mapping evaluation — data riil UMKM 3D Store</p>
+    </footer>
+  </div>
+</body>
+</html>

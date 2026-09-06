@@ -44,6 +44,40 @@ Tolong analisis dan mapping field-field berikut dari CSV:
 17. KWH (untuk token listrik)
 18. Paket Info (untuk Indihome, dll)
 
+CATATAN KHUSUS untuk header CSV OrderKuota/AgenPulsa (jika header berikut ada, WAJIB ikuti aturan ini, JANGAN mapping berdasarkan nama kolom saja):
+- Kolom "Produk" BUKAN nama produk, isinya kategori/brand kasar (mis. "KUOTA AXIS") -> mapping ke productType, BUKAN productName.
+- Kolom "Provider" adalah nama produk/varian sebenarnya (mis. "Mini Isi Ulang Axis 5 Hari") -> mapping ke productName, BUKAN productType.
+- Kolom "Nominal" BUKAN angka uang, isinya deskripsi teks paket (mis. "7GB Lokal / 28 Hari") -> mapping ke packageInfo.
+- Kolom "Harga" adalah nilai uang transaksi sebenarnya -> mapping ke amount.
+- Kolom "ID Plgn" selalu kosong di kedua platform -> abaikan, jangan dipetakan ke field manapun.
+- Kolom "Pembayaran" isinya selalu "Saldo Akun" (saldo platform reseller, bukan channel bayar pelanggan) -> mapping ke paymentMethod dengan nilai "eWallet".
+- Kolom "Status" bernilai "OK" (OrderKuota) atau "SUKSES" (AgenPulsa) -> keduanya berarti lunas, mapping ke paymentStatus.
+- totalAmount: jika TIDAK ADA kolom terpisah untuk total selain "Harga", biarkan totalAmount = null. JANGAN memetakan kolom yang sama dua kali ke amount dan totalAmount sekaligus.
+
+Contoh mapping benar untuk header: ID,Produk,Provider,Nominal,ID Plgn,NO. HP,Harga,Pembayaran,Tanggal,Status
+{
+  "mappings": {
+    "transactionNumber": "ID",
+    "transactionDate": "Tanggal",
+    "customerName": null,
+    "customerPhone": "NO. HP",
+    "productType": "Produk",
+    "productName": "Provider",
+    "amount": "Harga",
+    "adminFee": null,
+    "totalAmount": null,
+    "paymentStatus": "Status",
+    "paymentMethod": "Pembayaran",
+    "meterNumber": null,
+    "customerId": null,
+    "tariff": null,
+    "period": null,
+    "tokenNumber": null,
+    "kwh": null,
+    "packageInfo": "Nominal"
+  }
+}
+
 Berikan hasil mapping dalam format JSON seperti ini:
 {
   "mappings": {
@@ -298,7 +332,7 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
     // 4. Normalisasi ProductType
     if (key == 'productType') {
       if (valLower.contains('token')) return 'token';
-      if (valLower.contains('paket') || valLower.contains('data')) return 'paketdata';
+      if (valLower.contains('paket') || valLower.contains('data') || valLower.contains('kuota')) return 'paketdata';
       if (valLower.contains('listrik')) return 'listrik';
       if (valLower.contains('pulsa')) return 'pulsa';
       if (valLower.contains('bpjs')) return 'bpjs';
@@ -322,7 +356,8 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
       if (valLower.contains('transfer') || valLower.contains('bank')) return 'transfer';
       if (valLower.contains('qris')) return 'qris';
       if (valLower.contains('wallet') || valLower.contains('ewallet') || valLower.contains('ovo') || 
-          valLower.contains('gopay') || valLower.contains('dana') || valLower.contains('shopee')) {
+          valLower.contains('gopay') || valLower.contains('dana') || valLower.contains('shopee') ||
+          valLower.contains('saldo')) {
         return 'ewallet';
       }
       return 'cash';
