@@ -214,7 +214,7 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
     if (key == 'transactionDate') {
       try {
         DateTime dt = DateTime.parse(val);
-        return '${dt.year}${dt.month.toString().padLeft(2, '0')}${dt.day.toString().padLeft(2, '0')}';
+        return '${dt.year}-${dt.month.toString().padLeft(2, '0')}-${dt.day.toString().padLeft(2, '0')}';
       } catch (_) {}
 
       RegExp dmyRegex = RegExp(r'^(\d{1,2})[/-](\d{1,2})[/-](\d{4})');
@@ -223,7 +223,7 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
         int day = int.parse(match.group(1)!);
         int month = int.parse(match.group(2)!);
         int year = int.parse(match.group(3)!);
-        return '$year${month.toString().padLeft(2, '0')}${day.toString().padLeft(2, '0')}';
+        return '$year-${month.toString().padLeft(2, '0')}-${day.toString().padLeft(2, '0')}';
       }
 
       RegExp ymdRegex = RegExp(r'^(\d{4})[/-](\d{1,2})[/-](\d{1,2})');
@@ -232,12 +232,12 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
         int year = int.parse(match.group(1)!);
         int month = int.parse(match.group(2)!);
         int day = int.parse(match.group(3)!);
-        return '$year${month.toString().padLeft(2, '0')}${day.toString().padLeft(2, '0')}';
+        return '$year-${month.toString().padLeft(2, '0')}-${day.toString().padLeft(2, '0')}';
       }
 
       RegExp ddmmyyyyRegex = RegExp(r'^(\d{2})(\d{2})(\d{4})$');
       match = ddmmyyyyRegex.firstMatch(val);
-      if (match != null) return '${match.group(3)}${match.group(2)}${match.group(1)}';
+      if (match != null) return '${match.group(3)}-${match.group(2)}-${match.group(1)}';
 
       RegExp textDateRegex = RegExp(r'^(\d{1,2})\s+([a-zA-Z]+)\s+(\d{4})');
       match = textDateRegex.firstMatch(val);
@@ -254,7 +254,7 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
           'desember': 12, 'dec': 12, 'december': 12
         };
         int month = months[monthStr] ?? 1;
-        return '$year${month.toString().padLeft(2, '0')}${day.toString().padLeft(2, '0')}';
+        return '$year-${month.toString().padLeft(2, '0')}-${day.toString().padLeft(2, '0')}';
       }
       return val;
     }

@@ -42,6 +42,7 @@ class RuleBasedMapperService {
       RegExp(r'prod[_\-]?cat', caseSensitive: false),
     ],
     'productName': [
+      RegExp(r'^provider$', caseSensitive: false),
       RegExp(r'nama\s*produk', caseSensitive: false),
       RegExp(r'^produk$', caseSensitive: false),
       RegExp(r'^item$', caseSensitive: false),
@@ -50,6 +51,7 @@ class RuleBasedMapperService {
       RegExp(r'keterangan', caseSensitive: false),
     ],
     'amount': [
+      RegExp(r'^harga$', caseSensitive: false),
       RegExp(r'nominal', caseSensitive: false),
       RegExp(r'^harga$', caseSensitive: false),
       RegExp(r'^amount$', caseSensitive: false),
@@ -74,6 +76,7 @@ class RuleBasedMapperService {
       RegExp(r'pay[_\-]?status', caseSensitive: false),
     ],
     'paymentMethod': [
+      RegExp(r'pembayaran', caseSensitive: false),
       RegExp(r'metode\s*bayar', caseSensitive: false),
       RegExp(r'payment[_\-]?method', caseSensitive: false),
       RegExp(r'pay[_\-]?method', caseSensitive: false),
@@ -280,7 +283,7 @@ class RuleBasedMapperService {
       if (cleaned.contains(monthNames[i])) {
         final match = RegExp(r'(\d{1,2})\s+' + monthNames[i] + r'\s+(\d{4})').firstMatch(cleaned);
         if (match != null) {
-          return '${match.group(2)}${(i + 1).toString().padLeft(2, '0')}${match.group(1)!.padLeft(2, '0')}';
+          return '${match.group(2)}-${(i + 1).toString().padLeft(2, '0')}-${match.group(1)!.padLeft(2, '0')}';
         }
       }
     }
@@ -288,13 +291,13 @@ class RuleBasedMapperService {
     // 2. Handle DD/MM/YYYY atau DD-MM-YYYY
     final dmyMatch = RegExp(r'^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})').firstMatch(cleaned);
     if (dmyMatch != null) {
-      return '${dmyMatch.group(3)}${dmyMatch.group(2)!.padLeft(2, '0')}${dmyMatch.group(1)!.padLeft(2, '0')}';
+      return '${dmyMatch.group(3)}-${dmyMatch.group(2)!.padLeft(2, '0')}-${dmyMatch.group(1)!.padLeft(2, '0')}';
     }
 
     // 3. Handle YYYY-MM-DD atau YYYY/MM/DD
     final ymdMatch = RegExp(r'^(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})').firstMatch(cleaned);
     if (ymdMatch != null) {
-      return '${ymdMatch.group(1)}${ymdMatch.group(2)!.padLeft(2, '0')}${ymdMatch.group(3)!.padLeft(2, '0')}';
+      return '${ymdMatch.group(1)}-${ymdMatch.group(2)!.padLeft(2, '0')}-${ymdMatch.group(3)!.padLeft(2, '0')}';
     }
 
     return cleaned;
@@ -335,6 +338,7 @@ class RuleBasedMapperService {
     if (v.contains('transfer') || v.contains('va') || v.contains('bank')) return 'transfer';
     if (v.contains('qris') || v.contains('qr') || v.contains('scan')) return 'qris';
     if (v.contains('wallet') || v.contains('ewallet') || v.contains('dompet')) return 'eWallet';
+    if (v.contains('saldo')) return 'eWallet';
     return 'cash';
   }
 }
