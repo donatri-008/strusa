@@ -174,7 +174,13 @@ Return ONLY a JSON object with this exact format (no explanation):
         throw Exception('User not authenticated');
       }
 
-      final batch = FirebaseFirestore.instance.batch();
+      // FIX: `batch` sekarang dideklarasikan dengan `var` (bukan `final`)
+      // supaya bisa diganti dengan instance WriteBatch yang baru setelah
+      // commit(). Sebelumnya, `batch` yang sama dipakai lagi setelah
+      // commit() dipanggil pada baris ke-500 — di cloud_firestore, WriteBatch
+      // TIDAK BISA dipakai lagi setelah di-commit, sehingga import CSV
+      // dengan >500 baris akan throw error di tengah proses.
+      var batch = FirebaseFirestore.instance.batch();
       int successCount = 0;
       int errorCount = 0;
       int batchCount = 0;
@@ -219,6 +225,14 @@ Return ONLY a JSON object with this exact format (no explanation):
             _getValueFromMapping(row, mapping['category'])?.toString(),
           );
 
+          // FIX: Pakai kolom "Total" dari CSV jika user memetakannya dan
+          // nilainya valid (>0). Jika tidak dipetakan atau nilainya 0/invalid,
+          // baru fallback ke hitungan nominal + adminFee. Sebelumnya nilai
+          // dari mapping['totalAmount'] selalu diabaikan meskipun user sudah
+          // memetakan kolom "Harga Jual (Total)" di layar import.
+          final mappedTotal = _parseNumber(_getValueFromMapping(row, mapping['totalAmount']));
+          final totalAmount = mappedTotal > 0 ? mappedTotal : nominal + adminFee;
+
           // Extract data based on mapping
           final transactionData = {
             'userId': user.uid,
@@ -229,7 +243,7 @@ Return ONLY a JSON object with this exact format (no explanation):
             'customerName': _getValueFromMapping(row, mapping['customerName'])?.toString().trim() ?? '',
             'nominal': nominal,
             'adminFee': adminFee,
-            'totalAmount': nominal + adminFee,
+            'totalAmount': totalAmount,
             'paymentMethod': 'IMPORT',
             'isPaid': _parseBool(_getValueFromMapping(row, mapping['isPaid'])),
             'date': _parseDate(_getValueFromMapping(row, mapping['date'])),
@@ -251,6 +265,9 @@ Return ONLY a JSON object with this exact format (no explanation):
           if (batchCount >= 500) {
             debugPrint('Committing batch of $batchCount operations...');
             await batch.commit();
+            // FIX: buat WriteBatch baru — batch lama sudah final/tidak
+            // bisa dipakai lagi setelah commit().
+            batch = FirebaseFirestore.instance.batch();
             batchCount = 0;
           }
 
