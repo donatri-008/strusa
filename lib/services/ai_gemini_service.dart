@@ -44,39 +44,19 @@ Tolong analisis dan mapping field-field berikut dari CSV:
 17. KWH (untuk token listrik)
 18. Paket Info (untuk Indihome, dll)
 
-CATATAN KHUSUS untuk header CSV OrderKuota/AgenPulsa (jika header berikut ada, WAJIB ikuti aturan ini, JANGAN mapping berdasarkan nama kolom saja):
-- Kolom "Produk" BUKAN nama produk, isinya kategori/brand kasar (mis. "KUOTA AXIS") -> mapping ke productType, BUKAN productName.
-- Kolom "Provider" adalah nama produk/varian sebenarnya (mis. "Mini Isi Ulang Axis 5 Hari") -> mapping ke productName, BUKAN productType.
-- Kolom "Nominal" BUKAN angka uang, isinya deskripsi teks paket (mis. "7GB Lokal / 28 Hari") -> mapping ke packageInfo.
-- Kolom "Harga" adalah nilai uang transaksi sebenarnya -> mapping ke amount.
-- Kolom "ID Plgn" selalu kosong di kedua platform -> abaikan, jangan dipetakan ke field manapun.
-- Kolom "Pembayaran" isinya selalu "Saldo Akun" (saldo platform reseller, bukan channel bayar pelanggan) -> mapping ke paymentMethod dengan nilai "eWallet".
-- Kolom "Status" bernilai "OK" (OrderKuota) atau "SUKSES" (AgenPulsa) -> keduanya berarti lunas, mapping ke paymentStatus.
-- totalAmount: jika TIDAK ADA kolom terpisah untuk total selain "Harga", biarkan totalAmount = null. JANGAN memetakan kolom yang sama dua kali ke amount dan totalAmount sekaligus.
-
-Contoh mapping benar untuk header: ID,Produk,Provider,Nominal,ID Plgn,NO. HP,Harga,Pembayaran,Tanggal,Status
-{
-  "mappings": {
-    "transactionNumber": "ID",
-    "transactionDate": "Tanggal",
-    "customerName": null,
-    "customerPhone": "NO. HP",
-    "productType": "Produk",
-    "productName": "Provider",
-    "amount": "Harga",
-    "adminFee": null,
-    "totalAmount": null,
-    "paymentStatus": "Status",
-    "paymentMethod": "Pembayaran",
-    "meterNumber": null,
-    "customerId": null,
-    "tariff": null,
-    "period": null,
-    "tokenNumber": null,
-    "kwh": null,
-    "packageInfo": "Nominal"
-  }
-}
+PENTING — perhatikan ISI kolom, bukan cuma NAMA kolom: pada sebagian
+platform (mis. OrderKuota, AgenPulsa) nama kolom bisa menyesatkan.
+Contoh nyata yang ditemukan:
+- Kolom "Produk" sering berisi KATEGORI/PROVIDER (mis. "KUOTA AXIS"),
+  BUKAN nama produk spesifik. Nama produk spesifik biasanya ada di
+  kolom "Provider" (mis. "Mini Isi Ulang Axis 5 Hari").
+- Kolom "Nominal" kadang berisi DESKRIPSI TEKS paket (mis. "7GB Lokal
+  / 28 Hari"), BUKAN angka nominal uang. Nilai uang riil biasanya ada
+  di kolom "Harga".
+- Kolom "Pembayaran" bisa berisi nilai seperti "Saldo Akun" — ini tetap
+  metode pembayaran (saldo reseller), map ke paymentMethod.
+Jangan asumsikan nama kolom = arti field target. Periksa contoh isi
+datanya dulu sebelum memutuskan mapping.
 
 Berikan hasil mapping dalam format JSON seperti ini:
 {
@@ -244,10 +224,11 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
       return digits.isEmpty ? null : digits;
     }
 
-    // 2. Normalisasi Tanggal ke format YYYYMMDD
+    // 2. Normalisasi Tanggal ke format YYYY-MM-DD
     if (key == 'transactionDate') {
       try {
         DateTime dt = DateTime.parse(val);
+        // ✅ FIX Bug 1: pakai dash, samakan dengan format ground truth
         return '${dt.year}-${dt.month.toString().padLeft(2, '0')}-${dt.day.toString().padLeft(2, '0')}';
       } catch (_) {}
 
@@ -257,6 +238,7 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
         int day = int.parse(match.group(1)!);
         int month = int.parse(match.group(2)!);
         int year = int.parse(match.group(3)!);
+        // ✅ FIX Bug 1: pakai dash
         return '$year-${month.toString().padLeft(2, '0')}-${day.toString().padLeft(2, '0')}';
       }
 
@@ -266,12 +248,16 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
         int year = int.parse(match.group(1)!);
         int month = int.parse(match.group(2)!);
         int day = int.parse(match.group(3)!);
+        // ✅ FIX Bug 1: pakai dash
         return '$year-${month.toString().padLeft(2, '0')}-${day.toString().padLeft(2, '0')}';
       }
 
       RegExp ddmmyyyyRegex = RegExp(r'^(\d{2})(\d{2})(\d{4})$');
       match = ddmmyyyyRegex.firstMatch(val);
-      if (match != null) return '${match.group(3)}-${match.group(2)}-${match.group(1)}';
+      if (match != null) {
+        // ✅ FIX Bug 1: pakai dash
+        return '${match.group(3)}-${match.group(2)}-${match.group(1)}';
+      }
 
       RegExp textDateRegex = RegExp(r'^(\d{1,2})\s+([a-zA-Z]+)\s+(\d{4})');
       match = textDateRegex.firstMatch(val);
@@ -288,6 +274,7 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
           'desember': 12, 'dec': 12, 'december': 12
         };
         int month = months[monthStr] ?? 1;
+        // ✅ FIX Bug 1: pakai dash
         return '$year-${month.toString().padLeft(2, '0')}-${day.toString().padLeft(2, '0')}';
       }
       return val;
@@ -332,7 +319,7 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
     // 4. Normalisasi ProductType
     if (key == 'productType') {
       if (valLower.contains('token')) return 'token';
-      if (valLower.contains('paket') || valLower.contains('data') || valLower.contains('kuota')) return 'paketdata';
+      if (valLower.contains('paket') || valLower.contains('data')) return 'paketdata';
       if (valLower.contains('listrik')) return 'listrik';
       if (valLower.contains('pulsa')) return 'pulsa';
       if (valLower.contains('bpjs')) return 'bpjs';
@@ -356,10 +343,12 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
       if (valLower.contains('transfer') || valLower.contains('bank')) return 'transfer';
       if (valLower.contains('qris')) return 'qris';
       if (valLower.contains('wallet') || valLower.contains('ewallet') || valLower.contains('ovo') || 
-          valLower.contains('gopay') || valLower.contains('dana') || valLower.contains('shopee') ||
-          valLower.contains('saldo')) {
+          valLower.contains('gopay') || valLower.contains('dana') || valLower.contains('shopee')) {
         return 'ewallet';
       }
+      // ✅ FIX Bug 2: "Saldo Akun" (OrderKuota/AgenPulsa) -> anggap ewallet
+      // (saldo reseller), sekaligus dicatat sbg temuan RM5.
+      if (valLower.contains('saldo')) return 'ewallet';
       return 'cash';
     }
 

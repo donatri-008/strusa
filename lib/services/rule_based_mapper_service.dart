@@ -35,6 +35,7 @@ class RuleBasedMapperService {
       RegExp(r'\bhp\b', caseSensitive: false),
     ],
     'productType': [
+      RegExp(r'^produk$', caseSensitive: false),
       RegExp(r'jenis\s*produk', caseSensitive: false),
       RegExp(r'kategori', caseSensitive: false),
       RegExp(r'jenis\s*layanan', caseSensitive: false),
@@ -42,6 +43,9 @@ class RuleBasedMapperService {
       RegExp(r'prod[_\-]?cat', caseSensitive: false),
     ],
     'productName': [
+      // ✅ FIX Bug 2: "Provider" berisi nama produk spesifik di
+      // OrderKuota/AgenPulsa, harus dicek SEBELUM pattern generik lain
+      // supaya tidak keduluan match ke kolom "Produk" (yang isinya kategori).
       RegExp(r'^provider$', caseSensitive: false),
       RegExp(r'nama\s*produk', caseSensitive: false),
       RegExp(r'^produk$', caseSensitive: false),
@@ -51,9 +55,11 @@ class RuleBasedMapperService {
       RegExp(r'keterangan', caseSensitive: false),
     ],
     'amount': [
+      // ✅ FIX Bug 2: "Harga" adalah nilai uang riil di OrderKuota/AgenPulsa,
+      // sedangkan "Nominal" di platform itu isinya deskripsi teks paket.
+      // Harus dicek duluan supaya tidak salah ambil "Nominal".
       RegExp(r'^harga$', caseSensitive: false),
       RegExp(r'nominal', caseSensitive: false),
-      RegExp(r'^harga$', caseSensitive: false),
       RegExp(r'^amount$', caseSensitive: false),
       RegExp(r'jumlah\s*bayar', caseSensitive: false),
       RegExp(r'base[_\-]?price', caseSensitive: false),
@@ -76,6 +82,8 @@ class RuleBasedMapperService {
       RegExp(r'pay[_\-]?status', caseSensitive: false),
     ],
     'paymentMethod': [
+      // ✅ FIX Bug 2: kolom "Pembayaran" di OrderKuota/AgenPulsa
+      // (isinya "Saldo Akun") tidak pernah match pattern lama.
       RegExp(r'pembayaran', caseSensitive: false),
       RegExp(r'metode\s*bayar', caseSensitive: false),
       RegExp(r'payment[_\-]?method', caseSensitive: false),
@@ -162,7 +170,16 @@ class RuleBasedMapperService {
         } else {
           String? cleanValue = row[colIndex]?.toString().trim();
           if (cleanValue != null && ['amount', 'adminFee', 'totalAmount'].contains(field)) {
-            cleanValue = _cleanNumeric(cleanValue);
+            // ✅ FIX Bug 3: kalau setelah dibuang "Rp"/"IDR" masih ada huruf
+            // (mis. "7GB Lokal / 28 Hari" yang kepental dari kolom
+            // "Nominal" bertipe deskripsi teks), field ini BUKAN angka asli
+            // -> jangan dipaksa jadi angka garbage, anggap kosong saja.
+            final stripped = cleanValue.replaceAll(RegExp(r'rp|idr', caseSensitive: false), '');
+            if (RegExp(r'[a-zA-Z]').hasMatch(stripped)) {
+              cleanValue = null;
+            } else {
+              cleanValue = _cleanNumeric(cleanValue);
+            }
           }
           mappedRow[field] = cleanValue?.isEmpty == true ? null : cleanValue;
         }
@@ -283,6 +300,7 @@ class RuleBasedMapperService {
       if (cleaned.contains(monthNames[i])) {
         final match = RegExp(r'(\d{1,2})\s+' + monthNames[i] + r'\s+(\d{4})').firstMatch(cleaned);
         if (match != null) {
+          // ✅ FIX Bug 1: pakai dash, samakan dengan format ground truth (YYYY-MM-DD)
           return '${match.group(2)}-${(i + 1).toString().padLeft(2, '0')}-${match.group(1)!.padLeft(2, '0')}';
         }
       }
@@ -291,12 +309,14 @@ class RuleBasedMapperService {
     // 2. Handle DD/MM/YYYY atau DD-MM-YYYY
     final dmyMatch = RegExp(r'^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})').firstMatch(cleaned);
     if (dmyMatch != null) {
+      // ✅ FIX Bug 1: pakai dash
       return '${dmyMatch.group(3)}-${dmyMatch.group(2)!.padLeft(2, '0')}-${dmyMatch.group(1)!.padLeft(2, '0')}';
     }
 
     // 3. Handle YYYY-MM-DD atau YYYY/MM/DD
     final ymdMatch = RegExp(r'^(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})').firstMatch(cleaned);
     if (ymdMatch != null) {
+      // ✅ FIX Bug 1: pakai dash
       return '${ymdMatch.group(1)}-${ymdMatch.group(2)!.padLeft(2, '0')}-${ymdMatch.group(3)!.padLeft(2, '0')}';
     }
 
@@ -310,7 +330,7 @@ class RuleBasedMapperService {
     if (v.contains('listrik') || v.contains('pln')) return 'listrik';
     if (v.contains('pulsa')) return 'pulsa';
     if (v.contains('indihome') || v.contains('internet') || v.contains('ppob_indihome')) return 'indihome';
-    if (v.contains('paket') || v.contains('data')) return 'paketData';
+    if (v.contains('paket') || v.contains('data') || v.contains('kuota')) return 'paketData';
     if (v.contains('bpjs') || v.contains('ppob_bpjs')) return 'bpjs';
     if (v.contains('pdam') || v.contains('air')) return 'pdam';
     return 'lainnya';
@@ -338,6 +358,9 @@ class RuleBasedMapperService {
     if (v.contains('transfer') || v.contains('va') || v.contains('bank')) return 'transfer';
     if (v.contains('qris') || v.contains('qr') || v.contains('scan')) return 'qris';
     if (v.contains('wallet') || v.contains('ewallet') || v.contains('dompet')) return 'eWallet';
+    // ✅ FIX Bug 2: "Saldo Akun" (OrderKuota/AgenPulsa) = saldo reseller,
+    // dianggap eWallet (bucket terdekat) — sekaligus dicatat sbg temuan
+    // RM5 (ketidaksesuaian skema, lihat catatan di real_data_mapping.dart).
     if (v.contains('saldo')) return 'eWallet';
     return 'cash';
   }
