@@ -1,7 +1,0 @@
-datasetId,category,mapper,rowsCompared,fieldsExpected,fieldsPredicted,fieldsCorrect,precision,recall,f1Score,f1Percentage,elapsedMs,status,errorMessage
-agenpulsa_agustus_anonim,real_data,gemini,5,45,50,45,0.9,1.0,0.9474,94.7%,1628,OK,""
-agenpulsa_agustus_anonim,real_data,ruleBased,5,45,40,36,0.9,0.8,0.8471,84.7%,29,OK,""
-agenpulsa_september_anonim,real_data,gemini,14,126,140,126,0.9,1.0,0.9474,94.7%,1155,OK,""
-agenpulsa_september_anonim,real_data,ruleBased,14,126,112,103,0.9196,0.8175,0.8655,86.6%,9,OK,""
-orderkuota_september_anonim,real_data,gemini,3,27,30,25,0.8333,0.9259,0.8772,87.7%,1177,OK,""
-orderkuota_september_anonim,real_data,ruleBased,3,27,24,24,1.0,0.8889,0.9412,94.1%,3,OK,""

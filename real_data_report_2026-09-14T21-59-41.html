@@ -124,24 +124,24 @@
   <div class="container">
     <header>
       <h1>📊 Real Data Batch Test Report</h1>
-      <p>Strusa CSV Mapper Evaluation (Data Riil OrderKuota &amp; AgenPulsa) • Generated: 2026-09-06 17:32:51</p>
+      <p>Strusa CSV Mapper Evaluation (Data Riil OrderKuota &amp; AgenPulsa) • Generated: 2026-09-14 21:59:41</p>
       <p>Mappers Tested: gemini, ruleBased</p>
     </header>
 
     <div class="summary-grid">
       <div class="summary-card highlight">
         <div class="label">Average F1 Score</div>
-        <div class="value">89.66%</div>
-        <div class="sub">Across 6 runs</div>
+        <div class="value">91.08%</div>
+        <div class="sub">Across 8 runs</div>
       </div>
       <div class="summary-card">
         <div class="label">Total Fields Correct</div>
-        <div class="value">353 / 396</div>
-        <div class="sub">89.1% overall accuracy</div>
+        <div class="value">3595 / 3984</div>
+        <div class="sub">90.2% overall accuracy</div>
       </div>
       <div class="summary-card highlight">
         <div class="label">Perfect Scores (100%)</div>
-        <div class="value">3 / 6</div>
+        <div class="value">1 / 8</div>
         <div class="sub">Runs with F1 = 100%</div>
       </div>
       <div class="summary-card ">
@@ -172,37 +172,37 @@
       <td><strong>agenpulsa_agustus_anonim</strong></td>
       <td>real_data</td>
       <td><code>gemini</code></td>
-      <td class="num">5</td>
-      <td class="num">45 / 45</td>
+      <td class="num">83</td>
+      <td class="num">722 / 722</td>
+      <td class="num">96.7%</td>
       <td class="num">100.0%</td>
-      <td class="num">100.0%</td>
-      <td class="num">1576 ms</td>
+      <td class="num">4503 ms</td>
       <td class="f1-cell" style="background:#dcfce7;color:#16a34a">
-        <strong>100.0%</strong>
+        <strong>98.3%</strong>
       </td>
     </tr>
     <tr>
       <td><strong>agenpulsa_agustus_anonim</strong></td>
       <td>real_data</td>
       <td><code>ruleBased</code></td>
-      <td class="num">5</td>
-      <td class="num">36 / 45</td>
-      <td class="num">80.0%</td>
-      <td class="num">80.0%</td>
-      <td class="num">28 ms</td>
+      <td class="num">83</td>
+      <td class="num">581 / 722</td>
+      <td class="num">87.5%</td>
+      <td class="num">80.5%</td>
+      <td class="num">183 ms</td>
       <td class="f1-cell" style="background:#fef9c3;color:#ca8a04">
-        <strong>80.0%</strong>
+        <strong>83.8%</strong>
       </td>
     </tr>
     <tr>
       <td><strong>agenpulsa_september_anonim</strong></td>
       <td>real_data</td>
       <td><code>gemini</code></td>
-      <td class="num">14</td>
-      <td class="num">126 / 126</td>
+      <td class="num">26</td>
+      <td class="num">234 / 234</td>
       <td class="num">100.0%</td>
       <td class="num">100.0%</td>
-      <td class="num">1228 ms</td>
+      <td class="num">6615 ms</td>
       <td class="f1-cell" style="background:#dcfce7;color:#16a34a">
         <strong>100.0%</strong>
       </td>
@@ -211,39 +211,65 @@
       <td><strong>agenpulsa_september_anonim</strong></td>
       <td>real_data</td>
       <td><code>ruleBased</code></td>
-      <td class="num">14</td>
-      <td class="num">98 / 126</td>
-      <td class="num">79.7%</td>
+      <td class="num">26</td>
+      <td class="num">182 / 234</td>
+      <td class="num">87.5%</td>
       <td class="num">77.8%</td>
-      <td class="num">11 ms</td>
-      <td class="f1-cell" style="background:#fee2e2;color:#dc2626">
-        <strong>78.7%</strong>
+      <td class="num">106 ms</td>
+      <td class="f1-cell" style="background:#fef9c3;color:#ca8a04">
+        <strong>82.3%</strong>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>orderkuota_agustus_anonim</strong></td>
+      <td>real_data</td>
+      <td><code>gemini</code></td>
+      <td class="num">93</td>
+      <td class="num">804 / 804</td>
+      <td class="num">96.1%</td>
+      <td class="num">100.0%</td>
+      <td class="num">2546 ms</td>
+      <td class="f1-cell" style="background:#dcfce7;color:#16a34a">
+        <strong>98.0%</strong>
+      </td>
+    </tr>
+    <tr>
+      <td><strong>orderkuota_agustus_anonim</strong></td>
+      <td>real_data</td>
+      <td><code>ruleBased</code></td>
+      <td class="num">93</td>
+      <td class="num">651 / 804</td>
+      <td class="num">87.5%</td>
+      <td class="num">81.0%</td>
+      <td class="num">80 ms</td>
+      <td class="f1-cell" style="background:#fef9c3;color:#ca8a04">
+        <strong>84.1%</strong>
       </td>
     </tr>
     <tr>
       <td><strong>orderkuota_september_anonim</strong></td>
       <td>real_data</td>
       <td><code>gemini</code></td>
-      <td class="num">3</td>
-      <td class="num">27 / 27</td>
+      <td class="num">27</td>
+      <td class="num">232 / 232</td>
+      <td class="num">95.5%</td>
       <td class="num">100.0%</td>
-      <td class="num">100.0%</td>
-      <td class="num">1190 ms</td>
+      <td class="num">1523 ms</td>
       <td class="f1-cell" style="background:#dcfce7;color:#16a34a">
-        <strong>100.0%</strong>
+        <strong>97.7%</strong>
       </td>
     </tr>
     <tr>
       <td><strong>orderkuota_september_anonim</strong></td>
       <td>real_data</td>
       <td><code>ruleBased</code></td>
-      <td class="num">3</td>
-      <td class="num">21 / 27</td>
-      <td class="num">80.8%</td>
-      <td class="num">77.8%</td>
-      <td class="num">4 ms</td>
-      <td class="f1-cell" style="background:#fee2e2;color:#dc2626">
-        <strong>79.3%</strong>
+      <td class="num">27</td>
+      <td class="num">189 / 232</td>
+      <td class="num">87.5%</td>
+      <td class="num">81.5%</td>
+      <td class="num">34 ms</td>
+      <td class="f1-cell" style="background:#fef9c3;color:#ca8a04">
+        <strong>84.4%</strong>
       </td>
     </tr>
         </tbody>

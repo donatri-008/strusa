@@ -9,6 +9,20 @@ import 'package:strusa/services/mapping_evaluator_service.dart';
 
 enum MapperKind { gemini, ruleBased }
 
+/// Align predicted rows to ground truth by transactionNumber, not index.
+/// Ground truth stays subset; CSV can grow without row-count mismatch.
+List<Map<String, String?>> _alignByKey(
+  List<Map<String, String?>> groundTruth,
+  List<Map<String, String?>> predicted,
+) {
+  final byKey = {
+    for (final row in predicted) row['transactionNumber']: row,
+  };
+  return groundTruth
+      .map((gt) => byKey[gt['transactionNumber']] ?? <String, String?>{})
+      .toList();
+}
+
 void main() {
   final evaluator = MappingEvaluatorService();
 
@@ -27,7 +41,7 @@ void main() {
       List<Map<String, String?>> predicted;
       try {
         predicted = await AIGeminiService(apiKey: apiKey)
-            .mapCsvToFieldMaps(File(dataset.csvFilePath));
+            .mapCsvToFieldMaps(File(dataset.dataFilePath));
       } catch (e, st) {
         stopwatch.stop();
         exportData.add({
@@ -50,10 +64,12 @@ void main() {
       }
       stopwatch.stop();
 
+      final aligned = _alignByKey(dataset.toFieldMaps(), predicted);
+
       final report = evaluator.evaluate(
         label: 'Gemini - ${dataset.id}',
         groundTruth: dataset.toFieldMaps(),
-        predicted: predicted,
+        predicted: aligned,
         elapsed: stopwatch.elapsed,
       );
 
@@ -83,13 +99,15 @@ void main() {
     test('${dataset.id} (ruleBased)', () async {
       final stopwatch = Stopwatch()..start();
       final predicted = await RuleBasedMapperService()
-          .mapCsvToFieldMaps(File(dataset.csvFilePath));
+          .mapCsvToFieldMaps(File(dataset.dataFilePath));
       stopwatch.stop();
+
+      final aligned = _alignByKey(dataset.toFieldMaps(), predicted);
 
       final report = evaluator.evaluate(
         label: 'RuleBased - ${dataset.id}',
         groundTruth: dataset.toFieldMaps(),
-        predicted: predicted,
+        predicted: aligned,
         elapsed: stopwatch.elapsed,
       );
 

@@ -2,7 +2,7 @@
 import 'dart:io';
 import 'dart:convert';
 import 'package:google_generative_ai/google_generative_ai.dart';
-import 'package:csv/csv.dart';
+import '../utils/table_file_reader.dart';
 
 class AIGeminiService {
   late GenerativeModel _model;
@@ -55,6 +55,12 @@ Contoh nyata yang ditemukan:
   di kolom "Harga".
 - Kolom "Pembayaran" bisa berisi nilai seperti "Saldo Akun" — ini tetap
   metode pembayaran (saldo reseller), map ke paymentMethod.
+- Untuk field productType (jenis produk): jika CSV punya kolom bernama "Produk"
+  (isinya kategori umum seperti "KUOTA AXIS", "PULSA TELKOMSEL", "TOKEN PLN"),
+  field itu WAJIB jadi sumber productType. JANGAN ambil productType dari kolom
+  "Provider" (isinya nama varian produk spesifik, bukan kategori).
+- Jika tidak ada kolom "Total" terpisah yang berbeda dari kolom Harga/amount,
+  totalAmount WAJIB diisi null. Jangan menyalin nilai amount ke totalAmount.
 Jangan asumsikan nama kolom = arti field target. Periksa contoh isi
 datanya dulu sebelum memutuskan mapping.
 
@@ -91,13 +97,10 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
     File csvFile, {
     String Function(List<String> headers)? promptBuilder,
   }) async {
-    final input = csvFile.readAsStringSync();
-    final normalizedInput = input.replaceAll('\r\n', '\n').replaceAll('\r', '\n');
-    final fields = const CsvToListConverter(eol: '\n', shouldParseNumbers: false).convert(normalizedInput);
+    final fields = await TableFileReader.read(csvFile);
 
     if (fields.isEmpty) return [];
 
-    // FIX: Trim header
     final headers = fields[0].map((e) => e.toString().trim()).toList();
     final prompt = (promptBuilder ?? buildDefaultPrompt)(headers);
 
@@ -259,6 +262,14 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
         return '${match.group(3)}-${match.group(2)}-${match.group(1)}';
       }
 
+      final dmyShortMatch = RegExp(r'^(\d{1,2})[/-](\d{1,2})[/-](\d{2})(?!\d)').firstMatch(val);
+      if (dmyShortMatch != null) {
+        int day = int.parse(dmyShortMatch.group(1)!);
+        int month = int.parse(dmyShortMatch.group(2)!);
+        int year = 2000 + int.parse(dmyShortMatch.group(3)!);
+        return '$year-${month.toString().padLeft(2, '0')}-${day.toString().padLeft(2, '0')}';
+      }
+
       RegExp textDateRegex = RegExp(r'^(\d{1,2})\s+([a-zA-Z]+)\s+(\d{4})');
       match = textDateRegex.firstMatch(val);
       if (match != null) {
@@ -319,7 +330,7 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
     // 4. Normalisasi ProductType
     if (key == 'productType') {
       if (valLower.contains('token')) return 'token';
-      if (valLower.contains('paket') || valLower.contains('data')) return 'paketdata';
+      if (valLower.contains('paket') || valLower.contains('data') || valLower.contains('kuota')) return 'paketdata';
       if (valLower.contains('listrik')) return 'listrik';
       if (valLower.contains('pulsa')) return 'pulsa';
       if (valLower.contains('bpjs')) return 'bpjs';

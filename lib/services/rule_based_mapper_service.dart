@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'package:csv/csv.dart';
+import '../utils/table_file_reader.dart';
 
 /// Baseline RULE-BASED / REGEX untuk pemetaan CSV -> field transaksi.
 class RuleBasedMapperService {
@@ -119,6 +119,7 @@ class RuleBasedMapperService {
       RegExp(r'paket', caseSensitive: false),
       RegExp(r'^notes$', caseSensitive: false),
       RegExp(r'^catatan$', caseSensitive: false),
+      RegExp(r'^nominal$', caseSensitive: false),
     ],
   };
 
@@ -145,13 +146,7 @@ class RuleBasedMapperService {
   }
 
   Future<List<Map<String, String?>>> mapCsvToFieldMaps(File csvFile) async {
-    final input = await csvFile.readAsString();
-    final normalizedInput = input.replaceAll('\r\n', '\n').replaceAll('\r', '\n');
-
-    final fields = const CsvToListConverter(
-      eol: '\n',
-      shouldParseNumbers: false,
-    ).convert(normalizedInput);
+    final fields = await TableFileReader.read(csvFile);
 
     if (fields.isEmpty || fields.length < 2) return [];
 
@@ -300,24 +295,29 @@ class RuleBasedMapperService {
       if (cleaned.contains(monthNames[i])) {
         final match = RegExp(r'(\d{1,2})\s+' + monthNames[i] + r'\s+(\d{4})').firstMatch(cleaned);
         if (match != null) {
-          // ✅ FIX Bug 1: pakai dash, samakan dengan format ground truth (YYYY-MM-DD)
           return '${match.group(2)}-${(i + 1).toString().padLeft(2, '0')}-${match.group(1)!.padLeft(2, '0')}';
         }
       }
     }
 
     // 2. Handle DD/MM/YYYY atau DD-MM-YYYY
-    final dmyMatch = RegExp(r'^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{4})').firstMatch(cleaned);
+    final dmyMatch = RegExp(r'^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{2,4})').firstMatch(cleaned);
     if (dmyMatch != null) {
-      // ✅ FIX Bug 1: pakai dash
       return '${dmyMatch.group(3)}-${dmyMatch.group(2)!.padLeft(2, '0')}-${dmyMatch.group(1)!.padLeft(2, '0')}';
     }
 
     // 3. Handle YYYY-MM-DD atau YYYY/MM/DD
     final ymdMatch = RegExp(r'^(\d{4})[\/\-](\d{1,2})[\/\-](\d{1,2})').firstMatch(cleaned);
     if (ymdMatch != null) {
-      // ✅ FIX Bug 1: pakai dash
       return '${ymdMatch.group(1)}-${ymdMatch.group(2)!.padLeft(2, '0')}-${ymdMatch.group(3)!.padLeft(2, '0')}';
+    }
+
+    // 4. Handle DD-MM-YY / DD/MM/YY (tahun 2 digit)
+    final dmyShortMatch = RegExp(r'^(\d{1,2})[\/\-](\d{1,2})[\/\-](\d{2})(?!\d)').firstMatch(cleaned);
+    if (dmyShortMatch != null) {
+      final yy = int.parse(dmyShortMatch.group(3)!);
+      final yyyy = 2000 + yy;
+      return '$yyyy-${dmyShortMatch.group(2)!.padLeft(2, '0')}-${dmyShortMatch.group(1)!.padLeft(2, '0')}';
     }
 
     return cleaned;
@@ -329,8 +329,8 @@ class RuleBasedMapperService {
     if (v.contains('token') || v.contains('ppob_pln_token')) return 'token';
     if (v.contains('listrik') || v.contains('pln')) return 'listrik';
     if (v.contains('pulsa')) return 'pulsa';
-    if (v.contains('indihome') || v.contains('internet') || v.contains('ppob_indihome')) return 'indihome';
-    if (v.contains('paket') || v.contains('data') || v.contains('kuota')) return 'paketData';
+    if (v.contains('paket') || v.contains('data') || v.contains('kuota') || v.contains('internet')) return 'paketData';
+    if (v.contains('indihome') || v.contains('ppob_indihome')) return 'indihome';
     if (v.contains('bpjs') || v.contains('ppob_bpjs')) return 'bpjs';
     if (v.contains('pdam') || v.contains('air')) return 'pdam';
     return 'lainnya';

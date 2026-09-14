@@ -10,7 +10,7 @@
 ///   period, tokenNumber, kwh, packageInfo
 ///
 /// `expectedRows[i]` corresponds to the i-th data row (0-indexed, header
-/// excluded) of the CSV at [csvFilePath]. A `null` value means the
+/// excluded) of the CSV at [dataFilePath]. A `null` value means the
 /// correct/expected extraction for that field on that row is "not
 /// present / not derivable" — i.e. a correct mapper should also produce
 /// null there, not hallucinate a value.
@@ -45,7 +45,7 @@ const List<String> kTargetSchemaFields = [
 
 class GroundTruthDataset {
   final String id;
-  final String csvFilePath;
+  final String dataFilePath;
   final String platform;
   final String edgeCaseCategory;
   final String description;
@@ -53,7 +53,7 @@ class GroundTruthDataset {
 
   const GroundTruthDataset({
     required this.id,
-    required this.csvFilePath,
+    required this.dataFilePath,
     required this.platform,
     required this.edgeCaseCategory,
     required this.description,
@@ -74,7 +74,7 @@ class GroundTruthDataset {
 // ---------------------------------------------------------------------
 const GroundTruthDataset ec01MissingColumns = GroundTruthDataset(
   id: 'ec01_missing_columns',
-  csvFilePath: 'test/fixtures/edge_cases/ec01_missing_columns.csv',
+  dataFilePath: 'test/fixtures/edge_cases/ec01_missing_columns.csv',
   platform: 'orderkuota',
   edgeCaseCategory: 'missing_columns',
   description:
@@ -129,7 +129,7 @@ const GroundTruthDataset ec01MissingColumns = GroundTruthDataset(
 // ---------------------------------------------------------------------
 const GroundTruthDataset ec02EmptyValues = GroundTruthDataset(
   id: 'ec02_empty_values',
-  csvFilePath: 'test/fixtures/edge_cases/ec02_empty_values.csv',
+  dataFilePath: 'test/fixtures/edge_cases/ec02_empty_values.csv',
   platform: 'agenpulsa',
   edgeCaseCategory: 'empty_values',
   description:
@@ -198,7 +198,7 @@ const GroundTruthDataset ec02EmptyValues = GroundTruthDataset(
 // ---------------------------------------------------------------------
 const GroundTruthDataset ec03InconsistentDates = GroundTruthDataset(
   id: 'ec03_inconsistent_dates',
-  csvFilePath: 'test/fixtures/edge_cases/ec03_inconsistent_dates.csv',
+  dataFilePath: 'test/fixtures/edge_cases/ec03_inconsistent_dates.csv',
   platform: 'orderkuota',
   edgeCaseCategory: 'inconsistent_date_formats',
   description:
@@ -275,7 +275,7 @@ const GroundTruthDataset ec03InconsistentDates = GroundTruthDataset(
 // ---------------------------------------------------------------------
 const GroundTruthDataset ec04CurrencyFormatting = GroundTruthDataset(
   id: 'ec04_currency_formatting',
-  csvFilePath: 'test/fixtures/edge_cases/ec04_currency_formatting.csv',
+  dataFilePath: 'test/fixtures/edge_cases/ec04_currency_formatting.csv',
   platform: 'agenpulsa',
   edgeCaseCategory: 'currency_formatting',
   description:
@@ -340,7 +340,7 @@ const GroundTruthDataset ec04CurrencyFormatting = GroundTruthDataset(
 // ---------------------------------------------------------------------
 const GroundTruthDataset ec05NonStandardStatus = GroundTruthDataset(
   id: 'ec05_non_standard_status',
-  csvFilePath: 'test/fixtures/edge_cases/ec05_non_standard_status.csv',
+  dataFilePath: 'test/fixtures/edge_cases/ec05_non_standard_status.csv',
   platform: 'orderkuota',
   edgeCaseCategory: 'non_standard_status_vocabulary',
   description:
@@ -418,7 +418,7 @@ const GroundTruthDataset ec05NonStandardStatus = GroundTruthDataset(
 // ---------------------------------------------------------------------
 const GroundTruthDataset ec06DuplicateHeaders = GroundTruthDataset(
   id: 'ec06_duplicate_headers',
-  csvFilePath: 'test/fixtures/edge_cases/ec06_duplicate_headers.csv',
+  dataFilePath: 'test/fixtures/edge_cases/ec06_duplicate_headers.csv',
   platform: 'agenpulsa',
   edgeCaseCategory: 'duplicate_ambiguous_headers',
   description:
@@ -466,7 +466,7 @@ const GroundTruthDataset ec06DuplicateHeaders = GroundTruthDataset(
 // ---------------------------------------------------------------------
 const GroundTruthDataset ec07WhitespaceCasing = GroundTruthDataset(
   id: 'ec07_whitespace_casing',
-  csvFilePath: 'test/fixtures/edge_cases/ec07_whitespace_casing.csv',
+  dataFilePath: 'test/fixtures/edge_cases/ec07_whitespace_casing.csv',
   platform: 'orderkuota',
   edgeCaseCategory: 'whitespace_and_casing',
   description:
@@ -519,7 +519,7 @@ const GroundTruthDataset ec07WhitespaceCasing = GroundTruthDataset(
 // ---------------------------------------------------------------------
 const GroundTruthDataset ec08MergedFields = GroundTruthDataset(
   id: 'ec08_merged_fields',
-  csvFilePath: 'test/fixtures/edge_cases/ec08_merged_fields.csv',
+  dataFilePath: 'test/fixtures/edge_cases/ec08_merged_fields.csv',
   platform: 'agenpulsa',
   edgeCaseCategory: 'merged_composite_fields',
   description:
@@ -592,7 +592,7 @@ const GroundTruthDataset ec08MergedFields = GroundTruthDataset(
 // ---------------------------------------------------------------------
 const GroundTruthDataset ec09PlatformSchemaVariation = GroundTruthDataset(
   id: 'ec09_platform_schema_variation',
-  csvFilePath: 'test/fixtures/edge_cases/ec09_platform_schema_variation.csv',
+  dataFilePath: 'test/fixtures/edge_cases/ec09_platform_schema_variation.csv',
   platform: 'agenpulsa',
   edgeCaseCategory: 'platform_schema_variation',
   description:

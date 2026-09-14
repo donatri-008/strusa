@@ -132,9 +132,9 @@ void main() {
 
 Future<_RunResult> _runOne(GroundTruthDataset dataset, MapperKind mapper) async {
   try {
-    final csvFile = File(dataset.csvFilePath);
+    final csvFile = File(dataset.dataFilePath);
     if (!await csvFile.exists()) {
-      throw FileSystemException('Fixture CSV not found', dataset.csvFilePath);
+      throw FileSystemException('Fixture CSV not found', dataset.dataFilePath);
     }
 
     final predictedRows = switch (mapper) {
