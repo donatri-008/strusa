@@ -9,6 +9,11 @@
 //   paper_table2_perfield_realdata.xlsx  — Per-field F1 di data riil (rata2 4 dataset xlsx)
 //   paper_table3_edgecases.xlsx          — F1 di edge-case kritis + homonim skema
 //
+// CATATAN RATE LIMIT: free tier Gemini dibatasi 15 request/menit. Ada 13
+// panggilan Gemini total (4 real + 9 edge case), jadi dikasih jeda 5 detik
+// antar panggilan Gemini + retry otomatis dengan backoff kalau tetap kena
+// quota (429 / RESOURCE_EXHAUSTED).
+//
 // ignore_for_file: avoid_print
 import 'dart:io';
 import 'package:excel/excel.dart' hide Border;
@@ -22,6 +27,10 @@ import 'package:strusa/models/evaluation_result.dart';
 enum Mapper { ruleBased, gemini }
 
 final evaluator = MappingEvaluatorService();
+
+/// Jeda tetap antar panggilan Gemini, supaya tidak nabrak limit
+/// free-tier (15 request/menit).
+const _geminiDelay = Duration(seconds: 5);
 
 /// Align predicted rows to ground truth by transactionNumber (real data has
 /// non-1:1 row counts sometimes; edge case too, just to be safe).
@@ -41,12 +50,34 @@ class RunOutcome {
   RunOutcome(this.report, this.elapsedMs);
 }
 
+/// Retry generik untuk error rate-limit (429 / quota / RESOURCE_EXHAUSTED).
+/// Backoff naik linear tiap percobaan (40s, 80s, 120s, ...).
+Future<T> _withRetry<T>(Future<T> Function() fn, {int maxRetry = 5}) async {
+  int attempt = 0;
+  while (true) {
+    try {
+      return await fn();
+    } catch (e) {
+      attempt++;
+      final msg = e.toString();
+      final isQuota = msg.contains('429') ||
+          msg.contains('quota') ||
+          msg.contains('RESOURCE_EXHAUSTED');
+      if (!isQuota || attempt >= maxRetry) rethrow;
+      final waitSec = 40 * attempt;
+      print('  Rate limit kena, tunggu ${waitSec}s (percobaan $attempt/$maxRetry)...');
+      await Future.delayed(Duration(seconds: waitSec));
+    }
+  }
+}
+
 Future<List<Map<String, String?>>> _predict(
     GroundTruthDataset ds, Mapper m, String apiKey) {
   final file = File(ds.dataFilePath);
   return switch (m) {
     Mapper.ruleBased => RuleBasedMapperService().mapCsvToFieldMaps(file),
-    Mapper.gemini => AIGeminiService(apiKey: apiKey).mapCsvToFieldMaps(file),
+    Mapper.gemini => _withRetry(
+        () => AIGeminiService(apiKey: apiKey).mapCsvToFieldMaps(file)),
   };
 }
 
@@ -122,12 +153,18 @@ Future<void> main() async {
     for (final m in Mapper.values) {
       print('Running ${ds.id} (${m.name})...');
       realRuns[m]!.add(await runOne(ds, m, apiKey));
+      if (m == Mapper.gemini) {
+        await Future.delayed(_geminiDelay);
+      }
     }
   }
   for (final ds in allEdgeCaseDatasets) {
     for (final m in Mapper.values) {
       print('Running ${ds.id} (${m.name})...');
       edgeRuns[m]!.add(await runOne(ds, m, apiKey));
+      if (m == Mapper.gemini) {
+        await Future.delayed(_geminiDelay);
+      }
     }
   }
 
@@ -206,14 +243,15 @@ Future<void> main() async {
     ]);
 
     final scenarios = <String, String>{
-      'ec04_currency_formatting':
-          'Currency Formatting (Rp / thousand-sep / decimal comma)',
+      'ec01_missing_columns': 'Missing Target Columns',
+      'ec02_empty_values': 'Empty/Blank Values',
+      'ec03_inconsistent_dates': 'Inconsistent Date Formats',
+      'ec04_currency_formatting': 'Currency Formatting (Rp / thousand-sep / decimal comma)',
       'ec05_non_standard_status': 'Non-Standard Status Vocabulary',
       'ec06_duplicate_headers': 'Duplicate / Ambiguous Headers',
-      'ec08_merged_fields':
-          'Merged Composite Fields (name+phone, product+kWh)',
-      'ec09_platform_schema_variation':
-          'Cross-Platform Schema Variation (EN/abbrev headers)',
+      'ec07_whitespace_casing': 'Whitespace & Inconsistent Casing',
+      'ec08_merged_fields': 'Merged Composite Fields (name+phone, product+kWh)',
+      'ec09_platform_schema_variation': 'Cross-Platform Schema Variation (EN/abbrev headers)',
     };
 
     RunOutcome? findRun(List<RunOutcome> list, String id) {

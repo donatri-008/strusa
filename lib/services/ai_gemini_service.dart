@@ -13,7 +13,7 @@ class AIGeminiService {
       model: 'gemini-3.5-flash-lite',
       apiKey: apiKey,
       generationConfig: GenerationConfig(
-        temperature: 0.1,
+        temperature: 0.0,
         maxOutputTokens: 2048,
       ),
     );
