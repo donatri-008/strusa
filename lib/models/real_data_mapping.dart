@@ -57,7 +57,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '11049',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Paket Harian 5GB + Lokal, 3 Hari',
+      'packageDescription': 'Paket Harian 5GB + Lokal, 3 Hari',
     },
     {
       'transactionNumber': '716901332',
@@ -98,7 +98,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '28990',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 5GB AlwaysOn (AON)',
+      'packageDescription': 'Kuota 5GB AlwaysOn (AON)',
     },
     {
       'transactionNumber': '717403988',
@@ -109,7 +109,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '11849',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Paket Harian 5GB + Lokal, 3 Hari',
+      'packageDescription': 'Paket Harian 5GB + Lokal, 3 Hari',
     },
     {
       'transactionNumber': '717529609',
@@ -120,7 +120,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '11649',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Paket Harian 5GB + Lokal, 3 Hari',
+      'packageDescription': 'Paket Harian 5GB + Lokal, 3 Hari',
     },
     {
       'transactionNumber': '717655269',
@@ -131,7 +131,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '12999',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 2.5GB, 5Hr',
+      'packageDescription': 'Freedom Internet 2.5GB, 5Hr',
     },
     {
       'transactionNumber': '717781026',
@@ -142,7 +142,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '27300',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Ekstra 8GB / 30 Hari',
+      'packageDescription': 'Kuota Ekstra 8GB / 30 Hari',
     },
     {
       'transactionNumber': '717906750',
@@ -163,7 +163,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '36300',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo Lite 6GB, 30 Hari',
+      'packageDescription': 'Xtra Combo Lite 6GB, 30 Hari',
     },
     {
       'transactionNumber': '718158040',
@@ -184,7 +184,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '28990',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 5GB AlwaysOn (AON)',
+      'packageDescription': 'Kuota 5GB AlwaysOn (AON)',
     },
     {
       'transactionNumber': '718409507',
@@ -195,7 +195,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '10469',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 3.6GB - 6GB, 2 Hari',
+      'packageDescription': 'Kuota 3.6GB - 6GB, 2 Hari',
     },
     {
       'transactionNumber': '718535264',
@@ -206,7 +206,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '32947',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 9GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 9GB, 28 Hari',
     },
     {
       'transactionNumber': '718660931',
@@ -227,7 +227,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '30948',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': '7GB Lokal / 28 Hari',
+      'packageDescription': '7GB Lokal / 28 Hari',
     },
     {
       'transactionNumber': '718912440',
@@ -258,7 +258,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '32647',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 9GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 9GB, 28 Hari',
     },
     {
       'transactionNumber': '719289481',
@@ -269,7 +269,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '15200',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet Malam 2GB / 30 Hari',
+      'packageDescription': 'Bronet Malam 2GB / 30 Hari',
     },
     {
       'transactionNumber': '719415086',
@@ -280,7 +280,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '11849',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Paket Harian 5GB + Lokal, 3 Hari',
+      'packageDescription': 'Paket Harian 5GB + Lokal, 3 Hari',
     },
     {
       'transactionNumber': '719540861',
@@ -301,7 +301,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '10769',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 3.6GB - 6GB, 2 Hari',
+      'packageDescription': 'Kuota 3.6GB - 6GB, 2 Hari',
     },
     {
       'transactionNumber': '719792192',
@@ -312,7 +312,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '29190',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 5GB AlwaysOn (AON)',
+      'packageDescription': 'Kuota 5GB AlwaysOn (AON)',
     },
     {
       'transactionNumber': '719917902',
@@ -323,7 +323,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '10469',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 3.6GB - 6GB, 2 Hari',
+      'packageDescription': 'Kuota 3.6GB - 6GB, 2 Hari',
     },
     {
       'transactionNumber': '720043604',
@@ -354,7 +354,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '22974',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari',
+      'packageDescription': 'XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari',
     },
     {
       'transactionNumber': '720420664',
@@ -365,7 +365,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '36300',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo Lite 6GB, 30 Hari',
+      'packageDescription': 'Xtra Combo Lite 6GB, 30 Hari',
     },
     {
       'transactionNumber': '720546333',
@@ -376,7 +376,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '28390',
       'paymentStatus': 'belumLunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 5GB AlwaysOn (AON)',
+      'packageDescription': 'Kuota 5GB AlwaysOn (AON)',
     },
     {
       'transactionNumber': '720672002',
@@ -387,7 +387,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '35500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo Lite 6GB, 30 Hari',
+      'packageDescription': 'Xtra Combo Lite 6GB, 30 Hari',
     },
     {
       'transactionNumber': '720797738',
@@ -398,7 +398,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '32947',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 9GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 9GB, 28 Hari',
     },
     {
       'transactionNumber': '720923526',
@@ -409,7 +409,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '33447',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 9GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 9GB, 28 Hari',
     },
     {
       'transactionNumber': '721049303',
@@ -420,7 +420,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '13299',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 2.5GB, 5Hr',
+      'packageDescription': 'Freedom Internet 2.5GB, 5Hr',
     },
     {
       'transactionNumber': '721174945',
@@ -431,7 +431,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '14900',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet Malam 2GB / 30 Hari',
+      'packageDescription': 'Bronet Malam 2GB / 30 Hari',
     },
     {
       'transactionNumber': '721300614',
@@ -442,7 +442,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '28690',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 5GB AlwaysOn (AON)',
+      'packageDescription': 'Kuota 5GB AlwaysOn (AON)',
     },
     {
       'transactionNumber': '721426300',
@@ -463,7 +463,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '15500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet Malam 2GB / 30 Hari',
+      'packageDescription': 'Bronet Malam 2GB / 30 Hari',
     },
     {
       'transactionNumber': '721677621',
@@ -484,7 +484,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '31148',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': '7GB Lokal / 28 Hari',
+      'packageDescription': '7GB Lokal / 28 Hari',
     },
     {
       'transactionNumber': '721928980',
@@ -495,7 +495,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '31148',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': '7GB Lokal / 28 Hari',
+      'packageDescription': '7GB Lokal / 28 Hari',
     },
     {
       'transactionNumber': '722054597',
@@ -516,7 +516,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '32647',
       'paymentStatus': 'belumLunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 9GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 9GB, 28 Hari',
     },
     {
       'transactionNumber': '722305989',
@@ -537,7 +537,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '32947',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 9GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 9GB, 28 Hari',
     },
     {
       'transactionNumber': '722557384',
@@ -548,7 +548,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '32647',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 9GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 9GB, 28 Hari',
     },
     {
       'transactionNumber': '722683013',
@@ -579,7 +579,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '25550',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'BAYAR PAKET DIGIPOS SAKTI',
+      'packageDescription': 'BAYAR PAKET DIGIPOS SAKTI',
     },
     {
       'transactionNumber': '723060262',
@@ -590,7 +590,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '25550',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'BAYAR PAKET DIGIPOS SAKTI',
+      'packageDescription': 'BAYAR PAKET DIGIPOS SAKTI',
     },
     {
       'transactionNumber': '723186004',
@@ -601,7 +601,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '32647',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 9GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 9GB, 28 Hari',
     },
     {
       'transactionNumber': '723311648',
@@ -612,7 +612,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '25550',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'BAYAR PAKET DIGIPOS SAKTI',
+      'packageDescription': 'BAYAR PAKET DIGIPOS SAKTI',
     },
     {
       'transactionNumber': '723437268',
@@ -623,7 +623,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '33447',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 9GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 9GB, 28 Hari',
     },
     {
       'transactionNumber': '723562931',
@@ -634,7 +634,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '10469',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 3.6GB - 6GB, 2 Hari',
+      'packageDescription': 'Kuota 3.6GB - 6GB, 2 Hari',
     },
     {
       'transactionNumber': '723688637',
@@ -655,7 +655,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '32647',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 9GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 9GB, 28 Hari',
     },
     {
       'transactionNumber': '723939979',
@@ -676,7 +676,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '36300',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo Lite 6GB, 30 Hari',
+      'packageDescription': 'Xtra Combo Lite 6GB, 30 Hari',
     },
     {
       'transactionNumber': '724191385',
@@ -687,7 +687,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '35800',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo Lite 6GB, 30 Hari',
+      'packageDescription': 'Xtra Combo Lite 6GB, 30 Hari',
     },
     {
       'transactionNumber': '724317052',
@@ -698,7 +698,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '13799',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 2.5GB, 5Hr',
+      'packageDescription': 'Freedom Internet 2.5GB, 5Hr',
     },
     {
       'transactionNumber': '724442713',
@@ -729,7 +729,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '32947',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 9GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 9GB, 28 Hari',
     },
     {
       'transactionNumber': '724819747',
@@ -740,7 +740,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '13599',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 2.5GB, 5Hr',
+      'packageDescription': 'Freedom Internet 2.5GB, 5Hr',
     },
     {
       'transactionNumber': '724945454',
@@ -751,7 +751,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '15200',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet Malam 2GB / 30 Hari',
+      'packageDescription': 'Bronet Malam 2GB / 30 Hari',
     },
     {
       'transactionNumber': '725071174',
@@ -762,7 +762,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '15200',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet Malam 2GB / 30 Hari',
+      'packageDescription': 'Bronet Malam 2GB / 30 Hari',
     },
     {
       'transactionNumber': '725196864',
@@ -773,7 +773,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '23474',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari',
+      'packageDescription': 'XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari',
     },
     {
       'transactionNumber': '725322603',
@@ -794,7 +794,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '28690',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 5GB AlwaysOn (AON)',
+      'packageDescription': 'Kuota 5GB AlwaysOn (AON)',
     },
     {
       'transactionNumber': '725573993',
@@ -805,7 +805,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '25250',
       'paymentStatus': 'belumLunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'BAYAR PAKET DIGIPOS SAKTI',
+      'packageDescription': 'BAYAR PAKET DIGIPOS SAKTI',
     },
     {
       'transactionNumber': '725699720',
@@ -816,7 +816,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '36100',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo Lite 6GB, 30 Hari',
+      'packageDescription': 'Xtra Combo Lite 6GB, 30 Hari',
     },
     {
       'transactionNumber': '725825473',
@@ -827,7 +827,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '10969',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 3.6GB - 6GB, 2 Hari',
+      'packageDescription': 'Kuota 3.6GB - 6GB, 2 Hari',
     },
     {
       'transactionNumber': '725951157',
@@ -838,7 +838,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '22674',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari',
+      'packageDescription': 'XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari',
     },
     {
       'transactionNumber': '726076792',
@@ -859,7 +859,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '28690',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 5GB AlwaysOn (AON)',
+      'packageDescription': 'Kuota 5GB AlwaysOn (AON)',
     },
     {
       'transactionNumber': '726328075',
@@ -880,7 +880,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '30648',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': '7GB Lokal / 28 Hari',
+      'packageDescription': '7GB Lokal / 28 Hari',
     },
     {
       'transactionNumber': '726885288',
@@ -891,7 +891,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '10469',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 3.6GB - 6GB, 2 Hari',
+      'packageDescription': 'Kuota 3.6GB - 6GB, 2 Hari',
     },
     {
       'transactionNumber': '726949215',
@@ -902,7 +902,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '22974',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari',
+      'packageDescription': 'XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari',
     },
     {
       'transactionNumber': '727299418',
@@ -913,7 +913,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '11349',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Paket Harian 5GB + Lokal, 3 Hari',
+      'packageDescription': 'Paket Harian 5GB + Lokal, 3 Hari',
     },
     {
       'transactionNumber': '727447701',
@@ -924,7 +924,7 @@ const GroundTruthDataset agenpulsaAgustusAnonim = GroundTruthDataset(
       'amount': '32947',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 9GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 9GB, 28 Hari',
     },
   ],
 );
@@ -946,7 +946,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '25550',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'BAYAR PAKET DIGIPOS SAKTI',
+      'packageDescription': 'BAYAR PAKET DIGIPOS SAKTI',
     },
     {
       'transactionNumber': '728114059',
@@ -957,7 +957,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '28690',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 5GB AlwaysOn (AON)',
+      'packageDescription': 'Kuota 5GB AlwaysOn (AON)',
     },
     {
       'transactionNumber': '728150189',
@@ -968,7 +968,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '13299',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 2.5GB, 5Hr',
+      'packageDescription': 'Freedom Internet 2.5GB, 5Hr',
     },
     {
       'transactionNumber': '728169893',
@@ -979,7 +979,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '25550',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'BAYAR PAKET DIGIPOS SAKTI',
+      'packageDescription': 'BAYAR PAKET DIGIPOS SAKTI',
     },
     {
       'transactionNumber': '728503576',
@@ -990,7 +990,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '9055',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 1.5GB, 7 Hari',
+      'packageDescription': 'Kuota 1.5GB, 7 Hari',
     },
     {
       'transactionNumber': '728769784',
@@ -1001,7 +1001,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '44485',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 16GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 16GB, 28 Hari',
     },
     {
       'transactionNumber': '728838870',
@@ -1012,7 +1012,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '30437',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 8GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 8GB, 28 Hari',
     },
     {
       'transactionNumber': '728982862',
@@ -1023,7 +1023,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '60550',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'BAYAR PAKET DIGIPOS SAKTI',
+      'packageDescription': 'BAYAR PAKET DIGIPOS SAKTI',
     },
     {
       'transactionNumber': '729072999',
@@ -1034,7 +1034,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '22998',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'XL Flex Mini 6GB, 14 Hari',
+      'packageDescription': 'XL Flex Mini 6GB, 14 Hari',
     },
     {
       'transactionNumber': '729110384',
@@ -1045,7 +1045,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '9055',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 1.5GB, 7 Hari',
+      'packageDescription': 'Kuota 1.5GB, 7 Hari',
     },
     {
       'transactionNumber': '729289750',
@@ -1056,7 +1056,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '13299',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 4GB s/d 6GB + Bonus Lokal Jawa, Bali dan Nusra, 5 Hari',
+      'packageDescription': 'Kuota 4GB s/d 6GB + Bonus Lokal Jawa, Bali dan Nusra, 5 Hari',
     },
     {
       'transactionNumber': '729334170',
@@ -1067,7 +1067,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '13499',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Telkomsel Data 2.5GB, 5 Hari',
+      'packageDescription': 'Telkomsel Data 2.5GB, 5 Hari',
     },
     {
       'transactionNumber': '729427975',
@@ -1078,7 +1078,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '23031',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 3GB, 14 Hari',
+      'packageDescription': 'Freedom Internet 3GB, 14 Hari',
     },
     {
       'transactionNumber': '729487303',
@@ -1089,7 +1089,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '19860',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Axis OWSEM 4GB, 28 Hari',
+      'packageDescription': 'Axis OWSEM 4GB, 28 Hari',
     },
     {
       'transactionNumber': '729524125',
@@ -1100,7 +1100,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '12206',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 2GB, 10 Hari',
+      'packageDescription': 'Kuota 2GB, 10 Hari',
     },
     {
       'transactionNumber': '729599825',
@@ -1111,7 +1111,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '30199',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'AIGO 9GB + Netflix 1GB, 28 Hari',
+      'packageDescription': 'AIGO 9GB + Netflix 1GB, 28 Hari',
     },
     {
       'transactionNumber': '729609631',
@@ -1122,7 +1122,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '37911',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 10GB, 28 Hari',
+      'packageDescription': 'Kuota 10GB, 28 Hari',
     },
     {
       'transactionNumber': '729984982',
@@ -1133,7 +1133,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '9055',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 1.5GB, 7 Hari',
+      'packageDescription': 'Kuota 1.5GB, 7 Hari',
     },
     {
       'transactionNumber': '730300227',
@@ -1144,7 +1144,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '23106',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 3GB, 14 Hari',
+      'packageDescription': 'Freedom Internet 3GB, 14 Hari',
     },
     {
       'transactionNumber': '730392236',
@@ -1155,7 +1155,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '5024',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 1GB - 1.5GB, 2 Hari',
+      'packageDescription': 'Kuota 1GB - 1.5GB, 2 Hari',
     },
     {
       'transactionNumber': '730570643',
@@ -1166,7 +1166,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '19439',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': '4GB + Unlimited APK + Free Nelpon Sesama, 14 Hari',
+      'packageDescription': '4GB + Unlimited APK + Free Nelpon Sesama, 14 Hari',
     },
     {
       'transactionNumber': '730855588',
@@ -1177,7 +1177,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '12430',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Lokal 4GB (Jawa Timur, Bali, Nusa Tenggara), 3 Hari',
+      'packageDescription': 'Kuota Lokal 4GB (Jawa Timur, Bali, Nusa Tenggara), 3 Hari',
     },
     {
       'transactionNumber': '730959125',
@@ -1188,7 +1188,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '5024',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 1GB - 1.5GB, 2 Hari',
+      'packageDescription': 'Kuota 1GB - 1.5GB, 2 Hari',
     },
     {
       'transactionNumber': '731295025',
@@ -1199,7 +1199,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '23106',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 3GB, 14 Hari',
+      'packageDescription': 'Freedom Internet 3GB, 14 Hari',
     },
     {
       'transactionNumber': '731355718',
@@ -1210,7 +1210,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '45047',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 15GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 15GB, 28 Hari',
     },
     {
       'transactionNumber': '731434827',
@@ -1221,7 +1221,7 @@ const GroundTruthDataset agenpulsaSeptemberAnonim = GroundTruthDataset(
       'amount': '30400',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 6.5GB, 28 Hari',
+      'packageDescription': 'Freedom Internet 6.5GB, 28 Hari',
     },
   ],
 );
@@ -1243,7 +1243,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '12200',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Mini 4GB + Channel Jawa 5 Hari',
+      'packageDescription': 'Mini 4GB + Channel Jawa 5 Hari',
     },
     {
       'transactionNumber': '1310566707',
@@ -1254,7 +1254,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '21000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Malam 10GB 30 Hari',
+      'packageDescription': 'Kuota Malam 10GB 30 Hari',
     },
     {
       'transactionNumber': '1311083549',
@@ -1265,7 +1265,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '21000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Malam 10GB 30 Hari',
+      'packageDescription': 'Kuota Malam 10GB 30 Hari',
     },
     {
       'transactionNumber': '1311600281',
@@ -1276,7 +1276,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '20000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Malam 10GB 30 Hari',
+      'packageDescription': 'Kuota Malam 10GB 30 Hari',
     },
     {
       'transactionNumber': '1312117015',
@@ -1297,7 +1297,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '28000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'AON 5GB 30 Hari',
+      'packageDescription': 'AON 5GB 30 Hari',
     },
     {
       'transactionNumber': '1313150662',
@@ -1308,7 +1308,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '27500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Ekstra 8GB 30 Hari',
+      'packageDescription': 'Kuota Ekstra 8GB 30 Hari',
     },
     {
       'transactionNumber': '1313667430',
@@ -1319,7 +1319,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '16000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet 2GB 30 Hari',
+      'packageDescription': 'Bronet 2GB 30 Hari',
     },
     {
       'transactionNumber': '1314184242',
@@ -1340,7 +1340,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '45000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Combo Sakti 5GB + Nelpon 30 Hari',
+      'packageDescription': 'Combo Sakti 5GB + Nelpon 30 Hari',
     },
     {
       'transactionNumber': '1315217748',
@@ -1351,7 +1351,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '25000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Combo 3GB + Nelpon 30 Hari',
+      'packageDescription': 'Freedom Combo 3GB + Nelpon 30 Hari',
     },
     {
       'transactionNumber': '1315734532',
@@ -1382,7 +1382,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '11700',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Mini 4GB + Channel Jawa 5 Hari',
+      'packageDescription': 'Mini 4GB + Channel Jawa 5 Hari',
     },
     {
       'transactionNumber': '1317284661',
@@ -1423,7 +1423,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '42000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo VIP 8GB 30 Hari',
+      'packageDescription': 'Xtra Combo VIP 8GB 30 Hari',
     },
     {
       'transactionNumber': '1319351565',
@@ -1444,7 +1444,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '9500',
       'paymentStatus': 'belumLunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Mini Axis 3GB + Bonus Aigo 3 Hari',
+      'packageDescription': 'Mini Axis 3GB + Bonus Aigo 3 Hari',
     },
     {
       'transactionNumber': '1320384964',
@@ -1455,7 +1455,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '15500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet 2GB 30 Hari',
+      'packageDescription': 'Bronet 2GB 30 Hari',
     },
     {
       'transactionNumber': '1320901748',
@@ -1466,7 +1466,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '30000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 5GB 30 Hari',
+      'packageDescription': 'Freedom Internet 5GB 30 Hari',
     },
     {
       'transactionNumber': '1321418481',
@@ -1477,7 +1477,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '0',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Cek List Paket Combo Sakti',
+      'packageDescription': 'Cek List Paket Combo Sakti',
     },
     {
       'transactionNumber': '1321935169',
@@ -1488,7 +1488,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '38500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'OMG 10GB 30 Hari',
+      'packageDescription': 'OMG 10GB 30 Hari',
     },
     {
       'transactionNumber': '1322451814',
@@ -1499,7 +1499,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '0',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Cek List Paket Combo Sakti',
+      'packageDescription': 'Cek List Paket Combo Sakti',
     },
     {
       'transactionNumber': '1322968555',
@@ -1510,7 +1510,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '9500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Mini Axis 3GB + Bonus Aigo 3 Hari',
+      'packageDescription': 'Mini Axis 3GB + Bonus Aigo 3 Hari',
     },
     {
       'transactionNumber': '1323485351',
@@ -1531,7 +1531,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '10000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Mini Axis 3GB + Bonus Aigo 3 Hari',
+      'packageDescription': 'Mini Axis 3GB + Bonus Aigo 3 Hari',
     },
     {
       'transactionNumber': '1324518942',
@@ -1542,7 +1542,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '38500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'OMG 10GB 30 Hari',
+      'packageDescription': 'OMG 10GB 30 Hari',
     },
     {
       'transactionNumber': '1325035777',
@@ -1563,7 +1563,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '15500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet 2GB 30 Hari',
+      'packageDescription': 'Bronet 2GB 30 Hari',
     },
     {
       'transactionNumber': '1326069326',
@@ -1594,7 +1594,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '26000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Combo 3GB + Nelpon 30 Hari',
+      'packageDescription': 'Freedom Combo 3GB + Nelpon 30 Hari',
     },
     {
       'transactionNumber': '1327619712',
@@ -1605,7 +1605,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '39000',
       'paymentStatus': 'belumLunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'OMG 10GB 30 Hari',
+      'packageDescription': 'OMG 10GB 30 Hari',
     },
     {
       'transactionNumber': '1328136483',
@@ -1626,7 +1626,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '25000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Combo 3GB + Nelpon 30 Hari',
+      'packageDescription': 'Freedom Combo 3GB + Nelpon 30 Hari',
     },
     {
       'transactionNumber': '1329170113',
@@ -1637,7 +1637,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '35500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo Lite 6GB 30 Hari',
+      'packageDescription': 'Xtra Combo Lite 6GB 30 Hari',
     },
     {
       'transactionNumber': '1329686847',
@@ -1648,7 +1648,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '11000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Mini Axis 3GB + Bonus Aigo 3 Hari',
+      'packageDescription': 'Mini Axis 3GB + Bonus Aigo 3 Hari',
     },
     {
       'transactionNumber': '1330203619',
@@ -1669,7 +1669,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '42000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo VIP 8GB 30 Hari',
+      'packageDescription': 'Xtra Combo VIP 8GB 30 Hari',
     },
     {
       'transactionNumber': '1331237049',
@@ -1680,7 +1680,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '34500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo Lite 6GB 30 Hari',
+      'packageDescription': 'Xtra Combo Lite 6GB 30 Hari',
     },
     {
       'transactionNumber': '1331753896',
@@ -1691,7 +1691,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '13200',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Mini 4GB + Channel Jawa 5 Hari',
+      'packageDescription': 'Mini 4GB + Channel Jawa 5 Hari',
     },
     {
       'transactionNumber': '1332270741',
@@ -1702,7 +1702,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '42500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo VIP 8GB 30 Hari',
+      'packageDescription': 'Xtra Combo VIP 8GB 30 Hari',
     },
     {
       'transactionNumber': '1332787592',
@@ -1713,7 +1713,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '46000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Combo Sakti 5GB + Nelpon 30 Hari',
+      'packageDescription': 'Combo Sakti 5GB + Nelpon 30 Hari',
     },
     {
       'transactionNumber': '1333304254',
@@ -1724,7 +1724,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '28000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'AON 5GB 30 Hari',
+      'packageDescription': 'AON 5GB 30 Hari',
     },
     {
       'transactionNumber': '1333821061',
@@ -1745,7 +1745,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '45500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Combo Sakti 5GB + Nelpon 30 Hari',
+      'packageDescription': 'Combo Sakti 5GB + Nelpon 30 Hari',
     },
     {
       'transactionNumber': '1334854553',
@@ -1756,7 +1756,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '24500',
       'paymentStatus': 'belumLunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Combo 3GB + Nelpon 30 Hari',
+      'packageDescription': 'Freedom Combo 3GB + Nelpon 30 Hari',
     },
     {
       'transactionNumber': '1335371195',
@@ -1767,7 +1767,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '26000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Combo 3GB + Nelpon 30 Hari',
+      'packageDescription': 'Freedom Combo 3GB + Nelpon 30 Hari',
     },
     {
       'transactionNumber': '1335887814',
@@ -1798,7 +1798,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '27500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Ekstra 8GB 30 Hari',
+      'packageDescription': 'Kuota Ekstra 8GB 30 Hari',
     },
     {
       'transactionNumber': '1337438230',
@@ -1809,7 +1809,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '31000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 5GB 30 Hari',
+      'packageDescription': 'Freedom Internet 5GB 30 Hari',
     },
     {
       'transactionNumber': '1337955011',
@@ -1830,7 +1830,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '20500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Malam 10GB 30 Hari',
+      'packageDescription': 'Kuota Malam 10GB 30 Hari',
     },
     {
       'transactionNumber': '1338988458',
@@ -1851,7 +1851,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '42000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo VIP 8GB 30 Hari',
+      'packageDescription': 'Xtra Combo VIP 8GB 30 Hari',
     },
     {
       'transactionNumber': '1340021943',
@@ -1882,7 +1882,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '41500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo VIP 8GB 30 Hari',
+      'packageDescription': 'Xtra Combo VIP 8GB 30 Hari',
     },
     {
       'transactionNumber': '1341572128',
@@ -1903,7 +1903,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '12700',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Mini 4GB + Channel Jawa 5 Hari',
+      'packageDescription': 'Mini 4GB + Channel Jawa 5 Hari',
     },
     {
       'transactionNumber': '1342605596',
@@ -1914,7 +1914,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '42000',
       'paymentStatus': 'belumLunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo VIP 8GB 30 Hari',
+      'packageDescription': 'Xtra Combo VIP 8GB 30 Hari',
     },
     {
       'transactionNumber': '1343122227',
@@ -1925,7 +1925,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '38000',
       'paymentStatus': 'belumLunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'OMG 10GB 30 Hari',
+      'packageDescription': 'OMG 10GB 30 Hari',
     },
     {
       'transactionNumber': '1343638969',
@@ -1946,7 +1946,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '31000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 5GB 30 Hari',
+      'packageDescription': 'Freedom Internet 5GB 30 Hari',
     },
     {
       'transactionNumber': '1344672692',
@@ -1957,7 +1957,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '16000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet 2GB 30 Hari',
+      'packageDescription': 'Bronet 2GB 30 Hari',
     },
     {
       'transactionNumber': '1345189477',
@@ -1988,7 +1988,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '25500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Combo 3GB + Nelpon 30 Hari',
+      'packageDescription': 'Freedom Combo 3GB + Nelpon 30 Hari',
     },
     {
       'transactionNumber': '1346739580',
@@ -1999,7 +1999,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '15500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet 2GB 30 Hari',
+      'packageDescription': 'Bronet 2GB 30 Hari',
     },
     {
       'transactionNumber': '1347256446',
@@ -2030,7 +2030,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '28000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Ekstra 8GB 30 Hari',
+      'packageDescription': 'Kuota Ekstra 8GB 30 Hari',
     },
     {
       'transactionNumber': '1348806801',
@@ -2041,7 +2041,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '28000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Ekstra 8GB 30 Hari',
+      'packageDescription': 'Kuota Ekstra 8GB 30 Hari',
     },
     {
       'transactionNumber': '1349323551',
@@ -2062,7 +2062,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '29000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'AON 5GB 30 Hari',
+      'packageDescription': 'AON 5GB 30 Hari',
     },
     {
       'transactionNumber': '1350357192',
@@ -2073,7 +2073,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '0',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Cek List Paket Combo Sakti',
+      'packageDescription': 'Cek List Paket Combo Sakti',
     },
     {
       'transactionNumber': '1350873918',
@@ -2084,7 +2084,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '45000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Combo Sakti 5GB + Nelpon 30 Hari',
+      'packageDescription': 'Combo Sakti 5GB + Nelpon 30 Hari',
     },
     {
       'transactionNumber': '1351390708',
@@ -2095,7 +2095,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '42500',
       'paymentStatus': 'belumLunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo VIP 8GB 30 Hari',
+      'packageDescription': 'Xtra Combo VIP 8GB 30 Hari',
     },
     {
       'transactionNumber': '1351907497',
@@ -2116,7 +2116,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '28500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Ekstra 8GB 30 Hari',
+      'packageDescription': 'Kuota Ekstra 8GB 30 Hari',
     },
     {
       'transactionNumber': '1352941060',
@@ -2157,7 +2157,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '42500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo VIP 8GB 30 Hari',
+      'packageDescription': 'Xtra Combo VIP 8GB 30 Hari',
     },
     {
       'transactionNumber': '1355008222',
@@ -2168,7 +2168,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '31000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 5GB 30 Hari',
+      'packageDescription': 'Freedom Internet 5GB 30 Hari',
     },
     {
       'transactionNumber': '1355524894',
@@ -2179,7 +2179,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '16000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet 2GB 30 Hari',
+      'packageDescription': 'Bronet 2GB 30 Hari',
     },
     {
       'transactionNumber': '1356041570',
@@ -2200,7 +2200,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '29500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 5GB 30 Hari',
+      'packageDescription': 'Freedom Internet 5GB 30 Hari',
     },
     {
       'transactionNumber': '1357074974',
@@ -2211,7 +2211,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '27500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Ekstra 8GB 30 Hari',
+      'packageDescription': 'Kuota Ekstra 8GB 30 Hari',
     },
     {
       'transactionNumber': '1357591622',
@@ -2222,7 +2222,7 @@ const GroundTruthDataset orderkuotaAgustusAnonim = GroundTruthDataset(
       'amount': '34500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Xtra Combo Lite 6GB 30 Hari',
+      'packageDescription': 'Xtra Combo Lite 6GB 30 Hari',
     },
   ],
 );
@@ -2244,7 +2244,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '22999',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'XL Flex Mini 6GB, 14 Hari',
+      'packageDescription': 'XL Flex Mini 6GB, 14 Hari',
     },
     {
       'transactionNumber': '1358252698',
@@ -2255,7 +2255,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '12200',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Mini 4GB + Channel Jawa 5 Hari',
+      'packageDescription': 'Mini 4GB + Channel Jawa 5 Hari',
     },
     {
       'transactionNumber': '1360405559',
@@ -2266,7 +2266,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '0',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Cek List Paket Combo Sakti',
+      'packageDescription': 'Cek List Paket Combo Sakti',
     },
     {
       'transactionNumber': '1361100523',
@@ -2287,7 +2287,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '10000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Mini Axis 3GB + Bonus Aigo 3 Hari',
+      'packageDescription': 'Mini Axis 3GB + Bonus Aigo 3 Hari',
     },
     {
       'transactionNumber': '1362990147',
@@ -2308,7 +2308,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '9055',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 1.5GB, 7 Hari',
+      'packageDescription': 'Kuota 1.5GB, 7 Hari',
     },
     {
       'transactionNumber': '1364087233',
@@ -2319,7 +2319,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '33500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet Max 8GB, 30 Hari',
+      'packageDescription': 'Bronet Max 8GB, 30 Hari',
     },
     {
       'transactionNumber': '1364655781',
@@ -2340,7 +2340,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '62500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Utama 15GB + Malam 8GB, 30 Hari',
+      'packageDescription': 'Kuota Utama 15GB + Malam 8GB, 30 Hari',
     },
     {
       'transactionNumber': '1365789012',
@@ -2371,7 +2371,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '45000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Utama 10GB, 30 Hari',
+      'packageDescription': 'Kuota Utama 10GB, 30 Hari',
     },
     {
       'transactionNumber': '1367488901',
@@ -2382,7 +2382,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '0',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Cek List Paket Combo Sakti',
+      'packageDescription': 'Cek List Paket Combo Sakti',
     },
     {
       'transactionNumber': '1368054567',
@@ -2393,7 +2393,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '23500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 5GB, 30 Hari',
+      'packageDescription': 'Freedom Internet 5GB, 30 Hari',
     },
     {
       'transactionNumber': '1368621234',
@@ -2414,7 +2414,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '31900',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Axis OWSEM 8GB, 30 Hari',
+      'packageDescription': 'Axis OWSEM 8GB, 30 Hari',
     },
     {
       'transactionNumber': '1369754321',
@@ -2435,7 +2435,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '44900',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'XL Flex Mini 10GB, 30 Hari',
+      'packageDescription': 'XL Flex Mini 10GB, 30 Hari',
     },
     {
       'transactionNumber': '1370907654',
@@ -2456,7 +2456,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '48900',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota 10GB AlwaysOn (AON), 30 Hari',
+      'packageDescription': 'Kuota 10GB AlwaysOn (AON), 30 Hari',
     },
     {
       'transactionNumber': '1372059876',
@@ -2477,7 +2477,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '38900',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Freedom Internet 12GB, 30 Hari',
+      'packageDescription': 'Freedom Internet 12GB, 30 Hari',
     },
     {
       'transactionNumber': '1373213109',
@@ -2498,7 +2498,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '55000',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Bronet Max 15GB, 30 Hari',
+      'packageDescription': 'Bronet Max 15GB, 30 Hari',
     },
     {
       'transactionNumber': '1374366321',
@@ -2519,7 +2519,7 @@ const GroundTruthDataset orderkuotaSeptemberAnonim = GroundTruthDataset(
       'amount': '76500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'eWallet',
-      'packageInfo': 'Kuota Utama 20GB + Malam 10GB, 30 Hari',
+      'packageDescription': 'Kuota Utama 20GB + Malam 10GB, 30 Hari',
     },
   ],
 );

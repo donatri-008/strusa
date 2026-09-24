@@ -7,7 +7,7 @@
 ///   transactionNumber, transactionDate, customerName, customerPhone,
 ///   productType, productName, amount, adminFee, totalAmount,
 ///   paymentStatus, paymentMethod, meterNumber, customerId, tariff,
-///   period, tokenNumber, kwh, packageInfo
+///   period, tokenNumber, kwh, packageDescription
 ///
 /// `expectedRows[i]` corresponds to the i-th data row (0-indexed, header
 /// excluded) of the CSV at [dataFilePath]. A `null` value means the
@@ -40,7 +40,7 @@ const List<String> kTargetSchemaFields = [
   'period',
   'tokenNumber',
   'kwh',
-  'packageInfo',
+  'packageDescription',
 ];
 
 class GroundTruthDataset {
@@ -655,7 +655,7 @@ const GroundTruthDataset ec09PlatformSchemaVariation = GroundTruthDataset(
       'totalAmount': '402500',
       'paymentStatus': 'lunas',
       'paymentMethod': 'qris',
-      'packageInfo': 'Paket Internet + TV',
+      'packageDescription': 'Paket Internet + TV',
     },
   ],
 );

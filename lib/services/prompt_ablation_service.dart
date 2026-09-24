@@ -49,7 +49,7 @@ sesuai header di atas, JANGAN copy nilai kolom di contoh):
     "period": null,
     "tokenNumber": null,
     "kwh": null,
-    "packageInfo": null
+    "packageDescription": null
   }
 }
 
@@ -68,7 +68,7 @@ Header CSV: ${headers.join(', ')}
 Mapping ke field: transactionNumber, transactionDate, customerName,
 customerPhone, productType, productName, amount, adminFee, totalAmount,
 paymentStatus, paymentMethod, meterNumber, customerId, tariff, period,
-tokenNumber, kwh, packageInfo.
+tokenNumber, kwh, packageDescription.
 
 Balas HANYA JSON: {"mappings": {"field": "nama_header_csv_atau_null", ...}}
 ''',
@@ -84,7 +84,7 @@ ${headers.join(', ')}
 Petakan header di atas (dan HANYA header di atas) ke field berikut:
 transactionNumber, transactionDate, customerName, customerPhone, productType,
 productName, amount, adminFee, totalAmount, paymentStatus, paymentMethod,
-meterNumber, customerId, tariff, period, tokenNumber, kwh, packageInfo.
+meterNumber, customerId, tariff, period, tokenNumber, kwh, packageDescription.
 
 Jika tidak ada header yang cocok untuk suatu field, WAJIB isi null untuk
 field tersebut. Jangan pernah membuat nama kolom yang tidak ada di daftar

@@ -115,7 +115,7 @@ class RuleBasedMapperService {
       RegExp(r'\bkwh\b', caseSensitive: false),
       RegExp(r'stroom', caseSensitive: false),
     ],
-    'packageInfo': [
+    'packageDescription': [
       RegExp(r'paket', caseSensitive: false),
       RegExp(r'^notes$', caseSensitive: false),
       RegExp(r'^catatan$', caseSensitive: false),
@@ -239,8 +239,8 @@ class RuleBasedMapperService {
       if (mappedRow['productType'] == null && mappedRow['productName'] != null) {
         mappedRow['productType'] = _normalizeProductType(mappedRow['productName']);
       }
-      if (mappedRow['packageInfo'] != null) {
-        String info = mappedRow['packageInfo']!;
+      if (mappedRow['packageDescription'] != null) {
+        String info = mappedRow['packageDescription']!;
 
         if (mappedRow['meterNumber'] == null) {
           final meterMatch = RegExp(r'no\.?\s*meter\s*[:\-]?\s*(\d+)', caseSensitive: false).firstMatch(info);
@@ -258,7 +258,7 @@ class RuleBasedMapperService {
           }
         }
 
-        mappedRow['packageInfo'] = info.isEmpty ? null : info;
+        mappedRow['packageDescription'] = info.isEmpty ? null : info;
       }
 
       mappedRow['transactionDate'] = _normalizeDate(mappedRow['transactionDate']);

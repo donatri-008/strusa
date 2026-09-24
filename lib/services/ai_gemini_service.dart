@@ -84,7 +84,7 @@ Berikan hasil mapping dalam format JSON seperti ini:
     "period": "nama_kolom_di_csv atau null",
     "tokenNumber": "nama_kolom_di_csv atau null",
     "kwh": "nama_kolom_di_csv atau null",
-    "packageInfo": "nama_kolom_di_csv atau null"
+    "packageDescription": "nama_kolom_di_csv atau null"
   }
 }
 
@@ -137,7 +137,7 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
         'transactionNumber', 'transactionDate', 'customerName', 'customerPhone',
         'productType', 'productName', 'amount', 'adminFee', 'totalAmount',
         'paymentStatus', 'paymentMethod', 'meterNumber', 'customerId',
-        'tariff', 'period', 'tokenNumber', 'kwh', 'packageInfo',
+        'tariff', 'period', 'tokenNumber', 'kwh', 'packageDescription',
       ]) {
         final v = getValue(key);
         mappedRow[key] = _normalizeField(key, v?.toString());
