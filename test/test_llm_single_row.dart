@@ -5,7 +5,7 @@ import 'package:strusa/services/ai_gemini_service.dart';
 
 void main() async {
   // 1. Masukkan API Key Gemini Anda di sini (atau biarkan kosong jika sudah di-set di environment)
-  final apiKey = Platform.environment['GEMINI_API_KEY'] ?? 'apikey';
+  final apiKey = Platform.environment['GEMINI_API_KEY'] ?? 'YOUR_APIKEY';
   
   if (apiKey.isEmpty || apiKey == 'MASUKKAN_API_KEY_ANDA_DISINI') {
     print('⚠️ Error: GEMINI_API_KEY kosong. Silakan isi variabel apiKey di kode atau set via terminal.');
