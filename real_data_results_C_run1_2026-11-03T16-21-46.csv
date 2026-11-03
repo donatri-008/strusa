@@ -1,0 +1,9 @@
+gtVariant,runId,datasetId,category,mapper,rowsCompared,fieldsExpected,fieldsPredicted,fieldsCorrect,precision,recall,f1Score,f1Percentage,elapsedMs,status,errorMessage
+C,run1,agenpulsa_agustus_anonim,real_data,gemini,83,722,747,722,0.9665,1.0,0.983,98.3%,1780,OK,""
+C,run1,agenpulsa_agustus_anonim,real_data,ruleBased,83,722,664,581,0.875,0.8047,0.8384,83.8%,173,OK,""
+C,run1,agenpulsa_september_anonim,real_data,gemini,26,234,234,229,0.9786,0.9786,0.9786,97.9%,1253,OK,""
+C,run1,agenpulsa_september_anonim,real_data,ruleBased,26,234,208,177,0.851,0.7564,0.8009,80.1%,40,OK,""
+C,run1,orderkuota_agustus_anonim,real_data,gemini,90,777,810,777,0.9593,1.0,0.9792,97.9%,1287,OK,""
+C,run1,orderkuota_agustus_anonim,real_data,ruleBased,90,777,720,630,0.875,0.8108,0.8417,84.2%,49,OK,""
+C,run1,orderkuota_september_anonim,real_data,gemini,25,214,225,214,0.9511,1.0,0.9749,97.5%,1149,OK,""
+C,run1,orderkuota_september_anonim,real_data,ruleBased,25,214,200,175,0.875,0.8178,0.8454,84.5%,24,OK,""

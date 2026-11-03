@@ -1,0 +1,1730 @@
+gt_variant,run,suite,dataset,category,mapper,row,field,outcome,gt,pred,tp,fp,fn
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,0,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,2,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,3,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,4,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,10,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,12,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,16,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,18,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,19,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,23,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,27,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,28,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,38,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,40,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,43,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,45,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,48,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,49,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,56,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,58,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,62,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,63,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,69,packageDescription,fp,,Pulsa 15.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,75,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,gemini,77,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,0,customerPhone,fpfn,087782462819,87782462819,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,1,customerPhone,fpfn,085935181909,85935181909,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,1,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,2,customerPhone,fpfn,082179754323,82179754323,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,3,customerPhone,fpfn,081291186252,81291186252,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,4,customerPhone,fpfn,081895559797,81895559797,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,5,customerPhone,fpfn,087749746507,87749746507,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,5,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,6,customerPhone,fpfn,089903423667,89903423667,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,6,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,7,customerPhone,fpfn,081842684656,81842684656,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,7,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,8,customerPhone,fpfn,085924402685,85924402685,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,8,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,9,customerPhone,fpfn,085607866661,85607866661,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,9,packageDescription,fn,Kuota Ekstra 8GB / 30 Hari,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,10,customerPhone,fpfn,081937215901,81937215901,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,11,customerPhone,fpfn,085290139624,85290139624,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,11,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,12,customerPhone,fpfn,089977741215,89977741215,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,13,customerPhone,fpfn,081703852808,81703852808,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,13,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,14,customerPhone,fpfn,085225388853,85225388853,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,14,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,15,customerPhone,fpfn,089538750047,89538750047,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,15,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,16,customerPhone,fpfn,085213137353,85213137353,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,17,customerPhone,fpfn,081916372651,81916372651,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,17,packageDescription,fn,7GB Lokal / 28 Hari,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,18,customerPhone,fpfn,081922202972,81922202972,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,19,customerPhone,fpfn,081882001826,81882001826,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,20,customerPhone,fpfn,085748395486,85748395486,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,20,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,21,customerPhone,fpfn,085986828288,85986828288,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,21,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,22,customerPhone,fpfn,082322791805,82322791805,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,22,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,23,customerPhone,fpfn,087733401878,87733401878,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,24,customerPhone,fpfn,085689834788,85689834788,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,24,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,25,customerPhone,fpfn,089826167513,89826167513,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,25,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,26,customerPhone,fpfn,085825242731,85825242731,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,26,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,27,customerPhone,fpfn,081368656355,81368656355,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,28,customerPhone,fpfn,081877065894,81877065894,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,29,customerPhone,fpfn,081944024264,81944024264,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,29,packageDescription,fn,"XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,30,customerPhone,fpfn,085975140261,85975140261,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,30,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,31,customerPhone,fpfn,089514170586,89514170586,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,31,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,32,customerPhone,fpfn,089512402344,89512402344,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,32,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,33,customerPhone,fpfn,081724504000,81724504000,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,33,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,34,customerPhone,fpfn,089571678684,89571678684,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,34,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,35,customerPhone,fpfn,082365020146,82365020146,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,35,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,36,customerPhone,fpfn,081749340722,81749340722,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,36,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,37,customerPhone,fpfn,081853043520,81853043520,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,37,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,38,customerPhone,fpfn,082283380141,82283380141,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,39,customerPhone,fpfn,081243198296,81243198296,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,39,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,40,customerPhone,fpfn,085620868288,85620868288,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,41,customerPhone,fpfn,081900251678,81900251678,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,41,packageDescription,fn,7GB Lokal / 28 Hari,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,42,customerPhone,fpfn,089940718818,89940718818,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,42,packageDescription,fn,7GB Lokal / 28 Hari,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,43,customerPhone,fpfn,082233377617,82233377617,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,44,customerPhone,fpfn,082354499207,82354499207,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,44,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,45,customerPhone,fpfn,085774847771,85774847771,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,46,customerPhone,fpfn,089904718746,89904718746,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,46,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,47,customerPhone,fpfn,081928452984,81928452984,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,47,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,48,customerPhone,fpfn,089960207764,89960207764,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,49,customerPhone,fpfn,085850556130,85850556130,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,50,customerPhone,fpfn,081966915640,81966915640,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,50,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,51,customerPhone,fpfn,082268535606,82268535606,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,51,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,52,customerPhone,fpfn,089679247082,89679247082,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,52,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,53,customerPhone,fpfn,085334786122,85334786122,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,53,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,54,customerPhone,fpfn,081837576283,81837576283,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,54,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,55,customerPhone,fpfn,081815354930,81815354930,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,55,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,56,customerPhone,fpfn,085764507495,85764507495,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,57,customerPhone,fpfn,089566764020,89566764020,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,57,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,58,customerPhone,fpfn,083116877313,83116877313,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,59,customerPhone,fpfn,089818002390,89818002390,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,59,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,60,customerPhone,fpfn,089611148936,89611148936,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,60,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,61,customerPhone,fpfn,083184745378,83184745378,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,61,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,62,customerPhone,fpfn,083137614365,83137614365,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,63,customerPhone,fpfn,089656304813,89656304813,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,64,customerPhone,fpfn,089573441979,89573441979,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,64,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,65,customerPhone,fpfn,087792603092,87792603092,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,65,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,66,customerPhone,fpfn,089851125328,89851125328,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,66,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,67,customerPhone,fpfn,085257210141,85257210141,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,67,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,68,customerPhone,fpfn,085354610735,85354610735,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,68,packageDescription,fn,"XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,69,customerPhone,fpfn,085270636060,85270636060,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,70,customerPhone,fpfn,085655459045,85655459045,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,70,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,71,customerPhone,fpfn,081903177646,81903177646,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,71,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,72,customerPhone,fpfn,083142935575,83142935575,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,72,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,73,customerPhone,fpfn,085323610788,85323610788,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,73,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,74,customerPhone,fpfn,085613167723,85613167723,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,74,packageDescription,fn,"XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,75,customerPhone,fpfn,089581444945,89581444945,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,76,customerPhone,fpfn,089523324935,89523324935,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,76,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,77,customerPhone,fpfn,081783170107,81783170107,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,78,customerPhone,fpfn,083137671122,83137671122,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,78,packageDescription,fn,7GB Lokal / 28 Hari,,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,79,customerPhone,fpfn,087728142112,87728142112,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,79,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,80,customerPhone,fpfn,081934781100,81934781100,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,80,packageDescription,fn,"XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,81,customerPhone,fpfn,083185221121,83185221121,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,81,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,82,customerPhone,fpfn,085784591311,85784591311,0,1,1
+base,run1,real,agenpulsa_agustus_anonim,real_data,ruleBased,82,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,gemini,0,customerPhone,fpfn,082330057322,08237322,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,gemini,1,customerPhone,fpfn,089533064232,08954232,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,gemini,2,customerPhone,fpfn,085850283321,08583321,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,gemini,3,customerPhone,fpfn,081232727761,08127761,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,gemini,4,customerPhone,fpfn,0895324131123,089531123,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,0,transactionDate,fpfn,2026-09-01,26-09-01,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,0,customerPhone,fpfn,082330057322,0823****7322,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,0,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,1,transactionDate,fpfn,2026-09-02,26-09-02,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,1,customerPhone,fpfn,089533064232,0895****4232,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,1,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,2,transactionDate,fpfn,2026-09-02,26-09-02,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,2,customerPhone,fpfn,085850283321,0858****3321,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,2,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,3,transactionDate,fpfn,2026-09-02,26-09-02,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,3,customerPhone,fpfn,081232727761,0812****7761,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,3,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,4,transactionDate,fpfn,2026-09-03,26-09-03,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,4,customerPhone,fpfn,0895324131123,08953****1123,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,4,packageDescription,fn,"Kuota 1.5GB, 7 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,5,transactionDate,fpfn,2026-09-03,26-09-03,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,5,packageDescription,fn,"Freedom Internet 16GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,6,transactionDate,fpfn,2026-09-04,26-09-04,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,6,packageDescription,fn,"Freedom Internet 8GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,7,transactionDate,fpfn,2026-09-04,26-09-04,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,7,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,8,transactionDate,fpfn,2026-09-04,26-09-04,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,8,packageDescription,fn,"XL Flex Mini 6GB, 14 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,9,transactionDate,fpfn,2026-09-04,26-09-04,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,9,packageDescription,fn,"Kuota 1.5GB, 7 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,10,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,10,packageDescription,fn,"Kuota 4GB s/d 6GB + Bonus Lokal Jawa, Bali dan Nusra, 5 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,11,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,11,packageDescription,fn,"Telkomsel Data 2.5GB, 5 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,12,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,12,packageDescription,fn,"Freedom Internet 3GB, 14 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,13,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,13,packageDescription,fn,"Axis OWSEM 4GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,14,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,14,packageDescription,fn,"Kuota 2GB, 10 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,15,transactionDate,fpfn,2026-09-06,26-09-06,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,15,packageDescription,fn,"AIGO 9GB + Netflix 1GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,16,transactionDate,fpfn,2026-09-06,26-09-06,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,16,packageDescription,fn,"Kuota 10GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,17,transactionDate,fpfn,2026-09-07,26-09-07,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,17,packageDescription,fn,"Kuota 1.5GB, 7 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,18,transactionDate,fpfn,2026-09-08,26-09-08,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,18,packageDescription,fn,"Freedom Internet 3GB, 14 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,19,transactionDate,fpfn,2026-09-08,26-09-08,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,19,packageDescription,fn,"Kuota 1GB - 1.5GB, 2 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,20,transactionDate,fpfn,2026-09-08,26-09-08,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,20,packageDescription,fn,"4GB + Unlimited APK + Free Nelpon Sesama, 14 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,21,transactionDate,fpfn,2026-09-09,26-09-09,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,21,packageDescription,fn,"Kuota Lokal 4GB (Jawa Timur, Bali, Nusa Tenggara), 3 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,22,transactionDate,fpfn,2026-09-09,26-09-09,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,22,packageDescription,fn,"Kuota 1GB - 1.5GB, 2 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,23,transactionDate,fpfn,2026-09-10,26-09-10,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,23,packageDescription,fn,"Freedom Internet 3GB, 14 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,24,transactionDate,fpfn,2026-09-10,26-09-10,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,24,packageDescription,fn,"Freedom Internet 15GB, 28 Hari",,0,0,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,25,transactionDate,fpfn,2026-09-11,26-09-11,0,1,1
+base,run1,real,agenpulsa_september_anonim,real_data,ruleBased,25,packageDescription,fn,"Freedom Internet 6.5GB, 28 Hari",,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,4,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,8,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,11,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,12,packageDescription,fp,,Pulsa 15.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,14,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,15,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,16,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,18,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,26,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,29,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,31,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,32,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,35,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,39,packageDescription,fp,,Pulsa 15.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,46,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,50,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,51,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,54,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,56,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,58,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,59,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,61,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,65,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,68,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,69,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,72,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,73,packageDescription,fp,,Pulsa 15.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,76,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,81,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,83,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,84,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,85,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,gemini,89,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,0,customerPhone,fpfn,082142351161,82142351161,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,0,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,1,customerPhone,fpfn,081378161849,81378161849,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,1,packageDescription,fn,Kuota Malam 10GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,2,customerPhone,fpfn,083103413164,83103413164,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,2,packageDescription,fn,Kuota Malam 10GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,3,customerPhone,fpfn,085234192832,85234192832,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,3,packageDescription,fn,Kuota Malam 10GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,4,customerPhone,fpfn,081330564139,81330564139,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,5,customerPhone,fpfn,085372423884,85372423884,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,5,packageDescription,fn,AON 5GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,6,customerPhone,fpfn,087787101226,87787101226,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,6,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,7,customerPhone,fpfn,085678480184,85678480184,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,7,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,8,customerPhone,fpfn,083848281489,83848281489,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,9,customerPhone,fpfn,081880957015,81880957015,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,9,packageDescription,fn,Combo Sakti 5GB + Nelpon 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,10,customerPhone,fpfn,085891171822,85891171822,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,10,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,11,customerPhone,fpfn,082289638346,82289638346,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,12,customerPhone,fpfn,085831509839,85831509839,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,13,customerPhone,fpfn,085810518347,85810518347,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,13,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,14,customerPhone,fpfn,085973763116,85973763116,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,15,customerPhone,fpfn,081365133387,81365133387,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,16,customerPhone,fpfn,089831781080,89831781080,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,17,customerPhone,fpfn,089973602606,89973602606,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,17,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,18,customerPhone,fpfn,081872343098,81872343098,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,19,customerPhone,fpfn,089988208121,89988208121,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,19,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,20,customerPhone,fpfn,085793990916,85793990916,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,20,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,21,customerPhone,fpfn,085846247510,85846247510,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,21,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,22,customerPhone,fpfn,081838425135,81838425135,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,22,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,23,customerPhone,fpfn,081298084124,81298084124,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,23,packageDescription,fn,OMG 10GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,24,customerPhone,fpfn,087744935348,87744935348,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,24,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,25,customerPhone,fpfn,082200524278,82200524278,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,25,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,26,customerPhone,fpfn,085712805982,85712805982,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,27,customerPhone,fpfn,085815869232,85815869232,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,27,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,28,customerPhone,fpfn,081956342160,81956342160,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,28,packageDescription,fn,OMG 10GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,29,customerPhone,fpfn,089854330365,89854330365,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,30,customerPhone,fpfn,081768501429,81768501429,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,30,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,31,customerPhone,fpfn,089698169340,89698169340,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,32,customerPhone,fpfn,081835615951,81835615951,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,33,customerPhone,fpfn,089656482366,89656482366,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,33,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,34,customerPhone,fpfn,081268044369,81268044369,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,34,packageDescription,fn,OMG 10GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,35,customerPhone,fpfn,089921489513,89921489513,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,36,customerPhone,fpfn,087700379176,87700379176,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,36,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,37,customerPhone,fpfn,085332016328,85332016328,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,37,packageDescription,fn,Xtra Combo Lite 6GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,38,customerPhone,fpfn,085772788957,85772788957,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,38,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,39,customerPhone,fpfn,089827743487,89827743487,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,40,customerPhone,fpfn,083143455812,83143455812,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,40,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,41,customerPhone,fpfn,089658760366,89658760366,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,41,packageDescription,fn,Xtra Combo Lite 6GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,42,customerPhone,fpfn,089905466889,89905466889,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,42,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,43,customerPhone,fpfn,082267065627,82267065627,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,43,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,44,customerPhone,fpfn,083869901627,83869901627,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,44,packageDescription,fn,Combo Sakti 5GB + Nelpon 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,45,customerPhone,fpfn,082156464170,82156464170,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,45,packageDescription,fn,AON 5GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,46,customerPhone,fpfn,085810033092,85810033092,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,47,customerPhone,fpfn,085937452991,85937452991,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,47,packageDescription,fn,Combo Sakti 5GB + Nelpon 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,48,customerPhone,fpfn,083849663193,83849663193,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,48,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,49,customerPhone,fpfn,085905865185,85905865185,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,49,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,50,customerPhone,fpfn,085272628498,85272628498,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,51,customerPhone,fpfn,085945314737,85945314737,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,52,customerPhone,fpfn,089952735454,89952735454,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,52,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,53,customerPhone,fpfn,081731367837,81731367837,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,53,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,54,customerPhone,fpfn,081236349578,81236349578,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,55,customerPhone,fpfn,082157444313,82157444313,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,55,packageDescription,fn,Kuota Malam 10GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,56,customerPhone,fpfn,089574989413,89574989413,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,57,customerPhone,fpfn,081208240084,81208240084,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,57,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,58,customerPhone,fpfn,085947775204,85947775204,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,59,customerPhone,fpfn,085371902294,85371902294,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,60,customerPhone,fpfn,089699938677,89699938677,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,60,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,61,customerPhone,fpfn,085609133412,85609133412,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,62,customerPhone,fpfn,085674034471,85674034471,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,62,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,63,customerPhone,fpfn,089561832421,89561832421,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,63,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,64,customerPhone,fpfn,081271746488,81271746488,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,64,packageDescription,fn,OMG 10GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,65,customerPhone,fpfn,089659401399,89659401399,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,66,customerPhone,fpfn,081978742967,81978742967,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,66,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,67,customerPhone,fpfn,089655125674,89655125674,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,67,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,68,customerPhone,fpfn,083154516808,83154516808,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,69,customerPhone,fpfn,081759770348,81759770348,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,70,customerPhone,fpfn,085709324808,85709324808,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,70,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,71,customerPhone,fpfn,089812748467,89812748467,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,71,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,72,customerPhone,fpfn,085339821465,85339821465,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,73,customerPhone,fpfn,081249972787,81249972787,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,74,customerPhone,fpfn,089539636057,89539636057,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,74,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,75,customerPhone,fpfn,089902895171,89902895171,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,75,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,76,customerPhone,fpfn,089621745961,89621745961,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,77,customerPhone,fpfn,082178091343,82178091343,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,77,packageDescription,fn,AON 5GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,78,customerPhone,fpfn,081940050455,81940050455,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,78,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,79,customerPhone,fpfn,089692221969,89692221969,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,79,packageDescription,fn,Combo Sakti 5GB + Nelpon 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,80,customerPhone,fpfn,087737474074,87737474074,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,80,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,81,customerPhone,fpfn,089859464743,89859464743,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,82,customerPhone,fpfn,085944064090,85944064090,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,82,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,83,customerPhone,fpfn,085653394210,85653394210,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,84,customerPhone,fpfn,085221456232,85221456232,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,85,customerPhone,fpfn,081742474517,81742474517,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,86,customerPhone,fpfn,085216048175,85216048175,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,86,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,87,customerPhone,fpfn,085213709859,85213709859,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,87,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,88,customerPhone,fpfn,089612004711,89612004711,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,88,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,89,customerPhone,fpfn,089858692617,89858692617,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,90,customerPhone,fpfn,089577351585,89577351585,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,90,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,91,customerPhone,fpfn,085771390053,85771390053,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,91,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,92,customerPhone,fpfn,089593352904,89593352904,0,1,1
+base,run1,real,orderkuota_agustus_anonim,real_data,ruleBased,92,packageDescription,fn,Xtra Combo Lite 6GB 30 Hari,,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,gemini,3,packageDescription,fp,,Pulsa Reguler 10rb,0,1,0
+base,run1,real,orderkuota_september_anonim,real_data,gemini,5,packageDescription,fp,,Token Listrik 20rb + Meterai,0,1,0
+base,run1,real,orderkuota_september_anonim,real_data,gemini,8,packageDescription,fp,,Pulsa Reguler 50rb,0,1,0
+base,run1,real,orderkuota_september_anonim,real_data,gemini,10,packageDescription,fp,,Pulsa Reguler 25rb,0,1,0
+base,run1,real,orderkuota_september_anonim,real_data,gemini,11,packageDescription,fp,,Token Listrik 200rb + Meterai,0,1,0
+base,run1,real,orderkuota_september_anonim,real_data,gemini,15,packageDescription,fp,,Pulsa Reguler 20rb,0,1,0
+base,run1,real,orderkuota_september_anonim,real_data,gemini,17,packageDescription,fp,,Token Listrik 50rb + Meterai,0,1,0
+base,run1,real,orderkuota_september_anonim,real_data,gemini,19,packageDescription,fp,,Pulsa Reguler 25rb,0,1,0
+base,run1,real,orderkuota_september_anonim,real_data,gemini,21,packageDescription,fp,,Pulsa Reguler 50rb,0,1,0
+base,run1,real,orderkuota_september_anonim,real_data,gemini,23,packageDescription,fp,,Token Listrik 100rb + Meterai,0,1,0
+base,run1,real,orderkuota_september_anonim,real_data,gemini,25,packageDescription,fp,,Pulsa Reguler 15rb,0,1,0
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,0,customerPhone,fpfn,087856612234,87856612234,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,0,packageDescription,fn,"XL Flex Mini 6GB, 14 Hari",,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,1,customerPhone,fpfn,083845256643,83845256643,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,1,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,2,customerPhone,fpfn,081370604637,81370604637,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,2,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,3,customerPhone,fpfn,081298345671,81298345671,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,4,customerPhone,fpfn,083149662211,83149662211,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,4,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,5,customerPhone,fpfn,085711980022,85711980022,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,6,customerPhone,fpfn,089633120087,89633120087,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,6,packageDescription,fn,"Kuota 1.5GB, 7 Hari",,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,7,customerPhone,fpfn,083845217765,83845217765,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,7,packageDescription,fn,"Bronet Max 8GB, 30 Hari",,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,8,customerPhone,fpfn,081345662290,81345662290,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,9,customerPhone,fpfn,087712349087,87712349087,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,9,packageDescription,fn,"Kuota Utama 15GB + Malam 8GB, 30 Hari",,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,10,customerPhone,fpfn,085299887766,85299887766,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,11,customerPhone,fpfn,081234509988,81234509988,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,12,customerPhone,fpfn,088223311567,88223311567,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,12,packageDescription,fn,"Kuota Utama 10GB, 30 Hari",,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,13,customerPhone,fpfn,081276543210,81276543210,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,13,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,14,customerPhone,fpfn,085711002233,85711002233,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,14,packageDescription,fn,"Freedom Internet 5GB, 30 Hari",,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,15,customerPhone,fpfn,089544332211,89544332211,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,16,customerPhone,fpfn,083176654321,83176654321,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,16,packageDescription,fn,"Axis OWSEM 8GB, 30 Hari",,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,17,customerPhone,fpfn,081345998877,81345998877,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,18,customerPhone,fpfn,087822113344,87822113344,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,18,packageDescription,fn,"XL Flex Mini 10GB, 30 Hari",,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,19,customerPhone,fpfn,088113322556,88113322556,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,20,customerPhone,fpfn,089655221144,89655221144,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,20,packageDescription,fn,"Kuota 10GB AlwaysOn (AON), 30 Hari",,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,21,customerPhone,fpfn,085712233445,85712233445,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,22,customerPhone,fpfn,083145566778,83145566778,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,22,packageDescription,fn,"Freedom Internet 12GB, 30 Hari",,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,23,customerPhone,fpfn,081334455667,81334455667,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,24,customerPhone,fpfn,083172233445,83172233445,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,24,packageDescription,fn,"Bronet Max 15GB, 30 Hari",,0,0,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,25,customerPhone,fpfn,085611223399,85611223399,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,26,customerPhone,fpfn,087728156600,87728156600,0,1,1
+base,run1,real,orderkuota_september_anonim,real_data,ruleBased,26,packageDescription,fn,"Kuota Utama 20GB + Malam 10GB, 30 Hari",,0,0,1
+base,run1,edge,ec02_empty_values,empty_values,gemini,3,paymentStatus,fpfn,belumLunas,lunas,0,1,1
+base,run1,edge,ec03_inconsistent_dates,inconsistent_date_formats,ruleBased,0,tariff,fp,,R1/900VA,0,1,0
+base,run1,edge,ec05_non_standard_status,non_standard_status_vocabulary,gemini,1,paymentMethod,fpfn,eWallet,cash,0,1,1
+base,run1,edge,ec05_non_standard_status,non_standard_status_vocabulary,gemini,3,paymentMethod,fpfn,qris,cash,0,1,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,productName,fn,Pulsa Telkomsel,,0,0,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,amount,fpfn,50000,1500,0,1,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,adminFee,fn,1500,,0,0,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,paymentMethod,fn,cash,,0,0,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,productName,fn,Token PLN,,0,0,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,amount,fpfn,100000,2500,0,1,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,adminFee,fn,2500,,0,0,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,paymentMethod,fn,transfer,,0,0,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,productName,fn,Paket Data XL,,0,0,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,amount,fpfn,25000,500,0,1,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,adminFee,fn,500,,0,0,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,paymentMethod,fn,qris,,0,0,1
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,ruleBased,0,productType,fp,,pulsa,0,1,0
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,ruleBased,1,productType,fp,,token,0,1,0
+base,run1,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,ruleBased,2,productType,fp,,paketData,0,1,0
+base,run1,edge,ec08_merged_fields,merged_composite_fields,gemini,3,productName,fpfn,PLN R1/900VA,PLN R1/900VA Juli 2025,0,1,1
+base,run1,edge,ec08_merged_fields,merged_composite_fields,gemini,3,tariff,fn,R1/900VA,,0,0,1
+base,run1,edge,ec08_merged_fields,merged_composite_fields,gemini,3,period,fn,Juli 2025,,0,0,1
+base,run1,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,meterNumber,fn,998877665,,0,0,1
+base,run1,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,packageDescription,fp,,No Meter 998877665,0,1,0
+base,run1,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,paymentStatus,fpfn,belumLunas,lunas,0,1,1
+base,run1,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,paymentMethod,fpfn,transfer,cash,0,1,1
+base,run1,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,customerId,fn,0002123456789,,0,0,1
+base,run1,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,packageDescription,fp,,ID Pelanggan 0002123456789,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,0,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,2,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,3,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,4,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,10,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,12,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,16,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,18,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,19,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,23,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,27,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,28,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,38,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,40,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,43,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,45,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,48,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,49,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,56,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,58,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,62,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,63,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,69,packageDescription,fp,,Pulsa 15.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,75,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,gemini,77,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,0,customerPhone,fpfn,087782462819,87782462819,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,1,customerPhone,fpfn,085935181909,85935181909,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,1,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,2,customerPhone,fpfn,082179754323,82179754323,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,3,customerPhone,fpfn,081291186252,81291186252,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,4,customerPhone,fpfn,081895559797,81895559797,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,5,customerPhone,fpfn,087749746507,87749746507,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,5,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,6,customerPhone,fpfn,089903423667,89903423667,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,6,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,7,customerPhone,fpfn,081842684656,81842684656,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,7,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,8,customerPhone,fpfn,085924402685,85924402685,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,8,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,9,customerPhone,fpfn,085607866661,85607866661,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,9,packageDescription,fn,Kuota Ekstra 8GB / 30 Hari,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,10,customerPhone,fpfn,081937215901,81937215901,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,11,customerPhone,fpfn,085290139624,85290139624,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,11,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,12,customerPhone,fpfn,089977741215,89977741215,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,13,customerPhone,fpfn,081703852808,81703852808,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,13,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,14,customerPhone,fpfn,085225388853,85225388853,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,14,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,15,customerPhone,fpfn,089538750047,89538750047,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,15,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,16,customerPhone,fpfn,085213137353,85213137353,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,17,customerPhone,fpfn,081916372651,81916372651,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,17,packageDescription,fn,7GB Lokal / 28 Hari,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,18,customerPhone,fpfn,081922202972,81922202972,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,19,customerPhone,fpfn,081882001826,81882001826,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,20,customerPhone,fpfn,085748395486,85748395486,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,20,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,21,customerPhone,fpfn,085986828288,85986828288,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,21,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,22,customerPhone,fpfn,082322791805,82322791805,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,22,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,23,customerPhone,fpfn,087733401878,87733401878,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,24,customerPhone,fpfn,085689834788,85689834788,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,24,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,25,customerPhone,fpfn,089826167513,89826167513,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,25,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,26,customerPhone,fpfn,085825242731,85825242731,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,26,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,27,customerPhone,fpfn,081368656355,81368656355,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,28,customerPhone,fpfn,081877065894,81877065894,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,29,customerPhone,fpfn,081944024264,81944024264,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,29,packageDescription,fn,"XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,30,customerPhone,fpfn,085975140261,85975140261,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,30,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,31,customerPhone,fpfn,089514170586,89514170586,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,31,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,32,customerPhone,fpfn,089512402344,89512402344,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,32,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,33,customerPhone,fpfn,081724504000,81724504000,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,33,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,34,customerPhone,fpfn,089571678684,89571678684,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,34,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,35,customerPhone,fpfn,082365020146,82365020146,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,35,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,36,customerPhone,fpfn,081749340722,81749340722,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,36,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,37,customerPhone,fpfn,081853043520,81853043520,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,37,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,38,customerPhone,fpfn,082283380141,82283380141,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,39,customerPhone,fpfn,081243198296,81243198296,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,39,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,40,customerPhone,fpfn,085620868288,85620868288,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,41,customerPhone,fpfn,081900251678,81900251678,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,41,packageDescription,fn,7GB Lokal / 28 Hari,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,42,customerPhone,fpfn,089940718818,89940718818,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,42,packageDescription,fn,7GB Lokal / 28 Hari,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,43,customerPhone,fpfn,082233377617,82233377617,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,44,customerPhone,fpfn,082354499207,82354499207,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,44,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,45,customerPhone,fpfn,085774847771,85774847771,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,46,customerPhone,fpfn,089904718746,89904718746,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,46,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,47,customerPhone,fpfn,081928452984,81928452984,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,47,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,48,customerPhone,fpfn,089960207764,89960207764,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,49,customerPhone,fpfn,085850556130,85850556130,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,50,customerPhone,fpfn,081966915640,81966915640,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,50,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,51,customerPhone,fpfn,082268535606,82268535606,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,51,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,52,customerPhone,fpfn,089679247082,89679247082,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,52,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,53,customerPhone,fpfn,085334786122,85334786122,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,53,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,54,customerPhone,fpfn,081837576283,81837576283,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,54,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,55,customerPhone,fpfn,081815354930,81815354930,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,55,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,56,customerPhone,fpfn,085764507495,85764507495,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,57,customerPhone,fpfn,089566764020,89566764020,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,57,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,58,customerPhone,fpfn,083116877313,83116877313,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,59,customerPhone,fpfn,089818002390,89818002390,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,59,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,60,customerPhone,fpfn,089611148936,89611148936,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,60,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,61,customerPhone,fpfn,083184745378,83184745378,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,61,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,62,customerPhone,fpfn,083137614365,83137614365,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,63,customerPhone,fpfn,089656304813,89656304813,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,64,customerPhone,fpfn,089573441979,89573441979,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,64,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,65,customerPhone,fpfn,087792603092,87792603092,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,65,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,66,customerPhone,fpfn,089851125328,89851125328,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,66,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,67,customerPhone,fpfn,085257210141,85257210141,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,67,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,68,customerPhone,fpfn,085354610735,85354610735,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,68,packageDescription,fn,"XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,69,customerPhone,fpfn,085270636060,85270636060,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,70,customerPhone,fpfn,085655459045,85655459045,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,70,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,71,customerPhone,fpfn,081903177646,81903177646,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,71,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,72,customerPhone,fpfn,083142935575,83142935575,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,72,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,73,customerPhone,fpfn,085323610788,85323610788,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,73,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,74,customerPhone,fpfn,085613167723,85613167723,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,74,packageDescription,fn,"XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,75,customerPhone,fpfn,089581444945,89581444945,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,76,customerPhone,fpfn,089523324935,89523324935,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,76,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,77,customerPhone,fpfn,081783170107,81783170107,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,78,customerPhone,fpfn,083137671122,83137671122,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,78,packageDescription,fn,7GB Lokal / 28 Hari,,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,79,customerPhone,fpfn,087728142112,87728142112,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,79,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,80,customerPhone,fpfn,081934781100,81934781100,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,80,packageDescription,fn,"XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,81,customerPhone,fpfn,083185221121,83185221121,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,81,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,82,customerPhone,fpfn,085784591311,85784591311,0,1,1
+base,run2,real,agenpulsa_agustus_anonim,real_data,ruleBased,82,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,gemini,0,customerPhone,fpfn,082330057322,08237322,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,gemini,1,customerPhone,fpfn,089533064232,08954232,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,gemini,2,customerPhone,fpfn,085850283321,08583321,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,gemini,3,customerPhone,fpfn,081232727761,08127761,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,gemini,4,customerPhone,fpfn,0895324131123,089531123,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,0,transactionDate,fpfn,2026-09-01,26-09-01,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,0,customerPhone,fpfn,082330057322,0823****7322,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,0,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,1,transactionDate,fpfn,2026-09-02,26-09-02,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,1,customerPhone,fpfn,089533064232,0895****4232,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,1,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,2,transactionDate,fpfn,2026-09-02,26-09-02,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,2,customerPhone,fpfn,085850283321,0858****3321,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,2,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,3,transactionDate,fpfn,2026-09-02,26-09-02,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,3,customerPhone,fpfn,081232727761,0812****7761,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,3,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,4,transactionDate,fpfn,2026-09-03,26-09-03,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,4,customerPhone,fpfn,0895324131123,08953****1123,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,4,packageDescription,fn,"Kuota 1.5GB, 7 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,5,transactionDate,fpfn,2026-09-03,26-09-03,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,5,packageDescription,fn,"Freedom Internet 16GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,6,transactionDate,fpfn,2026-09-04,26-09-04,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,6,packageDescription,fn,"Freedom Internet 8GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,7,transactionDate,fpfn,2026-09-04,26-09-04,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,7,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,8,transactionDate,fpfn,2026-09-04,26-09-04,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,8,packageDescription,fn,"XL Flex Mini 6GB, 14 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,9,transactionDate,fpfn,2026-09-04,26-09-04,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,9,packageDescription,fn,"Kuota 1.5GB, 7 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,10,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,10,packageDescription,fn,"Kuota 4GB s/d 6GB + Bonus Lokal Jawa, Bali dan Nusra, 5 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,11,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,11,packageDescription,fn,"Telkomsel Data 2.5GB, 5 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,12,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,12,packageDescription,fn,"Freedom Internet 3GB, 14 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,13,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,13,packageDescription,fn,"Axis OWSEM 4GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,14,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,14,packageDescription,fn,"Kuota 2GB, 10 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,15,transactionDate,fpfn,2026-09-06,26-09-06,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,15,packageDescription,fn,"AIGO 9GB + Netflix 1GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,16,transactionDate,fpfn,2026-09-06,26-09-06,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,16,packageDescription,fn,"Kuota 10GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,17,transactionDate,fpfn,2026-09-07,26-09-07,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,17,packageDescription,fn,"Kuota 1.5GB, 7 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,18,transactionDate,fpfn,2026-09-08,26-09-08,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,18,packageDescription,fn,"Freedom Internet 3GB, 14 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,19,transactionDate,fpfn,2026-09-08,26-09-08,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,19,packageDescription,fn,"Kuota 1GB - 1.5GB, 2 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,20,transactionDate,fpfn,2026-09-08,26-09-08,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,20,packageDescription,fn,"4GB + Unlimited APK + Free Nelpon Sesama, 14 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,21,transactionDate,fpfn,2026-09-09,26-09-09,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,21,packageDescription,fn,"Kuota Lokal 4GB (Jawa Timur, Bali, Nusa Tenggara), 3 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,22,transactionDate,fpfn,2026-09-09,26-09-09,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,22,packageDescription,fn,"Kuota 1GB - 1.5GB, 2 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,23,transactionDate,fpfn,2026-09-10,26-09-10,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,23,packageDescription,fn,"Freedom Internet 3GB, 14 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,24,transactionDate,fpfn,2026-09-10,26-09-10,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,24,packageDescription,fn,"Freedom Internet 15GB, 28 Hari",,0,0,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,25,transactionDate,fpfn,2026-09-11,26-09-11,0,1,1
+base,run2,real,agenpulsa_september_anonim,real_data,ruleBased,25,packageDescription,fn,"Freedom Internet 6.5GB, 28 Hari",,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,4,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,8,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,11,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,12,packageDescription,fp,,Pulsa 15.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,14,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,15,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,16,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,18,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,26,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,29,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,31,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,32,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,35,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,39,packageDescription,fp,,Pulsa 15.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,46,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,50,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,51,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,54,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,56,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,58,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,59,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,61,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,65,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,68,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,69,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,72,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,73,packageDescription,fp,,Pulsa 15.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,76,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,81,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,83,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,84,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,85,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,gemini,89,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,0,customerPhone,fpfn,082142351161,82142351161,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,0,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,1,customerPhone,fpfn,081378161849,81378161849,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,1,packageDescription,fn,Kuota Malam 10GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,2,customerPhone,fpfn,083103413164,83103413164,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,2,packageDescription,fn,Kuota Malam 10GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,3,customerPhone,fpfn,085234192832,85234192832,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,3,packageDescription,fn,Kuota Malam 10GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,4,customerPhone,fpfn,081330564139,81330564139,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,5,customerPhone,fpfn,085372423884,85372423884,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,5,packageDescription,fn,AON 5GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,6,customerPhone,fpfn,087787101226,87787101226,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,6,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,7,customerPhone,fpfn,085678480184,85678480184,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,7,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,8,customerPhone,fpfn,083848281489,83848281489,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,9,customerPhone,fpfn,081880957015,81880957015,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,9,packageDescription,fn,Combo Sakti 5GB + Nelpon 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,10,customerPhone,fpfn,085891171822,85891171822,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,10,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,11,customerPhone,fpfn,082289638346,82289638346,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,12,customerPhone,fpfn,085831509839,85831509839,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,13,customerPhone,fpfn,085810518347,85810518347,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,13,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,14,customerPhone,fpfn,085973763116,85973763116,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,15,customerPhone,fpfn,081365133387,81365133387,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,16,customerPhone,fpfn,089831781080,89831781080,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,17,customerPhone,fpfn,089973602606,89973602606,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,17,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,18,customerPhone,fpfn,081872343098,81872343098,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,19,customerPhone,fpfn,089988208121,89988208121,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,19,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,20,customerPhone,fpfn,085793990916,85793990916,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,20,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,21,customerPhone,fpfn,085846247510,85846247510,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,21,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,22,customerPhone,fpfn,081838425135,81838425135,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,22,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,23,customerPhone,fpfn,081298084124,81298084124,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,23,packageDescription,fn,OMG 10GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,24,customerPhone,fpfn,087744935348,87744935348,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,24,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,25,customerPhone,fpfn,082200524278,82200524278,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,25,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,26,customerPhone,fpfn,085712805982,85712805982,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,27,customerPhone,fpfn,085815869232,85815869232,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,27,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,28,customerPhone,fpfn,081956342160,81956342160,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,28,packageDescription,fn,OMG 10GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,29,customerPhone,fpfn,089854330365,89854330365,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,30,customerPhone,fpfn,081768501429,81768501429,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,30,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,31,customerPhone,fpfn,089698169340,89698169340,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,32,customerPhone,fpfn,081835615951,81835615951,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,33,customerPhone,fpfn,089656482366,89656482366,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,33,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,34,customerPhone,fpfn,081268044369,81268044369,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,34,packageDescription,fn,OMG 10GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,35,customerPhone,fpfn,089921489513,89921489513,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,36,customerPhone,fpfn,087700379176,87700379176,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,36,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,37,customerPhone,fpfn,085332016328,85332016328,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,37,packageDescription,fn,Xtra Combo Lite 6GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,38,customerPhone,fpfn,085772788957,85772788957,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,38,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,39,customerPhone,fpfn,089827743487,89827743487,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,40,customerPhone,fpfn,083143455812,83143455812,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,40,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,41,customerPhone,fpfn,089658760366,89658760366,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,41,packageDescription,fn,Xtra Combo Lite 6GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,42,customerPhone,fpfn,089905466889,89905466889,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,42,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,43,customerPhone,fpfn,082267065627,82267065627,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,43,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,44,customerPhone,fpfn,083869901627,83869901627,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,44,packageDescription,fn,Combo Sakti 5GB + Nelpon 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,45,customerPhone,fpfn,082156464170,82156464170,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,45,packageDescription,fn,AON 5GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,46,customerPhone,fpfn,085810033092,85810033092,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,47,customerPhone,fpfn,085937452991,85937452991,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,47,packageDescription,fn,Combo Sakti 5GB + Nelpon 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,48,customerPhone,fpfn,083849663193,83849663193,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,48,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,49,customerPhone,fpfn,085905865185,85905865185,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,49,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,50,customerPhone,fpfn,085272628498,85272628498,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,51,customerPhone,fpfn,085945314737,85945314737,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,52,customerPhone,fpfn,089952735454,89952735454,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,52,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,53,customerPhone,fpfn,081731367837,81731367837,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,53,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,54,customerPhone,fpfn,081236349578,81236349578,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,55,customerPhone,fpfn,082157444313,82157444313,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,55,packageDescription,fn,Kuota Malam 10GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,56,customerPhone,fpfn,089574989413,89574989413,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,57,customerPhone,fpfn,081208240084,81208240084,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,57,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,58,customerPhone,fpfn,085947775204,85947775204,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,59,customerPhone,fpfn,085371902294,85371902294,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,60,customerPhone,fpfn,089699938677,89699938677,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,60,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,61,customerPhone,fpfn,085609133412,85609133412,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,62,customerPhone,fpfn,085674034471,85674034471,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,62,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,63,customerPhone,fpfn,089561832421,89561832421,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,63,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,64,customerPhone,fpfn,081271746488,81271746488,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,64,packageDescription,fn,OMG 10GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,65,customerPhone,fpfn,089659401399,89659401399,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,66,customerPhone,fpfn,081978742967,81978742967,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,66,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,67,customerPhone,fpfn,089655125674,89655125674,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,67,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,68,customerPhone,fpfn,083154516808,83154516808,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,69,customerPhone,fpfn,081759770348,81759770348,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,70,customerPhone,fpfn,085709324808,85709324808,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,70,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,71,customerPhone,fpfn,089812748467,89812748467,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,71,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,72,customerPhone,fpfn,085339821465,85339821465,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,73,customerPhone,fpfn,081249972787,81249972787,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,74,customerPhone,fpfn,089539636057,89539636057,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,74,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,75,customerPhone,fpfn,089902895171,89902895171,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,75,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,76,customerPhone,fpfn,089621745961,89621745961,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,77,customerPhone,fpfn,082178091343,82178091343,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,77,packageDescription,fn,AON 5GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,78,customerPhone,fpfn,081940050455,81940050455,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,78,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,79,customerPhone,fpfn,089692221969,89692221969,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,79,packageDescription,fn,Combo Sakti 5GB + Nelpon 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,80,customerPhone,fpfn,087737474074,87737474074,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,80,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,81,customerPhone,fpfn,089859464743,89859464743,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,82,customerPhone,fpfn,085944064090,85944064090,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,82,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,83,customerPhone,fpfn,085653394210,85653394210,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,84,customerPhone,fpfn,085221456232,85221456232,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,85,customerPhone,fpfn,081742474517,81742474517,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,86,customerPhone,fpfn,085216048175,85216048175,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,86,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,87,customerPhone,fpfn,085213709859,85213709859,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,87,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,88,customerPhone,fpfn,089612004711,89612004711,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,88,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,89,customerPhone,fpfn,089858692617,89858692617,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,90,customerPhone,fpfn,089577351585,89577351585,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,90,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,91,customerPhone,fpfn,085771390053,85771390053,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,91,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,92,customerPhone,fpfn,089593352904,89593352904,0,1,1
+base,run2,real,orderkuota_agustus_anonim,real_data,ruleBased,92,packageDescription,fn,Xtra Combo Lite 6GB 30 Hari,,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,gemini,3,packageDescription,fp,,Pulsa Reguler 10rb,0,1,0
+base,run2,real,orderkuota_september_anonim,real_data,gemini,5,packageDescription,fp,,Token Listrik 20rb + Meterai,0,1,0
+base,run2,real,orderkuota_september_anonim,real_data,gemini,8,packageDescription,fp,,Pulsa Reguler 50rb,0,1,0
+base,run2,real,orderkuota_september_anonim,real_data,gemini,10,packageDescription,fp,,Pulsa Reguler 25rb,0,1,0
+base,run2,real,orderkuota_september_anonim,real_data,gemini,11,packageDescription,fp,,Token Listrik 200rb + Meterai,0,1,0
+base,run2,real,orderkuota_september_anonim,real_data,gemini,15,packageDescription,fp,,Pulsa Reguler 20rb,0,1,0
+base,run2,real,orderkuota_september_anonim,real_data,gemini,17,packageDescription,fp,,Token Listrik 50rb + Meterai,0,1,0
+base,run2,real,orderkuota_september_anonim,real_data,gemini,19,packageDescription,fp,,Pulsa Reguler 25rb,0,1,0
+base,run2,real,orderkuota_september_anonim,real_data,gemini,21,packageDescription,fp,,Pulsa Reguler 50rb,0,1,0
+base,run2,real,orderkuota_september_anonim,real_data,gemini,23,packageDescription,fp,,Token Listrik 100rb + Meterai,0,1,0
+base,run2,real,orderkuota_september_anonim,real_data,gemini,25,packageDescription,fp,,Pulsa Reguler 15rb,0,1,0
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,0,customerPhone,fpfn,087856612234,87856612234,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,0,packageDescription,fn,"XL Flex Mini 6GB, 14 Hari",,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,1,customerPhone,fpfn,083845256643,83845256643,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,1,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,2,customerPhone,fpfn,081370604637,81370604637,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,2,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,3,customerPhone,fpfn,081298345671,81298345671,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,4,customerPhone,fpfn,083149662211,83149662211,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,4,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,5,customerPhone,fpfn,085711980022,85711980022,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,6,customerPhone,fpfn,089633120087,89633120087,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,6,packageDescription,fn,"Kuota 1.5GB, 7 Hari",,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,7,customerPhone,fpfn,083845217765,83845217765,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,7,packageDescription,fn,"Bronet Max 8GB, 30 Hari",,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,8,customerPhone,fpfn,081345662290,81345662290,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,9,customerPhone,fpfn,087712349087,87712349087,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,9,packageDescription,fn,"Kuota Utama 15GB + Malam 8GB, 30 Hari",,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,10,customerPhone,fpfn,085299887766,85299887766,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,11,customerPhone,fpfn,081234509988,81234509988,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,12,customerPhone,fpfn,088223311567,88223311567,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,12,packageDescription,fn,"Kuota Utama 10GB, 30 Hari",,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,13,customerPhone,fpfn,081276543210,81276543210,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,13,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,14,customerPhone,fpfn,085711002233,85711002233,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,14,packageDescription,fn,"Freedom Internet 5GB, 30 Hari",,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,15,customerPhone,fpfn,089544332211,89544332211,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,16,customerPhone,fpfn,083176654321,83176654321,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,16,packageDescription,fn,"Axis OWSEM 8GB, 30 Hari",,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,17,customerPhone,fpfn,081345998877,81345998877,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,18,customerPhone,fpfn,087822113344,87822113344,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,18,packageDescription,fn,"XL Flex Mini 10GB, 30 Hari",,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,19,customerPhone,fpfn,088113322556,88113322556,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,20,customerPhone,fpfn,089655221144,89655221144,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,20,packageDescription,fn,"Kuota 10GB AlwaysOn (AON), 30 Hari",,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,21,customerPhone,fpfn,085712233445,85712233445,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,22,customerPhone,fpfn,083145566778,83145566778,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,22,packageDescription,fn,"Freedom Internet 12GB, 30 Hari",,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,23,customerPhone,fpfn,081334455667,81334455667,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,24,customerPhone,fpfn,083172233445,83172233445,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,24,packageDescription,fn,"Bronet Max 15GB, 30 Hari",,0,0,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,25,customerPhone,fpfn,085611223399,85611223399,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,26,customerPhone,fpfn,087728156600,87728156600,0,1,1
+base,run2,real,orderkuota_september_anonim,real_data,ruleBased,26,packageDescription,fn,"Kuota Utama 20GB + Malam 10GB, 30 Hari",,0,0,1
+base,run2,edge,ec02_empty_values,empty_values,gemini,3,paymentStatus,fpfn,belumLunas,lunas,0,1,1
+base,run2,edge,ec03_inconsistent_dates,inconsistent_date_formats,ruleBased,0,tariff,fp,,R1/900VA,0,1,0
+base,run2,edge,ec05_non_standard_status,non_standard_status_vocabulary,gemini,1,paymentMethod,fpfn,eWallet,cash,0,1,1
+base,run2,edge,ec05_non_standard_status,non_standard_status_vocabulary,gemini,3,paymentMethod,fpfn,qris,cash,0,1,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,productType,fp,,lainnya,0,1,0
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,productName,fpfn,Pulsa Telkomsel,Cash,0,1,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,amount,fpfn,50000,1500,0,1,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,adminFee,fn,1500,,0,0,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,paymentMethod,fn,cash,,0,0,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,productType,fp,,lainnya,0,1,0
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,productName,fpfn,Token PLN,Transfer,0,1,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,amount,fpfn,100000,2500,0,1,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,adminFee,fn,2500,,0,0,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,paymentMethod,fn,transfer,,0,0,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,productType,fp,,lainnya,0,1,0
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,productName,fpfn,Paket Data XL,QRIS,0,1,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,amount,fpfn,25000,500,0,1,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,adminFee,fn,500,,0,0,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,paymentMethod,fn,qris,,0,0,1
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,ruleBased,0,productType,fp,,pulsa,0,1,0
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,ruleBased,1,productType,fp,,token,0,1,0
+base,run2,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,ruleBased,2,productType,fp,,paketData,0,1,0
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,transactionNumber,fn,TRX-OK-7001,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,transactionDate,fn,2025-06-01,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,customerName,fn,Rangga Saputra,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,productType,fn,pulsa,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,productName,fn,Smartfren 20000,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,amount,fn,20000,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,adminFee,fn,1000,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,totalAmount,fn,21000,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,paymentStatus,fn,lunas,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,paymentMethod,fn,cash,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,transactionNumber,fn,TRX-OK-7002,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,transactionDate,fn,2025-06-01,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,customerName,fn,Yuni Astuti,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,productType,fn,token,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,productName,fn,Token PLN 75000,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,amount,fn,75000,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,adminFee,fn,1500,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,totalAmount,fn,76500,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,paymentStatus,fn,lunas,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,paymentMethod,fn,transfer,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,transactionNumber,fn,TRX-OK-7003,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,transactionDate,fn,2025-06-02,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,customerName,fn,Dedi Kurniawan,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,productType,fn,bpjs,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,productName,fn,BPJS Kesehatan,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,amount,fn,140000,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,adminFee,fn,2500,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,totalAmount,fn,142500,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,paymentStatus,fn,lunas,,0,0,1
+base,run2,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,paymentMethod,fn,qris,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,0,transactionNumber,fn,TRX-AP-8001,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,0,transactionDate,fn,2025-07-01,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,0,customerName,fn,Budi Santoso,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,0,customerPhone,fn,081234567890,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,0,productType,fn,pulsa,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,0,productName,fn,Telkomsel 25000,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,0,amount,fn,25000,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,0,adminFee,fn,1000,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,0,totalAmount,fn,26000,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,0,paymentStatus,fn,lunas,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,1,transactionNumber,fn,TRX-AP-8002,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,1,transactionDate,fn,2025-07-01,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,1,customerName,fn,Siti Aminah,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,1,customerPhone,fn,08129876543,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,1,productType,fn,token,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,1,productName,fn,Token PLN 100000,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,1,amount,fn,100000,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,1,adminFee,fn,2500,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,1,totalAmount,fn,102500,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,1,paymentStatus,fn,lunas,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,1,kwh,fn,68.5,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,2,transactionNumber,fn,TRX-AP-8003,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,2,transactionDate,fn,2025-07-02,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,2,customerName,fn,Andi Wijaya,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,2,customerPhone,fn,081211112222,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,2,productType,fn,pdam,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,2,productName,fn,PDAM Bulanan,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,2,amount,fn,150000,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,2,adminFee,fn,2500,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,2,totalAmount,fn,152500,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,2,paymentStatus,fn,lunas,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,2,period,fn,06/2025,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,transactionNumber,fn,TRX-AP-8004,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,transactionDate,fn,2025-07-02,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,customerName,fn,Rina Marlina,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,customerPhone,fn,081399998888,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,productType,fn,listrik,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,productName,fn,PLN R1/900VA,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,amount,fn,220000,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,adminFee,fn,2500,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,totalAmount,fn,222500,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,paymentStatus,fn,lunas,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,meterNumber,fn,12345678,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,tariff,fn,R1/900VA,,0,0,1
+base,run2,edge,ec08_merged_fields,merged_composite_fields,gemini,3,period,fn,Juli 2025,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,transactionNumber,fn,AP-9001,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,transactionDate,fn,2025-08-01,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,customerName,fn,Hasan Basri,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,customerPhone,fn,081277778888,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,productType,fn,token,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,productName,fn,Token PLN 50rb,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,amount,fn,50000,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,adminFee,fn,1500,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,totalAmount,fn,51500,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,paymentStatus,fn,lunas,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,paymentMethod,fn,transfer,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,meterNumber,fn,998877665,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,transactionNumber,fn,AP-9002,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,transactionDate,fn,2025-08-01,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,customerName,fn,Wulan Dari,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,customerPhone,fn,081266665555,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,productType,fn,pulsa,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,productName,fn,Telkomsel 10rb,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,amount,fn,10000,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,adminFee,fn,500,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,totalAmount,fn,10500,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,paymentStatus,fn,lunas,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,paymentMethod,fn,eWallet,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,transactionNumber,fn,AP-9003,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,transactionDate,fn,2025-08-02,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,customerName,fn,Fitra Ramadhan,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,customerPhone,fn,081255554444,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,productType,fn,bpjs,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,productName,fn,BPJS Kesehatan Kelas 2,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,amount,fn,175000,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,adminFee,fn,2500,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,totalAmount,fn,177500,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,paymentStatus,fn,belumLunas,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,paymentMethod,fn,transfer,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,customerId,fn,0002123456789,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,transactionNumber,fn,AP-9004,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,transactionDate,fn,2025-08-02,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,customerName,fn,Citra Kirana,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,customerPhone,fn,081244443333,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,productType,fn,indihome,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,productName,fn,Indihome 50Mbps,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,amount,fn,400000,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,adminFee,fn,2500,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,totalAmount,fn,402500,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,paymentStatus,fn,lunas,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,paymentMethod,fn,qris,,0,0,1
+base,run2,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,packageDescription,fn,Paket Internet + TV,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,0,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,2,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,3,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,4,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,10,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,12,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,16,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,18,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,19,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,23,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,27,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,28,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,38,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,40,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,43,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,45,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,48,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,49,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,56,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,58,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,62,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,63,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,69,packageDescription,fp,,Pulsa 15.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,75,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,gemini,77,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,0,customerPhone,fpfn,087782462819,87782462819,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,1,customerPhone,fpfn,085935181909,85935181909,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,1,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,2,customerPhone,fpfn,082179754323,82179754323,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,3,customerPhone,fpfn,081291186252,81291186252,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,4,customerPhone,fpfn,081895559797,81895559797,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,5,customerPhone,fpfn,087749746507,87749746507,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,5,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,6,customerPhone,fpfn,089903423667,89903423667,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,6,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,7,customerPhone,fpfn,081842684656,81842684656,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,7,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,8,customerPhone,fpfn,085924402685,85924402685,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,8,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,9,customerPhone,fpfn,085607866661,85607866661,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,9,packageDescription,fn,Kuota Ekstra 8GB / 30 Hari,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,10,customerPhone,fpfn,081937215901,81937215901,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,11,customerPhone,fpfn,085290139624,85290139624,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,11,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,12,customerPhone,fpfn,089977741215,89977741215,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,13,customerPhone,fpfn,081703852808,81703852808,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,13,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,14,customerPhone,fpfn,085225388853,85225388853,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,14,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,15,customerPhone,fpfn,089538750047,89538750047,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,15,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,16,customerPhone,fpfn,085213137353,85213137353,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,17,customerPhone,fpfn,081916372651,81916372651,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,17,packageDescription,fn,7GB Lokal / 28 Hari,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,18,customerPhone,fpfn,081922202972,81922202972,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,19,customerPhone,fpfn,081882001826,81882001826,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,20,customerPhone,fpfn,085748395486,85748395486,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,20,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,21,customerPhone,fpfn,085986828288,85986828288,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,21,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,22,customerPhone,fpfn,082322791805,82322791805,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,22,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,23,customerPhone,fpfn,087733401878,87733401878,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,24,customerPhone,fpfn,085689834788,85689834788,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,24,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,25,customerPhone,fpfn,089826167513,89826167513,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,25,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,26,customerPhone,fpfn,085825242731,85825242731,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,26,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,27,customerPhone,fpfn,081368656355,81368656355,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,28,customerPhone,fpfn,081877065894,81877065894,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,29,customerPhone,fpfn,081944024264,81944024264,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,29,packageDescription,fn,"XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,30,customerPhone,fpfn,085975140261,85975140261,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,30,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,31,customerPhone,fpfn,089514170586,89514170586,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,31,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,32,customerPhone,fpfn,089512402344,89512402344,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,32,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,33,customerPhone,fpfn,081724504000,81724504000,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,33,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,34,customerPhone,fpfn,089571678684,89571678684,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,34,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,35,customerPhone,fpfn,082365020146,82365020146,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,35,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,36,customerPhone,fpfn,081749340722,81749340722,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,36,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,37,customerPhone,fpfn,081853043520,81853043520,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,37,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,38,customerPhone,fpfn,082283380141,82283380141,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,39,customerPhone,fpfn,081243198296,81243198296,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,39,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,40,customerPhone,fpfn,085620868288,85620868288,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,41,customerPhone,fpfn,081900251678,81900251678,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,41,packageDescription,fn,7GB Lokal / 28 Hari,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,42,customerPhone,fpfn,089940718818,89940718818,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,42,packageDescription,fn,7GB Lokal / 28 Hari,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,43,customerPhone,fpfn,082233377617,82233377617,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,44,customerPhone,fpfn,082354499207,82354499207,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,44,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,45,customerPhone,fpfn,085774847771,85774847771,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,46,customerPhone,fpfn,089904718746,89904718746,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,46,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,47,customerPhone,fpfn,081928452984,81928452984,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,47,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,48,customerPhone,fpfn,089960207764,89960207764,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,49,customerPhone,fpfn,085850556130,85850556130,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,50,customerPhone,fpfn,081966915640,81966915640,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,50,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,51,customerPhone,fpfn,082268535606,82268535606,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,51,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,52,customerPhone,fpfn,089679247082,89679247082,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,52,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,53,customerPhone,fpfn,085334786122,85334786122,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,53,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,54,customerPhone,fpfn,081837576283,81837576283,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,54,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,55,customerPhone,fpfn,081815354930,81815354930,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,55,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,56,customerPhone,fpfn,085764507495,85764507495,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,57,customerPhone,fpfn,089566764020,89566764020,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,57,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,58,customerPhone,fpfn,083116877313,83116877313,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,59,customerPhone,fpfn,089818002390,89818002390,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,59,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,60,customerPhone,fpfn,089611148936,89611148936,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,60,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,61,customerPhone,fpfn,083184745378,83184745378,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,61,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,62,customerPhone,fpfn,083137614365,83137614365,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,63,customerPhone,fpfn,089656304813,89656304813,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,64,customerPhone,fpfn,089573441979,89573441979,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,64,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,65,customerPhone,fpfn,087792603092,87792603092,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,65,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,66,customerPhone,fpfn,089851125328,89851125328,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,66,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,67,customerPhone,fpfn,085257210141,85257210141,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,67,packageDescription,fn,Bronet Malam 2GB / 30 Hari,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,68,customerPhone,fpfn,085354610735,85354610735,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,68,packageDescription,fn,"XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,69,customerPhone,fpfn,085270636060,85270636060,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,70,customerPhone,fpfn,085655459045,85655459045,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,70,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,71,customerPhone,fpfn,081903177646,81903177646,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,71,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,72,customerPhone,fpfn,083142935575,83142935575,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,72,packageDescription,fn,"Xtra Combo Lite 6GB, 30 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,73,customerPhone,fpfn,085323610788,85323610788,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,73,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,74,customerPhone,fpfn,085613167723,85613167723,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,74,packageDescription,fn,"XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,75,customerPhone,fpfn,089581444945,89581444945,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,76,customerPhone,fpfn,089523324935,89523324935,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,76,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,77,customerPhone,fpfn,081783170107,81783170107,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,78,customerPhone,fpfn,083137671122,83137671122,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,78,packageDescription,fn,7GB Lokal / 28 Hari,,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,79,customerPhone,fpfn,087728142112,87728142112,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,79,packageDescription,fn,"Kuota 3.6GB - 6GB, 2 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,80,customerPhone,fpfn,081934781100,81934781100,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,80,packageDescription,fn,"XL Flex Mini 10GB - 14GB + Bonus Nelpon, 7 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,81,customerPhone,fpfn,083185221121,83185221121,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,81,packageDescription,fn,"Paket Harian 5GB + Lokal, 3 Hari",,0,0,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,82,customerPhone,fpfn,085784591311,85784591311,0,1,1
+base,run3,real,agenpulsa_agustus_anonim,real_data,ruleBased,82,packageDescription,fn,"Freedom Internet 9GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,gemini,0,customerPhone,fpfn,082330057322,08237322,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,gemini,1,customerPhone,fpfn,089533064232,08954232,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,gemini,2,customerPhone,fpfn,085850283321,08583321,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,gemini,3,customerPhone,fpfn,081232727761,08127761,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,gemini,4,customerPhone,fpfn,0895324131123,089531123,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,0,transactionDate,fpfn,2026-09-01,26-09-01,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,0,customerPhone,fpfn,082330057322,0823****7322,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,0,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,1,transactionDate,fpfn,2026-09-02,26-09-02,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,1,customerPhone,fpfn,089533064232,0895****4232,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,1,packageDescription,fn,Kuota 5GB AlwaysOn (AON),,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,2,transactionDate,fpfn,2026-09-02,26-09-02,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,2,customerPhone,fpfn,085850283321,0858****3321,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,2,packageDescription,fn,"Freedom Internet 2.5GB, 5Hr",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,3,transactionDate,fpfn,2026-09-02,26-09-02,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,3,customerPhone,fpfn,081232727761,0812****7761,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,3,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,4,transactionDate,fpfn,2026-09-03,26-09-03,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,4,customerPhone,fpfn,0895324131123,08953****1123,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,4,packageDescription,fn,"Kuota 1.5GB, 7 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,5,transactionDate,fpfn,2026-09-03,26-09-03,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,5,packageDescription,fn,"Freedom Internet 16GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,6,transactionDate,fpfn,2026-09-04,26-09-04,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,6,packageDescription,fn,"Freedom Internet 8GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,7,transactionDate,fpfn,2026-09-04,26-09-04,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,7,packageDescription,fn,BAYAR PAKET DIGIPOS SAKTI,,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,8,transactionDate,fpfn,2026-09-04,26-09-04,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,8,packageDescription,fn,"XL Flex Mini 6GB, 14 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,9,transactionDate,fpfn,2026-09-04,26-09-04,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,9,packageDescription,fn,"Kuota 1.5GB, 7 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,10,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,10,packageDescription,fn,"Kuota 4GB s/d 6GB + Bonus Lokal Jawa, Bali dan Nusra, 5 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,11,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,11,packageDescription,fn,"Telkomsel Data 2.5GB, 5 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,12,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,12,packageDescription,fn,"Freedom Internet 3GB, 14 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,13,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,13,packageDescription,fn,"Axis OWSEM 4GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,14,transactionDate,fpfn,2026-09-05,26-09-05,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,14,packageDescription,fn,"Kuota 2GB, 10 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,15,transactionDate,fpfn,2026-09-06,26-09-06,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,15,packageDescription,fn,"AIGO 9GB + Netflix 1GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,16,transactionDate,fpfn,2026-09-06,26-09-06,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,16,packageDescription,fn,"Kuota 10GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,17,transactionDate,fpfn,2026-09-07,26-09-07,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,17,packageDescription,fn,"Kuota 1.5GB, 7 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,18,transactionDate,fpfn,2026-09-08,26-09-08,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,18,packageDescription,fn,"Freedom Internet 3GB, 14 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,19,transactionDate,fpfn,2026-09-08,26-09-08,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,19,packageDescription,fn,"Kuota 1GB - 1.5GB, 2 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,20,transactionDate,fpfn,2026-09-08,26-09-08,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,20,packageDescription,fn,"4GB + Unlimited APK + Free Nelpon Sesama, 14 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,21,transactionDate,fpfn,2026-09-09,26-09-09,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,21,packageDescription,fn,"Kuota Lokal 4GB (Jawa Timur, Bali, Nusa Tenggara), 3 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,22,transactionDate,fpfn,2026-09-09,26-09-09,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,22,packageDescription,fn,"Kuota 1GB - 1.5GB, 2 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,23,transactionDate,fpfn,2026-09-10,26-09-10,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,23,packageDescription,fn,"Freedom Internet 3GB, 14 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,24,transactionDate,fpfn,2026-09-10,26-09-10,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,24,packageDescription,fn,"Freedom Internet 15GB, 28 Hari",,0,0,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,25,transactionDate,fpfn,2026-09-11,26-09-11,0,1,1
+base,run3,real,agenpulsa_september_anonim,real_data,ruleBased,25,packageDescription,fn,"Freedom Internet 6.5GB, 28 Hari",,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,4,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,8,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,11,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,12,packageDescription,fp,,Pulsa 15.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,14,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,15,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,16,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,18,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,26,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,29,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,31,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,32,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,35,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,39,packageDescription,fp,,Pulsa 15.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,46,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,50,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,51,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,54,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,56,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,58,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,59,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,61,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,65,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,68,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,69,packageDescription,fp,,Pulsa 10.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,72,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,73,packageDescription,fp,,Pulsa 15.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,76,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,81,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,83,packageDescription,fp,,Pulsa 20.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,84,packageDescription,fp,,Pulsa 25.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,85,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,gemini,89,packageDescription,fp,,Pulsa 50.000,0,1,0
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,0,customerPhone,fpfn,082142351161,82142351161,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,0,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,1,customerPhone,fpfn,081378161849,81378161849,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,1,packageDescription,fn,Kuota Malam 10GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,2,customerPhone,fpfn,083103413164,83103413164,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,2,packageDescription,fn,Kuota Malam 10GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,3,customerPhone,fpfn,085234192832,85234192832,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,3,packageDescription,fn,Kuota Malam 10GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,4,customerPhone,fpfn,081330564139,81330564139,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,5,customerPhone,fpfn,085372423884,85372423884,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,5,packageDescription,fn,AON 5GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,6,customerPhone,fpfn,087787101226,87787101226,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,6,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,7,customerPhone,fpfn,085678480184,85678480184,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,7,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,8,customerPhone,fpfn,083848281489,83848281489,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,9,customerPhone,fpfn,081880957015,81880957015,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,9,packageDescription,fn,Combo Sakti 5GB + Nelpon 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,10,customerPhone,fpfn,085891171822,85891171822,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,10,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,11,customerPhone,fpfn,082289638346,82289638346,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,12,customerPhone,fpfn,085831509839,85831509839,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,13,customerPhone,fpfn,085810518347,85810518347,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,13,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,14,customerPhone,fpfn,085973763116,85973763116,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,15,customerPhone,fpfn,081365133387,81365133387,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,16,customerPhone,fpfn,089831781080,89831781080,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,17,customerPhone,fpfn,089973602606,89973602606,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,17,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,18,customerPhone,fpfn,081872343098,81872343098,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,19,customerPhone,fpfn,089988208121,89988208121,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,19,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,20,customerPhone,fpfn,085793990916,85793990916,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,20,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,21,customerPhone,fpfn,085846247510,85846247510,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,21,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,22,customerPhone,fpfn,081838425135,81838425135,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,22,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,23,customerPhone,fpfn,081298084124,81298084124,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,23,packageDescription,fn,OMG 10GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,24,customerPhone,fpfn,087744935348,87744935348,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,24,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,25,customerPhone,fpfn,082200524278,82200524278,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,25,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,26,customerPhone,fpfn,085712805982,85712805982,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,27,customerPhone,fpfn,085815869232,85815869232,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,27,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,28,customerPhone,fpfn,081956342160,81956342160,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,28,packageDescription,fn,OMG 10GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,29,customerPhone,fpfn,089854330365,89854330365,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,30,customerPhone,fpfn,081768501429,81768501429,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,30,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,31,customerPhone,fpfn,089698169340,89698169340,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,32,customerPhone,fpfn,081835615951,81835615951,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,33,customerPhone,fpfn,089656482366,89656482366,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,33,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,34,customerPhone,fpfn,081268044369,81268044369,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,34,packageDescription,fn,OMG 10GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,35,customerPhone,fpfn,089921489513,89921489513,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,36,customerPhone,fpfn,087700379176,87700379176,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,36,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,37,customerPhone,fpfn,085332016328,85332016328,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,37,packageDescription,fn,Xtra Combo Lite 6GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,38,customerPhone,fpfn,085772788957,85772788957,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,38,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,39,customerPhone,fpfn,089827743487,89827743487,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,40,customerPhone,fpfn,083143455812,83143455812,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,40,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,41,customerPhone,fpfn,089658760366,89658760366,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,41,packageDescription,fn,Xtra Combo Lite 6GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,42,customerPhone,fpfn,089905466889,89905466889,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,42,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,43,customerPhone,fpfn,082267065627,82267065627,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,43,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,44,customerPhone,fpfn,083869901627,83869901627,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,44,packageDescription,fn,Combo Sakti 5GB + Nelpon 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,45,customerPhone,fpfn,082156464170,82156464170,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,45,packageDescription,fn,AON 5GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,46,customerPhone,fpfn,085810033092,85810033092,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,47,customerPhone,fpfn,085937452991,85937452991,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,47,packageDescription,fn,Combo Sakti 5GB + Nelpon 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,48,customerPhone,fpfn,083849663193,83849663193,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,48,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,49,customerPhone,fpfn,085905865185,85905865185,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,49,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,50,customerPhone,fpfn,085272628498,85272628498,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,51,customerPhone,fpfn,085945314737,85945314737,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,52,customerPhone,fpfn,089952735454,89952735454,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,52,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,53,customerPhone,fpfn,081731367837,81731367837,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,53,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,54,customerPhone,fpfn,081236349578,81236349578,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,55,customerPhone,fpfn,082157444313,82157444313,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,55,packageDescription,fn,Kuota Malam 10GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,56,customerPhone,fpfn,089574989413,89574989413,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,57,customerPhone,fpfn,081208240084,81208240084,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,57,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,58,customerPhone,fpfn,085947775204,85947775204,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,59,customerPhone,fpfn,085371902294,85371902294,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,60,customerPhone,fpfn,089699938677,89699938677,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,60,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,61,customerPhone,fpfn,085609133412,85609133412,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,62,customerPhone,fpfn,085674034471,85674034471,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,62,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,63,customerPhone,fpfn,089561832421,89561832421,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,63,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,64,customerPhone,fpfn,081271746488,81271746488,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,64,packageDescription,fn,OMG 10GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,65,customerPhone,fpfn,089659401399,89659401399,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,66,customerPhone,fpfn,081978742967,81978742967,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,66,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,67,customerPhone,fpfn,089655125674,89655125674,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,67,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,68,customerPhone,fpfn,083154516808,83154516808,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,69,customerPhone,fpfn,081759770348,81759770348,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,70,customerPhone,fpfn,085709324808,85709324808,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,70,packageDescription,fn,Freedom Combo 3GB + Nelpon 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,71,customerPhone,fpfn,089812748467,89812748467,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,71,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,72,customerPhone,fpfn,085339821465,85339821465,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,73,customerPhone,fpfn,081249972787,81249972787,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,74,customerPhone,fpfn,089539636057,89539636057,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,74,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,75,customerPhone,fpfn,089902895171,89902895171,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,75,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,76,customerPhone,fpfn,089621745961,89621745961,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,77,customerPhone,fpfn,082178091343,82178091343,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,77,packageDescription,fn,AON 5GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,78,customerPhone,fpfn,081940050455,81940050455,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,78,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,79,customerPhone,fpfn,089692221969,89692221969,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,79,packageDescription,fn,Combo Sakti 5GB + Nelpon 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,80,customerPhone,fpfn,087737474074,87737474074,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,80,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,81,customerPhone,fpfn,089859464743,89859464743,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,82,customerPhone,fpfn,085944064090,85944064090,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,82,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,83,customerPhone,fpfn,085653394210,85653394210,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,84,customerPhone,fpfn,085221456232,85221456232,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,85,customerPhone,fpfn,081742474517,81742474517,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,86,customerPhone,fpfn,085216048175,85216048175,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,86,packageDescription,fn,Xtra Combo VIP 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,87,customerPhone,fpfn,085213709859,85213709859,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,87,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,88,customerPhone,fpfn,089612004711,89612004711,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,88,packageDescription,fn,Bronet 2GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,89,customerPhone,fpfn,089858692617,89858692617,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,90,customerPhone,fpfn,089577351585,89577351585,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,90,packageDescription,fn,Freedom Internet 5GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,91,customerPhone,fpfn,085771390053,85771390053,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,91,packageDescription,fn,Kuota Ekstra 8GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,92,customerPhone,fpfn,089593352904,89593352904,0,1,1
+base,run3,real,orderkuota_agustus_anonim,real_data,ruleBased,92,packageDescription,fn,Xtra Combo Lite 6GB 30 Hari,,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,gemini,3,packageDescription,fp,,Pulsa Reguler 10rb,0,1,0
+base,run3,real,orderkuota_september_anonim,real_data,gemini,5,packageDescription,fp,,Token Listrik 20rb + Meterai,0,1,0
+base,run3,real,orderkuota_september_anonim,real_data,gemini,8,packageDescription,fp,,Pulsa Reguler 50rb,0,1,0
+base,run3,real,orderkuota_september_anonim,real_data,gemini,10,packageDescription,fp,,Pulsa Reguler 25rb,0,1,0
+base,run3,real,orderkuota_september_anonim,real_data,gemini,11,packageDescription,fp,,Token Listrik 200rb + Meterai,0,1,0
+base,run3,real,orderkuota_september_anonim,real_data,gemini,15,packageDescription,fp,,Pulsa Reguler 20rb,0,1,0
+base,run3,real,orderkuota_september_anonim,real_data,gemini,17,packageDescription,fp,,Token Listrik 50rb + Meterai,0,1,0
+base,run3,real,orderkuota_september_anonim,real_data,gemini,19,packageDescription,fp,,Pulsa Reguler 25rb,0,1,0
+base,run3,real,orderkuota_september_anonim,real_data,gemini,21,packageDescription,fp,,Pulsa Reguler 50rb,0,1,0
+base,run3,real,orderkuota_september_anonim,real_data,gemini,23,packageDescription,fp,,Token Listrik 100rb + Meterai,0,1,0
+base,run3,real,orderkuota_september_anonim,real_data,gemini,25,packageDescription,fp,,Pulsa Reguler 15rb,0,1,0
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,0,customerPhone,fpfn,087856612234,87856612234,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,0,packageDescription,fn,"XL Flex Mini 6GB, 14 Hari",,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,1,customerPhone,fpfn,083845256643,83845256643,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,1,packageDescription,fn,Mini 4GB + Channel Jawa 5 Hari,,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,2,customerPhone,fpfn,081370604637,81370604637,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,2,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,3,customerPhone,fpfn,081298345671,81298345671,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,4,customerPhone,fpfn,083149662211,83149662211,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,4,packageDescription,fn,Mini Axis 3GB + Bonus Aigo 3 Hari,,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,5,customerPhone,fpfn,085711980022,85711980022,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,6,customerPhone,fpfn,089633120087,89633120087,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,6,packageDescription,fn,"Kuota 1.5GB, 7 Hari",,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,7,customerPhone,fpfn,083845217765,83845217765,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,7,packageDescription,fn,"Bronet Max 8GB, 30 Hari",,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,8,customerPhone,fpfn,081345662290,81345662290,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,9,customerPhone,fpfn,087712349087,87712349087,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,9,packageDescription,fn,"Kuota Utama 15GB + Malam 8GB, 30 Hari",,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,10,customerPhone,fpfn,085299887766,85299887766,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,11,customerPhone,fpfn,081234509988,81234509988,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,12,customerPhone,fpfn,088223311567,88223311567,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,12,packageDescription,fn,"Kuota Utama 10GB, 30 Hari",,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,13,customerPhone,fpfn,081276543210,81276543210,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,13,packageDescription,fn,Cek List Paket Combo Sakti,,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,14,customerPhone,fpfn,085711002233,85711002233,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,14,packageDescription,fn,"Freedom Internet 5GB, 30 Hari",,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,15,customerPhone,fpfn,089544332211,89544332211,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,16,customerPhone,fpfn,083176654321,83176654321,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,16,packageDescription,fn,"Axis OWSEM 8GB, 30 Hari",,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,17,customerPhone,fpfn,081345998877,81345998877,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,18,customerPhone,fpfn,087822113344,87822113344,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,18,packageDescription,fn,"XL Flex Mini 10GB, 30 Hari",,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,19,customerPhone,fpfn,088113322556,88113322556,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,20,customerPhone,fpfn,089655221144,89655221144,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,20,packageDescription,fn,"Kuota 10GB AlwaysOn (AON), 30 Hari",,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,21,customerPhone,fpfn,085712233445,85712233445,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,22,customerPhone,fpfn,083145566778,83145566778,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,22,packageDescription,fn,"Freedom Internet 12GB, 30 Hari",,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,23,customerPhone,fpfn,081334455667,81334455667,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,24,customerPhone,fpfn,083172233445,83172233445,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,24,packageDescription,fn,"Bronet Max 15GB, 30 Hari",,0,0,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,25,customerPhone,fpfn,085611223399,85611223399,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,26,customerPhone,fpfn,087728156600,87728156600,0,1,1
+base,run3,real,orderkuota_september_anonim,real_data,ruleBased,26,packageDescription,fn,"Kuota Utama 20GB + Malam 10GB, 30 Hari",,0,0,1
+base,run3,edge,ec02_empty_values,empty_values,gemini,3,paymentStatus,fpfn,belumLunas,lunas,0,1,1
+base,run3,edge,ec03_inconsistent_dates,inconsistent_date_formats,ruleBased,0,tariff,fp,,R1/900VA,0,1,0
+base,run3,edge,ec05_non_standard_status,non_standard_status_vocabulary,gemini,1,paymentMethod,fpfn,eWallet,cash,0,1,1
+base,run3,edge,ec05_non_standard_status,non_standard_status_vocabulary,gemini,3,paymentMethod,fpfn,qris,cash,0,1,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,transactionNumber,fn,TRX-AP-6001,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,transactionDate,fn,2025-05-01,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,customerName,fn,Anton Wijaya,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,productName,fn,Pulsa Telkomsel,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,amount,fn,50000,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,adminFee,fn,1500,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,paymentStatus,fn,lunas,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,0,paymentMethod,fn,cash,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,transactionNumber,fn,TRX-AP-6002,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,transactionDate,fn,2025-05-01,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,customerName,fn,Melati Sari,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,productName,fn,Token PLN,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,amount,fn,100000,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,adminFee,fn,2500,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,paymentStatus,fn,lunas,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,1,paymentMethod,fn,transfer,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,transactionNumber,fn,TRX-AP-6003,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,transactionDate,fn,2025-05-02,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,customerName,fn,Fitriani,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,productName,fn,Paket Data XL,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,amount,fn,25000,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,adminFee,fn,500,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,paymentStatus,fn,belumLunas,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,2,paymentMethod,fn,qris,,0,0,1
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,ruleBased,0,productType,fp,,pulsa,0,1,0
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,ruleBased,1,productType,fp,,token,0,1,0
+base,run3,edge,ec06_duplicate_headers,duplicate_ambiguous_headers,ruleBased,2,productType,fp,,paketData,0,1,0
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,transactionNumber,fn,TRX-OK-7001,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,transactionDate,fn,2025-06-01,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,customerName,fn,Rangga Saputra,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,productType,fn,pulsa,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,productName,fn,Smartfren 20000,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,amount,fn,20000,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,adminFee,fn,1000,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,totalAmount,fn,21000,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,paymentStatus,fn,lunas,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,0,paymentMethod,fn,cash,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,transactionNumber,fn,TRX-OK-7002,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,transactionDate,fn,2025-06-01,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,customerName,fn,Yuni Astuti,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,productType,fn,token,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,productName,fn,Token PLN 75000,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,amount,fn,75000,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,adminFee,fn,1500,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,totalAmount,fn,76500,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,paymentStatus,fn,lunas,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,1,paymentMethod,fn,transfer,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,transactionNumber,fn,TRX-OK-7003,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,transactionDate,fn,2025-06-02,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,customerName,fn,Dedi Kurniawan,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,productType,fn,bpjs,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,productName,fn,BPJS Kesehatan,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,amount,fn,140000,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,adminFee,fn,2500,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,totalAmount,fn,142500,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,paymentStatus,fn,lunas,,0,0,1
+base,run3,edge,ec07_whitespace_casing,whitespace_and_casing,gemini,2,paymentMethod,fn,qris,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,0,transactionNumber,fn,TRX-AP-8001,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,0,transactionDate,fn,2025-07-01,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,0,customerName,fn,Budi Santoso,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,0,customerPhone,fn,081234567890,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,0,productType,fn,pulsa,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,0,productName,fn,Telkomsel 25000,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,0,amount,fn,25000,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,0,adminFee,fn,1000,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,0,totalAmount,fn,26000,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,0,paymentStatus,fn,lunas,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,1,transactionNumber,fn,TRX-AP-8002,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,1,transactionDate,fn,2025-07-01,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,1,customerName,fn,Siti Aminah,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,1,customerPhone,fn,08129876543,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,1,productType,fn,token,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,1,productName,fn,Token PLN 100000,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,1,amount,fn,100000,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,1,adminFee,fn,2500,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,1,totalAmount,fn,102500,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,1,paymentStatus,fn,lunas,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,1,kwh,fn,68.5,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,2,transactionNumber,fn,TRX-AP-8003,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,2,transactionDate,fn,2025-07-02,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,2,customerName,fn,Andi Wijaya,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,2,customerPhone,fn,081211112222,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,2,productType,fn,pdam,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,2,productName,fn,PDAM Bulanan,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,2,amount,fn,150000,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,2,adminFee,fn,2500,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,2,totalAmount,fn,152500,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,2,paymentStatus,fn,lunas,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,2,period,fn,06/2025,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,transactionNumber,fn,TRX-AP-8004,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,transactionDate,fn,2025-07-02,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,customerName,fn,Rina Marlina,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,customerPhone,fn,081399998888,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,productType,fn,listrik,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,productName,fn,PLN R1/900VA,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,amount,fn,220000,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,adminFee,fn,2500,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,totalAmount,fn,222500,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,paymentStatus,fn,lunas,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,meterNumber,fn,12345678,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,tariff,fn,R1/900VA,,0,0,1
+base,run3,edge,ec08_merged_fields,merged_composite_fields,gemini,3,period,fn,Juli 2025,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,transactionNumber,fn,AP-9001,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,transactionDate,fn,2025-08-01,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,customerName,fn,Hasan Basri,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,customerPhone,fn,081277778888,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,productType,fn,token,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,productName,fn,Token PLN 50rb,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,amount,fn,50000,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,adminFee,fn,1500,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,totalAmount,fn,51500,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,paymentStatus,fn,lunas,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,paymentMethod,fn,transfer,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,0,meterNumber,fn,998877665,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,transactionNumber,fn,AP-9002,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,transactionDate,fn,2025-08-01,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,customerName,fn,Wulan Dari,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,customerPhone,fn,081266665555,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,productType,fn,pulsa,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,productName,fn,Telkomsel 10rb,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,amount,fn,10000,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,adminFee,fn,500,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,totalAmount,fn,10500,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,paymentStatus,fn,lunas,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,1,paymentMethod,fn,eWallet,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,transactionNumber,fn,AP-9003,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,transactionDate,fn,2025-08-02,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,customerName,fn,Fitra Ramadhan,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,customerPhone,fn,081255554444,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,productType,fn,bpjs,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,productName,fn,BPJS Kesehatan Kelas 2,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,amount,fn,175000,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,adminFee,fn,2500,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,totalAmount,fn,177500,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,paymentStatus,fn,belumLunas,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,paymentMethod,fn,transfer,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,2,customerId,fn,0002123456789,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,transactionNumber,fn,AP-9004,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,transactionDate,fn,2025-08-02,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,customerName,fn,Citra Kirana,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,customerPhone,fn,081244443333,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,productType,fn,indihome,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,productName,fn,Indihome 50Mbps,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,amount,fn,400000,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,adminFee,fn,2500,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,totalAmount,fn,402500,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,paymentStatus,fn,lunas,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,paymentMethod,fn,qris,,0,0,1
+base,run3,edge,ec09_platform_schema_variation,platform_schema_variation,gemini,3,packageDescription,fn,Paket Internet + TV,,0,0,1

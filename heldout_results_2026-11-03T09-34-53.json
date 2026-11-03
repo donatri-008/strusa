@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-11-03T09-34-53",
+  "gemini_retry_stats": {
+    "total_calls": 12,
+    "first_pass_ok": 12,
+    "retries": 0,
+    "invalid": 0
+  },
+  "results": [
+    {
+      "variant": "english",
+      "rule_based_v2": {
+        "label": "RuleBased_v2_english",
+        "rows": 229,
+        "tp": 2061,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "f1_pct": "100.0%"
+      },
+      "gemini": {
+        "label": "Gemini_english",
+        "rows": 229,
+        "tp": 2035,
+        "fp": 0,
+        "fn": 26,
+        "precision": 1.0,
+        "recall": 0.9874,
+        "f1": 0.9937,
+        "f1_pct": "99.4%"
+      },
+      "gemini_avg_latency_ms": 1469.9
+    },
+    {
+      "variant": "abbreviated",
+      "rule_based_v2": {
+        "label": "RuleBased_v2_abbreviated",
+        "rows": 229,
+        "tp": 2061,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "f1_pct": "100.0%"
+      },
+      "gemini": {
+        "label": "Gemini_abbreviated",
+        "rows": 229,
+        "tp": 2061,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "f1_pct": "100.0%"
+      },
+      "gemini_avg_latency_ms": 1278.2
+    },
+    {
+      "variant": "alt_indonesian",
+      "rule_based_v2": {
+        "label": "RuleBased_v2_alt_indonesian",
+        "rows": 229,
+        "tp": 2061,
+        "fp": 0,
+        "fn": 0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "f1_pct": "100.0%"
+      },
+      "gemini": {
+        "label": "Gemini_alt_indonesian",
+        "rows": 229,
+        "tp": 1832,
+        "fp": 0,
+        "fn": 229,
+        "precision": 1.0,
+        "recall": 0.8889,
+        "f1": 0.9412,
+        "f1_pct": "94.1%"
+      },
+      "gemini_avg_latency_ms": 1500.5
+    }
+  ]
+}

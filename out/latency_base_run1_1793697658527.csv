@@ -1,0 +1,9 @@
+gt_variant,run,suite,dataset,mapper,ms
+base,run1,real,agenpulsa_agustus_anonim,gemini,5429
+base,run1,real,agenpulsa_agustus_anonim,ruleBased,233
+base,run1,real,agenpulsa_september_anonim,gemini,3686
+base,run1,real,agenpulsa_september_anonim,ruleBased,40
+base,run1,real,orderkuota_agustus_anonim,gemini,1358
+base,run1,real,orderkuota_agustus_anonim,ruleBased,52
+base,run1,real,orderkuota_september_anonim,gemini,2380
+base,run1,real,orderkuota_september_anonim,ruleBased,23

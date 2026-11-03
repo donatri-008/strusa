@@ -5,6 +5,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:strusa/models/ground_truth_mapping.dart';
 import 'package:strusa/services/ai_gemini_service.dart';
 import 'package:strusa/services/rule_based_mapper_service.dart';
+import 'export_cells.dart';
 
 enum MapperKind { gemini, ruleBased }
 
@@ -19,6 +20,13 @@ class _RunResult {
   final int fieldsPredicted;
   final int fieldsCorrect;
 
+  /// Baris hasil prediksi mentah (untuk ekspor sel per-baris/per-field).
+  final List<Map<String, String?>> predictedRows;
+
+  /// Log mapping Gemini (null untuk rule-based / saat error).
+  final Map<String, dynamic>? geminiMappings;
+  final List<String>? geminiHeaders;
+
   _RunResult.error({
     required this.datasetId,
     required this.category,
@@ -29,7 +37,10 @@ class _RunResult {
         rowsCompared = 0,
         fieldsExpected = 0,
         fieldsPredicted = 0,
-        fieldsCorrect = 0;
+        fieldsCorrect = 0,
+        predictedRows = const [],
+        geminiMappings = null,
+        geminiHeaders = null;
 
   _RunResult.success({
     required this.datasetId,
@@ -39,6 +50,9 @@ class _RunResult {
     required this.fieldsExpected,
     required this.fieldsPredicted,
     required this.fieldsCorrect,
+    required this.predictedRows,
+    this.geminiMappings,
+    this.geminiHeaders,
   })  : threw = false,
         errorMessage = null;
 
@@ -52,8 +66,10 @@ class _RunResult {
 
 void main() {
   final mappersToRun = <MapperKind>[MapperKind.gemini, MapperKind.ruleBased];
+  final ex = CellExporter(); // env: RUN_ID, GT_VARIANT
+  final dedupeHeaders = Platform.environment['DEDUPE_HEADERS'] == '1';
 
-  // 🆕 Tampung semua hasil test untuk diekspor
+  // Tampung semua hasil test untuk diekspor
   final List<Map<String, dynamic>> exportData = [];
 
   group('Edge Case Batch Robustness Test', () {
@@ -62,10 +78,13 @@ void main() {
         test(
           '${dataset.id} (${mapper.name})',
           () async {
-            final result = await _runOne(dataset, mapper);
+            final sw = Stopwatch()..start();
+            final result = await _runOne(dataset, mapper, dedupeHeaders);
+            sw.stop();
 
-            // 🆕 Simpan hasil ke list export
             exportData.add({
+              'gtVariant': ex.gtVariant,
+              'runId': ex.runId,
               'datasetId': dataset.id,
               'category': dataset.edgeCaseCategory,
               'mapper': mapper.name,
@@ -77,9 +96,29 @@ void main() {
               'recall': double.parse(result.recall.toStringAsFixed(4)),
               'f1Score': double.parse(result.f1.toStringAsFixed(4)),
               'f1Percentage': '${(result.f1 * 100).toStringAsFixed(1)}%',
+              'elapsedMs': sw.elapsedMilliseconds,
               'status': result.threw ? 'ERROR' : 'OK',
               'errorMessage': result.errorMessage,
             });
+
+            // Ekspor sel per-baris/per-field (alignment per indeks, sama
+            // seperti _evaluate). Pembanding = _normalize, sama seperti
+            // skor yang dilaporkan di Table 9/11.
+            ex.addCells(
+              suite: 'edge',
+              datasetId: dataset.id,
+              category: dataset.edgeCaseCategory,
+              mapper: mapper.name,
+              gt: dataset.expectedRows,
+              pred: result.predictedRows,
+              fields: kTargetSchemaFields,
+              match: (f, g, p) => _normalize(g) == _normalize(p),
+            );
+            ex.addLatency('edge', dataset.id, mapper.name, sw.elapsedMilliseconds);
+            if (mapper == MapperKind.gemini) {
+              ex.addMapping(dataset.id, result.geminiHeaders ?? [],
+                  result.geminiMappings, sw.elapsedMilliseconds);
+            }
 
             if (result.threw) {
               fail('Error pada ${dataset.id} (${mapper.name}): ${result.errorMessage}');
@@ -95,54 +134,76 @@ void main() {
     }
   });
 
-  // 🆕 Export ke 3 format setelah semua test selesai
+  // Export setelah semua test selesai
   tearDownAll(() async {
     if (exportData.isEmpty) {
       print('\n⚠️ Tidak ada data untuk diekspor.');
       return;
     }
 
+    await ex.flush(); // out/cells_*.csv, out/latency_*.csv, out/mappings_*.json
+
     final timestamp = DateTime.now()
         .toIso8601String()
         .replaceAll(':', '-')
         .split('.')
         .first;
+    final tag = '${ex.gtVariant}_${ex.runId}_$timestamp';
 
-    // 1. Export ke JSON
-    final jsonFile = File('test_results_$timestamp.json');
+    final jsonFile = File('test_results_$tag.json');
     await jsonFile.writeAsString(
       const JsonEncoder.withIndent('  ').convert(exportData),
     );
     print('\n📄 JSON: ${jsonFile.absolute.path}');
 
-    // 2. Export ke CSV
-    final csvFile = File('test_results_$timestamp.csv');
+    final csvFile = File('test_results_$tag.csv');
     await csvFile.writeAsString(_generateCsv(exportData));
     print('📊 CSV:  ${csvFile.absolute.path}');
 
-    // 3. Export ke HTML Report
-    final htmlFile = File('test_report_$timestamp.html');
+    final htmlFile = File('test_report_$tag.html');
     await htmlFile.writeAsString(_generateHtmlReport(exportData, mappersToRun));
     print('🌐 HTML: ${htmlFile.absolute.path}');
 
-    // 4. Cetak ringkasan akhir
     _printSummary(exportData);
   });
 }
 
-Future<_RunResult> _runOne(GroundTruthDataset dataset, MapperKind mapper) async {
+Future<_RunResult> _runOne(
+  GroundTruthDataset dataset,
+  MapperKind mapper,
+  bool dedupeHeaders,
+) async {
   try {
     final csvFile = File(dataset.dataFilePath);
     if (!await csvFile.exists()) {
       throw FileSystemException('Fixture CSV not found', dataset.dataFilePath);
     }
 
-    final predictedRows = switch (mapper) {
-      MapperKind.gemini => await _runGeminiMapper(csvFile),
-      MapperKind.ruleBased => await _runRuleBasedMapper(csvFile),
-    };
+    List<Map<String, String?>> predictedRows;
+    Map<String, dynamic>? mappings;
+    List<String>? headers;
 
-    return _evaluate(dataset, mapper, predictedRows);
+    switch (mapper) {
+      case MapperKind.gemini:
+        final apiKey = Platform.environment['GEMINI_API_KEY'] ?? '';
+        if (apiKey.isEmpty) {
+          throw StateError('GEMINI_API_KEY kosong.');
+        }
+        final service = AIGeminiService(
+          apiKey: apiKey,
+          disambiguateDuplicateHeaders: dedupeHeaders,
+        );
+        predictedRows = await service.mapCsvToFieldMaps(csvFile);
+        mappings = service.lastMappings;
+        headers = service.lastHeaders;
+        break;
+      case MapperKind.ruleBased:
+        predictedRows = await RuleBasedMapperService().mapCsvToFieldMaps(csvFile);
+        break;
+    }
+
+    return _evaluate(dataset, mapper, predictedRows,
+        geminiMappings: mappings, geminiHeaders: headers);
   } catch (e, stackTrace) {
     return _RunResult.error(
       datasetId: dataset.id,
@@ -153,25 +214,13 @@ Future<_RunResult> _runOne(GroundTruthDataset dataset, MapperKind mapper) async 
   }
 }
 
-Future<List<Map<String, String?>>> _runGeminiMapper(File csvFile) async {
-  final apiKey = Platform.environment['GEMINI_API_KEY'] ?? '';
-  if (apiKey.isEmpty) {
-    throw StateError('GEMINI_API_KEY kosong.');
-  }
-  final service = AIGeminiService(apiKey: apiKey);
-  return service.mapCsvToFieldMaps(csvFile);
-}
-
-Future<List<Map<String, String?>>> _runRuleBasedMapper(File csvFile) async {
-  final service = RuleBasedMapperService();
-  return service.mapCsvToFieldMaps(csvFile);
-}
-
 _RunResult _evaluate(
   GroundTruthDataset dataset,
   MapperKind mapper,
-  List<Map<String, String?>> predictedRows,
-) {
+  List<Map<String, String?>> predictedRows, {
+  Map<String, dynamic>? geminiMappings,
+  List<String>? geminiHeaders,
+}) {
   final rowsToCompare = dataset.expectedRows.length < predictedRows.length
       ? dataset.expectedRows.length
       : predictedRows.length;
@@ -219,6 +268,9 @@ _RunResult _evaluate(
     fieldsExpected: fieldsExpected,
     fieldsPredicted: fieldsPredicted,
     fieldsCorrect: fieldsCorrect,
+    predictedRows: predictedRows,
+    geminiMappings: geminiMappings,
+    geminiHeaders: geminiHeaders,
   );
 }
 
@@ -244,26 +296,19 @@ String? _normalize(dynamic value) {
 }
 
 // ============================================================================
-// 🆕 FUNGSI EXPORT
+// FUNGSI EXPORT
 // ============================================================================
 
-/// Generate CSV dari data hasil test
 String _generateCsv(List<Map<String, dynamic>> data) {
   final buffer = StringBuffer();
   final headers = data.first.keys.toList();
-
-  // Header
   buffer.writeln(headers.map(_escapeCsv).join(','));
-
-  // Rows
   for (final row in data) {
     buffer.writeln(headers.map((h) => _escapeCsv(row[h])).join(','));
   }
-
   return buffer.toString();
 }
 
-/// Escape nilai untuk CSV (handle koma, quote, newline)
 String _escapeCsv(dynamic value) {
   if (value == null) return '""';
   final str = value.toString();
@@ -273,13 +318,13 @@ String _escapeCsv(dynamic value) {
   return str;
 }
 
-/// Generate HTML Report yang cantik dan profesional
 String _generateHtmlReport(List<Map<String, dynamic>> data, List<MapperKind> mappers) {
   final avgF1 = data.map((e) => (e['f1Score'] as num).toDouble()).reduce((a, b) => a + b) / data.length;
   final totalCorrect = data.fold<int>(0, (sum, e) => sum + (e['fieldsCorrect'] as int));
   final totalExpected = data.fold<int>(0, (sum, e) => sum + (e['fieldsExpected'] as int));
   final perfectCount = data.where((e) => (e['f1Score'] as num) == 1.0).length;
   final errorCount = data.where((e) => e['status'] == 'ERROR').length;
+  final runId = data.first['runId'];
 
   final rows = data.map((row) {
     final f1 = (row['f1Score'] as num).toDouble() * 100;
@@ -341,7 +386,6 @@ String _generateHtmlReport(List<Map<String, dynamic>> data, List<MapperKind> map
       border-left: 4px solid #3b82f6;
     }
     .summary-card.highlight { border-left-color: #16a34a; }
-    .summary-card.warning { border-left-color: #ca8a04; }
     .summary-card.danger { border-left-color: #dc2626; }
     .summary-card .label {
       font-size: 0.85em;
@@ -350,16 +394,8 @@ String _generateHtmlReport(List<Map<String, dynamic>> data, List<MapperKind> map
       letter-spacing: 0.5px;
       margin-bottom: 8px;
     }
-    .summary-card .value {
-      font-size: 2em;
-      font-weight: 700;
-      color: #0f172a;
-    }
-    .summary-card .sub {
-      font-size: 0.85em;
-      color: #64748b;
-      margin-top: 4px;
-    }
+    .summary-card .value { font-size: 2em; font-weight: 700; color: #0f172a; }
+    .summary-card .sub { font-size: 0.85em; color: #64748b; margin-top: 4px; }
     .section {
       background: white;
       border-radius: 12px;
@@ -374,14 +410,8 @@ String _generateHtmlReport(List<Map<String, dynamic>> data, List<MapperKind> map
       padding-bottom: 12px;
       border-bottom: 2px solid #e2e8f0;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9em;
-    }
-    thead {
-      background: #f1f5f9;
-    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+    thead { background: #f1f5f9; }
     th {
       padding: 12px 14px;
       text-align: left;
@@ -391,18 +421,11 @@ String _generateHtmlReport(List<Map<String, dynamic>> data, List<MapperKind> map
       font-size: 0.75em;
       letter-spacing: 0.5px;
     }
-    td {
-      padding: 14px;
-      border-bottom: 1px solid #e2e8f0;
-    }
+    td { padding: 14px; border-bottom: 1px solid #e2e8f0; }
     tr:hover { background: #f8fafc; }
     td.num { text-align: right; font-variant-numeric: tabular-nums; }
     th.num { text-align: right; }
-    .f1-cell {
-      text-align: center;
-      border-radius: 6px;
-      font-variant-numeric: tabular-nums;
-    }
+    .f1-cell { text-align: center; border-radius: 6px; font-variant-numeric: tabular-nums; }
     code {
       background: #f1f5f9;
       padding: 2px 8px;
@@ -410,13 +433,7 @@ String _generateHtmlReport(List<Map<String, dynamic>> data, List<MapperKind> map
       font-size: 0.85em;
       color: #475569;
     }
-    footer {
-      text-align: center;
-      color: #64748b;
-      font-size: 0.85em;
-      margin-top: 40px;
-      padding: 20px;
-    }
+    footer { text-align: center; color: #64748b; font-size: 0.85em; margin-top: 40px; padding: 20px; }
     @media print {
       body { background: white; padding: 0; }
       .section, .summary-card { box-shadow: none; border: 1px solid #e2e8f0; }
@@ -428,7 +445,7 @@ String _generateHtmlReport(List<Map<String, dynamic>> data, List<MapperKind> map
     <header>
       <h1>📊 Edge Case Batch Test Report</h1>
       <p>Strusa CSV Mapper Robustness Evaluation • Generated: ${DateTime.now().toString().split('.').first}</p>
-      <p>Mappers Tested: ${mappers.map((m) => m.name).join(', ')}</p>
+      <p>Mappers Tested: ${mappers.map((m) => m.name).join(', ')} • Run: $runId</p>
     </header>
 
     <div class="summary-grid">
@@ -440,7 +457,7 @@ String _generateHtmlReport(List<Map<String, dynamic>> data, List<MapperKind> map
       <div class="summary-card">
         <div class="label">Total Fields Correct</div>
         <div class="value">$totalCorrect / $totalExpected</div>
-        <div class="sub">${((totalCorrect / totalExpected) * 100).toStringAsFixed(1)}% overall accuracy</div>
+        <div class="sub">${totalExpected == 0 ? '0.0' : ((totalCorrect / totalExpected) * 100).toStringAsFixed(1)}% overall accuracy</div>
       </div>
       <div class="summary-card highlight">
         <div class="label">Perfect Scores (100%)</div>
@@ -484,7 +501,6 @@ String _generateHtmlReport(List<Map<String, dynamic>> data, List<MapperKind> map
 </html>''';
 }
 
-/// Cetak ringkasan statistik di terminal
 void _printSummary(List<Map<String, dynamic>> data) {
   final avgF1 = data.map((e) => (e['f1Score'] as num).toDouble()).reduce((a, b) => a + b) / data.length;
   final perfectCount = data.where((e) => (e['f1Score'] as num) == 1.0).length;

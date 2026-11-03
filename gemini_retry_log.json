@@ -1,0 +1,156 @@
+{
+  "summary": {
+    "total_api_calls": 4,
+    "first_pass_valid": 4,
+    "first_pass_invalid": 0,
+    "retries": 0,
+    "avg_latency_ms": 1649.2,
+    "median_latency_ms": 1311.6
+  },
+  "results": [
+    {
+      "datasetId": "agenpulsa_agustus_anonim",
+      "headers": [
+        "ID",
+        "Produk",
+        "Provider",
+        "Nominal",
+        "ID Plgn",
+        "NO. HP",
+        "Harga",
+        "Pembayaran",
+        "Tanggal",
+        "Status"
+      ],
+      "mappings": {
+        "transactionNumber": "ID",
+        "transactionDate": "Tanggal",
+        "customerName": null,
+        "customerPhone": "NO. HP",
+        "productType": "Provider",
+        "productName": "Produk",
+        "amount": "Nominal",
+        "adminFee": null,
+        "totalAmount": "Harga",
+        "paymentStatus": "Status",
+        "paymentMethod": "Pembayaran",
+        "meterNumber": null,
+        "customerId": "ID Plgn",
+        "tariff": null,
+        "period": null,
+        "tokenNumber": null,
+        "kwh": null,
+        "packageDescription": null
+      },
+      "elapsedMs": 1568
+    },
+    {
+      "datasetId": "agenpulsa_september_anonim",
+      "headers": [
+        "ID",
+        "Produk",
+        "Provider",
+        "Nominal",
+        "ID Plgn",
+        "NO. HP",
+        "Harga",
+        "Pembayaran",
+        "Tanggal",
+        "Status"
+      ],
+      "mappings": {
+        "transactionNumber": "ID",
+        "transactionDate": "Tanggal",
+        "customerName": null,
+        "customerPhone": "NO. HP",
+        "productType": null,
+        "productName": "Produk",
+        "amount": "Nominal",
+        "adminFee": null,
+        "totalAmount": "Harga",
+        "paymentStatus": "Status",
+        "paymentMethod": "Pembayaran",
+        "meterNumber": null,
+        "customerId": "ID Plgn",
+        "tariff": null,
+        "period": null,
+        "tokenNumber": null,
+        "kwh": null,
+        "packageDescription": null
+      },
+      "elapsedMs": 3003
+    },
+    {
+      "datasetId": "orderkuota_agustus_anonim",
+      "headers": [
+        "ID",
+        "Produk",
+        "Provider",
+        "Nominal",
+        "ID Plgn",
+        "NO. HP",
+        "Harga",
+        "Pembayaran",
+        "Tanggal",
+        "Status"
+      ],
+      "mappings": {
+        "transactionNumber": "ID",
+        "transactionDate": "Tanggal",
+        "customerName": null,
+        "customerPhone": "NO. HP",
+        "productType": "Provider",
+        "productName": "Produk",
+        "amount": "Nominal",
+        "adminFee": null,
+        "totalAmount": "Harga",
+        "paymentStatus": "Status",
+        "paymentMethod": "Pembayaran",
+        "meterNumber": null,
+        "customerId": "ID Plgn",
+        "tariff": null,
+        "period": null,
+        "tokenNumber": null,
+        "kwh": null,
+        "packageDescription": null
+      },
+      "elapsedMs": 1056
+    },
+    {
+      "datasetId": "orderkuota_september_anonim",
+      "headers": [
+        "ID",
+        "Produk",
+        "Provider",
+        "Nominal",
+        "ID Plgn",
+        "NO. HP",
+        "Harga",
+        "Pembayaran",
+        "Tanggal",
+        "Status"
+      ],
+      "mappings": {
+        "transactionNumber": "ID",
+        "transactionDate": "Tanggal",
+        "customerName": null,
+        "customerPhone": "NO. HP",
+        "productType": "Provider",
+        "productName": "Produk",
+        "amount": "Nominal",
+        "adminFee": null,
+        "totalAmount": "Harga",
+        "paymentStatus": "Status",
+        "paymentMethod": "Pembayaran",
+        "meterNumber": null,
+        "customerId": "ID Plgn",
+        "tariff": null,
+        "period": null,
+        "tokenNumber": null,
+        "kwh": null,
+        "packageDescription": null
+      },
+      "elapsedMs": 971
+    }
+  ]
+}

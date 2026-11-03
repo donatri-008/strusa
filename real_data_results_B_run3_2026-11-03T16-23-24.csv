@@ -1,0 +1,49 @@
+gtVariant,runId,datasetId,category,mapper,rowsCompared,fieldsExpected,fieldsPredicted,fieldsCorrect,precision,recall,f1Score,f1Percentage,elapsedMs,status,errorMessage
+B,run3,agenpulsa_agustus_anonim,real_data,gemini,0,0,0,0,0.0,0.0,0.0,0.0%,1216,ERROR,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.
+Please retry in 30.113451167s.
+#0      parseGenerateContentResponse (package:google_generative_ai/src/api.dart:582:54)
+#1      StackZoneSpecification._registerUnaryCallback.<anonymous closure>.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:127:36)
+#2      StackZoneSpecification._run (package:stack_trace/src/stack_zone_specification.dart:207:15)
+#3      StackZoneSpecification._registerUnaryCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:127:24)
+#4      _rootRunUnary (dart:async/zone_root.dart:48:47)
+#5      _CustomZone.runUnary (dart:async/zone.dart:816:35)
+<asynchronous suspension>
+#6      AIGeminiService.mapCsvToFieldMaps (package:strusa/services/ai_gemini_service.dart:135:22)
+<asynchronous suspension>
+#7      main.<anonymous closure> (file:///D:/DONA/Konter/strusa/test/real_data_batch_test.dart:85:21)
+<asynchronous suspension>
+#8      Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:15)
+<asynchronous suspension>
+#9      Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#10     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+"
+B,run3,agenpulsa_agustus_anonim,real_data,ruleBased,83,639,664,498,0.75,0.7793,0.7644,76.4%,200,OK,""
+B,run3,agenpulsa_september_anonim,real_data,gemini,0,0,0,0,0.0,0.0,0.0,0.0%,393,ERROR,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.
+Please retry in 29.309857423s.
+#0      parseGenerateContentResponse (package:google_generative_ai/src/api.dart:582:54)
+#1      StackZoneSpecification._registerUnaryCallback.<anonymous closure>.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:127:36)
+#2      StackZoneSpecification._run (package:stack_trace/src/stack_zone_specification.dart:207:15)
+#3      StackZoneSpecification._registerUnaryCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:127:24)
+#4      _rootRunUnary (dart:async/zone_root.dart:48:47)
+#5      _CustomZone.runUnary (dart:async/zone.dart:816:35)
+<asynchronous suspension>
+#6      AIGeminiService.mapCsvToFieldMaps (package:strusa/services/ai_gemini_service.dart:135:22)
+<asynchronous suspension>
+#7      main.<anonymous closure> (file:///D:/DONA/Konter/strusa/test/real_data_batch_test.dart:85:21)
+<asynchronous suspension>
+#8      Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:15)
+<asynchronous suspension>
+#9      Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#10     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+"
+B,run3,agenpulsa_september_anonim,real_data,ruleBased,26,208,208,151,0.726,0.726,0.726,72.6%,38,OK,""
+B,run3,orderkuota_agustus_anonim,real_data,gemini,93,711,837,711,0.8495,1.0,0.9186,91.9%,1332,OK,""
+B,run3,orderkuota_agustus_anonim,real_data,ruleBased,93,711,744,558,0.75,0.7848,0.767,76.7%,65,OK,""
+B,run3,orderkuota_september_anonim,real_data,gemini,27,205,243,205,0.8436,1.0,0.9152,91.5%,1028,OK,""
+B,run3,orderkuota_september_anonim,real_data,ruleBased,27,205,216,162,0.75,0.7902,0.7696,77.0%,27,OK,""

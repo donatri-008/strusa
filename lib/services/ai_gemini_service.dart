@@ -8,7 +8,21 @@ class AIGeminiService {
   late GenerativeModel _model;
   final String apiKey;
 
-  AIGeminiService({required this.apiKey}) {
+  /// Kalau true, header duplikat diberi akhiran " #2", " #3", dst. sebelum
+  /// masuk prompt dan sebelum dibangun rowData. Default false supaya hasil
+  /// lama (Table 9-13) tetap sebanding. Aktifkan hanya untuk eksperimen
+  /// tambahan (mis. env DEDUPE_HEADERS=1 di test).
+  final bool disambiguateDuplicateHeaders;
+
+  /// Diisi setiap kali mapCsvToFieldMaps dipanggil. Dipakai test untuk
+  /// mengekspor log mapping per dataset (cek determinisme antar-run).
+  Map<String, dynamic>? lastMappings;
+  List<String>? lastHeaders;
+
+  AIGeminiService({
+    required this.apiKey,
+    this.disambiguateDuplicateHeaders = false,
+  }) {
     _model = GenerativeModel(
       model: 'gemini-3.5-flash-lite',
       apiKey: apiKey,
@@ -93,6 +107,15 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
 ''';
   }
 
+  List<String> _disambiguate(List<String> headers) {
+    final seen = <String, int>{};
+    return headers.map((h) {
+      final n = (seen[h] ?? 0) + 1;
+      seen[h] = n;
+      return n == 1 ? h : '$h #$n';
+    }).toList();
+  }
+
   Future<List<Map<String, String?>>> mapCsvToFieldMaps(
     File csvFile, {
     String Function(List<String> headers)? promptBuilder,
@@ -101,14 +124,19 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
 
     if (fields.isEmpty) return [];
 
-    final headers = fields[0].map((e) => e.toString().trim()).toList();
+    var headers = fields[0].map((e) => e.toString().trim()).toList();
+    if (disambiguateDuplicateHeaders) headers = _disambiguate(headers);
+    lastHeaders = headers;
+    lastMappings = null;
+
     final prompt = (promptBuilder ?? buildDefaultPrompt)(headers);
 
     final content = [Content.text(prompt)];
     final response = await _model.generateContent(content);
 
     if (response.candidates.isEmpty) {
-      throw Exception('Gemini tidak mengembalikan candidate. promptFeedback: ${response.promptFeedback}');
+      throw Exception(
+          'Gemini tidak mengembalikan candidate. promptFeedback: ${response.promptFeedback}');
     }
 
     final responseText = response.text ?? '';
@@ -117,6 +145,7 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
     }
 
     final mappings = _parseAIResponse(responseText);
+    lastMappings = mappings;
     final List<Map<String, String?>> results = [];
 
     for (int i = 1; i < fields.length; i++) {
@@ -143,7 +172,7 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
         mappedRow[key] = _normalizeField(key, v?.toString());
       }
 
-      // FIX: Post-processing untuk memecah data yang tergabung (Merged Fields)
+      // Post-processing untuk memecah data yang tergabung (Merged Fields)
       _extractMergedFields(mappedRow);
 
       results.add(mappedRow);
@@ -170,29 +199,40 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
         }
 
         mappedRow['customerPhone'] = extractedPhone;
-        mappedRow['customerName'] = name.replaceAll(match.group(0)!, '').replaceAll(RegExp(r'[\s\-\(\)\|,]+'), ' ').trim();
+        mappedRow['customerName'] = name
+            .replaceAll(match.group(0)!, '')
+            .replaceAll(RegExp(r'[\s\-\(\)\|,]+'), ' ')
+            .trim();
       }
     }
 
     // 2. Ekstrak Periode dari Nama Produk jika kolom Periode kosong
     if (mappedRow['period'] == null && mappedRow['productName'] != null) {
       String prodName = mappedRow['productName']!;
-      RegExp periodRegex = RegExp(r'(?:periode|bulan)\s+([a-zA-Z0-9/\s]+)', caseSensitive: false);
+      RegExp periodRegex = RegExp(r'(?:periode|bulan)\s+([a-zA-Z0-9/\s]+)',
+          caseSensitive: false);
       var match = periodRegex.firstMatch(prodName);
       if (match != null) {
         mappedRow['period'] = match.group(1)!.trim();
-        mappedRow['productName'] = prodName.replaceAll(match.group(0)!, '').replaceAll(RegExp(r'[\s\-\|,/]+'), ' ').trim();
+        mappedRow['productName'] = prodName
+            .replaceAll(match.group(0)!, '')
+            .replaceAll(RegExp(r'[\s\-\|,/]+'), ' ')
+            .trim();
       }
     }
 
     // 3. Ekstrak No Meter dari Nama Produk jika kolom Meter kosong
     if (mappedRow['meterNumber'] == null && mappedRow['productName'] != null) {
       String prodName = mappedRow['productName']!;
-      RegExp meterRegex = RegExp(r'(?:meter|no\s+meter)\s+(\d+)', caseSensitive: false);
+      RegExp meterRegex =
+          RegExp(r'(?:meter|no\s+meter)\s+(\d+)', caseSensitive: false);
       var match = meterRegex.firstMatch(prodName);
       if (match != null) {
         mappedRow['meterNumber'] = match.group(1)!.trim();
-        mappedRow['productName'] = prodName.replaceAll(match.group(0)!, '').replaceAll(RegExp(r'[\s\-\|,]+'), ' ').trim();
+        mappedRow['productName'] = prodName
+            .replaceAll(match.group(0)!, '')
+            .replaceAll(RegExp(r'[\s\-\|,]+'), ' ')
+            .trim();
       }
     }
 
@@ -203,7 +243,10 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
       var match = kwhRegex.firstMatch(prodName);
       if (match != null) {
         mappedRow['kwh'] = match.group(1)!.replaceAll('.', '').trim();
-        mappedRow['productName'] = prodName.replaceAll(match.group(0)!, '').replaceAll(RegExp(r'[\s\-\|,/]+'), ' ').trim();
+        mappedRow['productName'] = prodName
+            .replaceAll(match.group(0)!, '')
+            .replaceAll(RegExp(r'[\s\-\|,/]+'), ' ')
+            .trim();
       }
     }
   }
@@ -231,7 +274,6 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
     if (key == 'transactionDate') {
       try {
         DateTime dt = DateTime.parse(val);
-        // ✅ FIX Bug 1: pakai dash, samakan dengan format ground truth
         return '${dt.year}-${dt.month.toString().padLeft(2, '0')}-${dt.day.toString().padLeft(2, '0')}';
       } catch (_) {}
 
@@ -241,7 +283,6 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
         int day = int.parse(match.group(1)!);
         int month = int.parse(match.group(2)!);
         int year = int.parse(match.group(3)!);
-        // ✅ FIX Bug 1: pakai dash
         return '$year-${month.toString().padLeft(2, '0')}-${day.toString().padLeft(2, '0')}';
       }
 
@@ -251,18 +292,17 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
         int year = int.parse(match.group(1)!);
         int month = int.parse(match.group(2)!);
         int day = int.parse(match.group(3)!);
-        // ✅ FIX Bug 1: pakai dash
         return '$year-${month.toString().padLeft(2, '0')}-${day.toString().padLeft(2, '0')}';
       }
 
       RegExp ddmmyyyyRegex = RegExp(r'^(\d{2})(\d{2})(\d{4})$');
       match = ddmmyyyyRegex.firstMatch(val);
       if (match != null) {
-        // ✅ FIX Bug 1: pakai dash
         return '${match.group(3)}-${match.group(2)}-${match.group(1)}';
       }
 
-      final dmyShortMatch = RegExp(r'^(\d{1,2})[/-](\d{1,2})[/-](\d{2})(?!\d)').firstMatch(val);
+      final dmyShortMatch =
+          RegExp(r'^(\d{1,2})[/-](\d{1,2})[/-](\d{2})(?!\d)').firstMatch(val);
       if (dmyShortMatch != null) {
         int day = int.parse(dmyShortMatch.group(1)!);
         int month = int.parse(dmyShortMatch.group(2)!);
@@ -285,7 +325,6 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
           'desember': 12, 'dec': 12, 'december': 12
         };
         int month = months[monthStr] ?? 1;
-        // ✅ FIX Bug 1: pakai dash
         return '$year-${month.toString().padLeft(2, '0')}-${day.toString().padLeft(2, '0')}';
       }
       return val;
@@ -293,30 +332,31 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
 
     // 3. Normalisasi Nominal (Amount, AdminFee, TotalAmount) jadi angka murni
     if (key == 'amount' || key == 'adminFee' || key == 'totalAmount') {
-      String cleaned = val.replaceAll('Rp', '').replaceAll(' ', '').replaceAll('-', '').trim();
+      String cleaned =
+          val.replaceAll('Rp', '').replaceAll(' ', '').replaceAll('-', '').trim();
 
-      // Deteksi: kalau ada titik DAN koma, yang terakhir muncul adalah desimal
+      // Kalau ada titik DAN koma, yang terakhir muncul adalah desimal
       final lastDot = cleaned.lastIndexOf('.');
       final lastComma = cleaned.lastIndexOf(',');
 
       if (lastDot != -1 && lastComma != -1) {
         if (lastComma > lastDot) {
-          // format "1.234,56" -> titik ribuan, koma desimal
+          // "1.234,56" -> titik ribuan, koma desimal
           cleaned = cleaned.replaceAll('.', '').replaceAll(',', '.');
         } else {
-          // format "1,234.56" -> koma ribuan, titik desimal
+          // "1,234.56" -> koma ribuan, titik desimal
           cleaned = cleaned.replaceAll(',', '');
         }
       } else if (lastComma != -1) {
-        // hanya koma: cek apakah pola desimal (2 digit di belakang) atau ribuan
         final afterComma = cleaned.substring(lastComma + 1);
         cleaned = afterComma.length == 2
-            ? cleaned.replaceAll(',', '.')   // "150,50" -> desimal
-            : cleaned.replaceAll(',', '');   // "150,000" -> ribuan
+            ? cleaned.replaceAll(',', '.') // "150,50" -> desimal
+            : cleaned.replaceAll(',', ''); // "150,000" -> ribuan
       } else if (lastDot != -1) {
         final afterDot = cleaned.substring(lastDot + 1);
         if (afterDot.length == 2 || afterDot == '00' || afterDot.isEmpty) {
-          cleaned = cleaned.substring(0, lastDot) + (afterDot.isEmpty ? '' : '.$afterDot');
+          cleaned = cleaned.substring(0, lastDot) +
+              (afterDot.isEmpty ? '' : '.$afterDot');
         } else {
           cleaned = cleaned.replaceAll('.', ''); // ribuan gaya "1.000.000"
         }
@@ -330,19 +370,29 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
     // 4. Normalisasi ProductType
     if (key == 'productType') {
       if (valLower.contains('token')) return 'token';
-      if (valLower.contains('paket') || valLower.contains('data') || valLower.contains('kuota')) return 'paketdata';
+      if (valLower.contains('paket') ||
+          valLower.contains('data') ||
+          valLower.contains('kuota')) {
+        return 'paketdata';
+      }
       if (valLower.contains('listrik')) return 'listrik';
       if (valLower.contains('pulsa')) return 'pulsa';
       if (valLower.contains('bpjs')) return 'bpjs';
       if (valLower.contains('pdam') || valLower.contains('air')) return 'pdam';
-      if (valLower.contains('indihome') || valLower.contains('internet')) return 'indihome';
+      if (valLower.contains('indihome') || valLower.contains('internet')) {
+        return 'indihome';
+      }
       return 'lainnya';
     }
 
     // 5. Normalisasi PaymentStatus
     if (key == 'paymentStatus') {
-      if (valLower.contains('lunas') || valLower.contains('sukses') || valLower.contains('berhasil') || 
-          valLower.contains('paid') || valLower.contains('ok') || valLower.contains('success')) {
+      if (valLower.contains('lunas') ||
+          valLower.contains('sukses') ||
+          valLower.contains('berhasil') ||
+          valLower.contains('paid') ||
+          valLower.contains('ok') ||
+          valLower.contains('success')) {
         return 'lunas';
       }
       return 'belumlunas';
@@ -351,30 +401,42 @@ Hanya berikan JSON, tanpa penjelasan tambahan.
     // 6. Normalisasi PaymentMethod
     if (key == 'paymentMethod') {
       if (valLower.contains('cash') || valLower.contains('tunai')) return 'cash';
-      if (valLower.contains('transfer') || valLower.contains('bank')) return 'transfer';
+      if (valLower.contains('transfer') || valLower.contains('bank')) {
+        return 'transfer';
+      }
       if (valLower.contains('qris')) return 'qris';
-      if (valLower.contains('wallet') || valLower.contains('ewallet') || valLower.contains('ovo') || 
-          valLower.contains('gopay') || valLower.contains('dana') || valLower.contains('shopee')) {
+      if (valLower.contains('wallet') ||
+          valLower.contains('ewallet') ||
+          valLower.contains('ovo') ||
+          valLower.contains('gopay') ||
+          valLower.contains('dana') ||
+          valLower.contains('shopee')) {
         return 'ewallet';
       }
-      // ✅ FIX Bug 2: "Saldo Akun" (OrderKuota/AgenPulsa) -> anggap ewallet
-      // (saldo reseller), sekaligus dicatat sbg temuan RM5.
+      // "Saldo Akun" (OrderKuota/AgenPulsa) -> ewallet (saldo reseller);
+      // dicatat sebagai temuan RM5.
       if (valLower.contains('saldo')) return 'ewallet';
       return 'cash';
     }
 
     // 7. Pembersihan Prefix untuk MeterNumber & CustomerId
     if (key == 'meterNumber' || key == 'customerId') {
-      String cleaned = val.replaceAll(RegExp(r'^(no\s+meter|id\s+pelanggan|meter|id)\s*', caseSensitive: false), '').trim();
+      String cleaned = val
+          .replaceAll(
+              RegExp(r'^(no\s+meter|id\s+pelanggan|meter|id)\s*',
+                  caseSensitive: false),
+              '')
+          .trim();
       return cleaned.isEmpty ? null : cleaned;
     }
-    
-    return val; 
+
+    return val;
   }
 
   Map<String, dynamic> _parseAIResponse(String response) {
     try {
-      String cleaned = response.replaceAll('```json', '').replaceAll('```', '').trim();
+      String cleaned =
+          response.replaceAll('```json', '').replaceAll('```', '').trim();
       int startIndex = cleaned.indexOf('{');
       int endIndex = cleaned.lastIndexOf('}') + 1;
 

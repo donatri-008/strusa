@@ -1,0 +1,232 @@
+[
+  {
+    "datasetId": "ec01_missing_columns",
+    "headers": [
+      "No Transaksi",
+      "Tanggal",
+      "Nama Pelanggan",
+      "Jenis Produk",
+      "Nama Produk",
+      "Nominal",
+      "Status"
+    ],
+    "mappings": {
+      "transactionNumber": "No Transaksi",
+      "transactionDate": "Tanggal",
+      "customerName": "Nama Pelanggan",
+      "customerPhone": null,
+      "productType": "Jenis Produk",
+      "productName": "Nama Produk",
+      "amount": "Nominal",
+      "adminFee": null,
+      "totalAmount": null,
+      "paymentStatus": "Status",
+      "paymentMethod": null,
+      "meterNumber": null,
+      "customerId": null,
+      "tariff": null,
+      "period": null,
+      "tokenNumber": null,
+      "kwh": null,
+      "packageDescription": null
+    },
+    "elapsedMs": 1565
+  },
+  {
+    "datasetId": "ec02_empty_values",
+    "headers": [
+      "No Transaksi",
+      "Tanggal",
+      "Nama Pelanggan",
+      "No HP",
+      "Jenis Produk",
+      "Nama Produk",
+      "Nominal",
+      "Biaya Admin",
+      "Total",
+      "Status",
+      "Metode Bayar"
+    ],
+    "mappings": {
+      "transactionNumber": "No Transaksi",
+      "transactionDate": "Tanggal",
+      "customerName": "Nama Pelanggan",
+      "customerPhone": "No HP",
+      "productType": "Jenis Produk",
+      "productName": "Nama Produk",
+      "amount": "Nominal",
+      "adminFee": "Biaya Admin",
+      "totalAmount": "Total",
+      "paymentStatus": "Status",
+      "paymentMethod": "Metode Bayar",
+      "meterNumber": null,
+      "customerId": null,
+      "tariff": null,
+      "period": null,
+      "tokenNumber": null,
+      "kwh": null,
+      "packageDescription": null
+    },
+    "elapsedMs": 1489
+  },
+  {
+    "datasetId": "ec03_inconsistent_dates",
+    "headers": [
+      "No Transaksi",
+      "Tanggal Transaksi",
+      "Nama Pelanggan",
+      "Jenis Produk",
+      "Nama Produk",
+      "Nominal",
+      "Biaya Admin",
+      "Total",
+      "Status",
+      "Metode"
+    ],
+    "mappings": {
+      "transactionNumber": "No Transaksi",
+      "transactionDate": "Tanggal Transaksi",
+      "customerName": "Nama Pelanggan",
+      "customerPhone": null,
+      "productType": "Jenis Produk",
+      "productName": "Nama Produk",
+      "amount": "Nominal",
+      "adminFee": "Biaya Admin",
+      "totalAmount": "Total",
+      "paymentStatus": "Status",
+      "paymentMethod": "Metode",
+      "meterNumber": null,
+      "customerId": null,
+      "tariff": null,
+      "period": null,
+      "tokenNumber": null,
+      "kwh": null,
+      "packageDescription": null
+    },
+    "elapsedMs": 1177
+  },
+  {
+    "datasetId": "ec04_currency_formatting",
+    "headers": [
+      "No Transaksi",
+      "Tanggal",
+      "Nama Pelanggan",
+      "Jenis Produk",
+      "Nama Produk",
+      "Nominal",
+      "Biaya Admin",
+      "Total",
+      "Status",
+      "Metode"
+    ],
+    "mappings": {
+      "transactionNumber": "No Transaksi",
+      "transactionDate": "Tanggal",
+      "customerName": "Nama Pelanggan",
+      "customerPhone": null,
+      "productType": "Jenis Produk",
+      "productName": "Nama Produk",
+      "amount": "Nominal",
+      "adminFee": "Biaya Admin",
+      "totalAmount": "Total",
+      "paymentStatus": "Status",
+      "paymentMethod": "Metode",
+      "meterNumber": null,
+      "customerId": null,
+      "tariff": null,
+      "period": null,
+      "tokenNumber": null,
+      "kwh": null,
+      "packageDescription": null
+    },
+    "elapsedMs": 1015
+  },
+  {
+    "datasetId": "ec05_non_standard_status",
+    "headers": [
+      "No Transaksi",
+      "Tanggal",
+      "Nama Pelanggan",
+      "Jenis Produk",
+      "Nama Produk",
+      "Nominal",
+      "Biaya Admin",
+      "Total",
+      "Status",
+      "Metode"
+    ],
+    "mappings": {
+      "transactionNumber": "No Transaksi",
+      "transactionDate": "Tanggal",
+      "customerName": "Nama Pelanggan",
+      "customerPhone": null,
+      "productType": "Jenis Produk",
+      "productName": "Nama Produk",
+      "amount": "Nominal",
+      "adminFee": "Biaya Admin",
+      "totalAmount": "Total",
+      "paymentStatus": "Status",
+      "paymentMethod": "Metode",
+      "meterNumber": null,
+      "customerId": null,
+      "tariff": null,
+      "period": null,
+      "tokenNumber": null,
+      "kwh": null,
+      "packageDescription": null
+    },
+    "elapsedMs": 1155
+  },
+  {
+    "datasetId": "ec06_duplicate_headers",
+    "headers": [
+      "ID",
+      "Tanggal",
+      "Nama",
+      "Nominal",
+      "Nominal",
+      "Keterangan",
+      "Keterangan",
+      "Status"
+    ],
+    "mappings": {
+      "transactionNumber": "ID",
+      "transactionDate": "Tanggal",
+      "customerName": "Nama",
+      "customerPhone": null,
+      "productType": "Keterangan",
+      "productName": "Keterangan",
+      "amount": "Nominal",
+      "adminFee": null,
+      "totalAmount": null,
+      "paymentStatus": "Status",
+      "paymentMethod": null,
+      "meterNumber": null,
+      "customerId": null,
+      "tariff": null,
+      "period": null,
+      "tokenNumber": null,
+      "kwh": null,
+      "packageDescription": null
+    },
+    "elapsedMs": 982
+  },
+  {
+    "datasetId": "ec07_whitespace_casing",
+    "headers": [],
+    "mappings": null,
+    "elapsedMs": 364
+  },
+  {
+    "datasetId": "ec08_merged_fields",
+    "headers": [],
+    "mappings": null,
+    "elapsedMs": 374
+  },
+  {
+    "datasetId": "ec09_platform_schema_variation",
+    "headers": [],
+    "mappings": null,
+    "elapsedMs": 316
+  }
+]

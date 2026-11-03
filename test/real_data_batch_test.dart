@@ -6,6 +6,10 @@ import 'package:strusa/models/real_data_mapping.dart';
 import 'package:strusa/services/ai_gemini_service.dart';
 import 'package:strusa/services/rule_based_mapper_service.dart';
 import 'package:strusa/services/mapping_evaluator_service.dart';
+import 'package:strusa/models/evaluation_result.dart';
+import 'package:strusa/models/ground_truth_mapping.dart';
+import 'export_cells.dart';
+import 'gt_variants.dart';
 
 enum MapperKind { gemini, ruleBased }
 
@@ -25,26 +29,65 @@ List<Map<String, String?>> _alignByKey(
 
 void main() {
   final evaluator = MappingEvaluatorService();
+  final ex = CellExporter(); // env: RUN_ID, GT_VARIANT
+  final dedupeHeaders = Platform.environment['DEDUPE_HEADERS'] == '1';
 
-  // 🆕 Tampung semua hasil test untuk diekspor
+  // Tampung semua hasil test untuk diekspor
   final List<Map<String, dynamic>> exportData = [];
   final mappersToRun = <MapperKind>[MapperKind.gemini, MapperKind.ruleBased];
 
-  for (final dataset in allRealDataDatasets) {
+  // Ground truth sesuai variasi (base / B / C), lihat gt_variants.dart
+  final datasets = allRealDataDatasets.map(applyGtVariant).toList();
+
+  Map<String, dynamic> buildRow(
+    GroundTruthDataset dataset,
+    String mapper,
+    MappingEvaluationReport report,
+    int elapsedMs,
+  ) {
+    return {
+      'gtVariant': ex.gtVariant,
+      'runId': ex.runId,
+      'datasetId': dataset.id,
+      'category': dataset.edgeCaseCategory,
+      'mapper': mapper,
+      'rowsCompared': report.totalRows,
+      'fieldsExpected':
+          report.fieldResults.fold<int>(0, (s, f) => s + f.tp + f.fn),
+      'fieldsPredicted':
+          report.fieldResults.fold<int>(0, (s, f) => s + f.tp + f.fp),
+      'fieldsCorrect': report.fieldResults.fold<int>(0, (s, f) => s + f.tp),
+      'precision': double.parse(report.microPrecision.toStringAsFixed(4)),
+      'recall': double.parse(report.microRecall.toStringAsFixed(4)),
+      'f1Score': double.parse(report.microF1.toStringAsFixed(4)),
+      'f1Percentage': '${(report.microF1 * 100).toStringAsFixed(1)}%',
+      'elapsedMs': elapsedMs,
+      'status': 'OK',
+      'errorMessage': null,
+    };
+  }
+
+  for (final dataset in datasets) {
     test('${dataset.id} (gemini)', () async {
       final apiKey = Platform.environment['GEMINI_API_KEY'] ?? '';
       if (apiKey.isEmpty) {
         fail('GEMINI_API_KEY kosong. Set env var dulu sebelum run.');
       }
 
+      final svc = AIGeminiService(
+        apiKey: apiKey,
+        disambiguateDuplicateHeaders: dedupeHeaders,
+      );
+
       final stopwatch = Stopwatch()..start();
       List<Map<String, String?>> predicted;
       try {
-        predicted = await AIGeminiService(apiKey: apiKey)
-            .mapCsvToFieldMaps(File(dataset.dataFilePath));
+        predicted = await svc.mapCsvToFieldMaps(File(dataset.dataFilePath));
       } catch (e, st) {
         stopwatch.stop();
         exportData.add({
+          'gtVariant': ex.gtVariant,
+          'runId': ex.runId,
           'datasetId': dataset.id,
           'category': dataset.edgeCaseCategory,
           'mapper': 'gemini',
@@ -73,25 +116,23 @@ void main() {
         elapsed: stopwatch.elapsed,
       );
 
-      exportData.add({
-        'datasetId': dataset.id,
-        'category': dataset.edgeCaseCategory,
-        'mapper': 'gemini',
-        'rowsCompared': report.totalRows,
-        'fieldsExpected': report.fieldResults.fold<int>(
-            0, (s, f) => s + f.tp + f.fn),
-        'fieldsPredicted': report.fieldResults.fold<int>(
-            0, (s, f) => s + f.tp + f.fp),
-        'fieldsCorrect':
-            report.fieldResults.fold<int>(0, (s, f) => s + f.tp),
-        'precision': double.parse(report.microPrecision.toStringAsFixed(4)),
-        'recall': double.parse(report.microRecall.toStringAsFixed(4)),
-        'f1Score': double.parse(report.microF1.toStringAsFixed(4)),
-        'f1Percentage': '${(report.microF1 * 100).toStringAsFixed(1)}%',
-        'elapsedMs': stopwatch.elapsedMilliseconds,
-        'status': 'OK',
-        'errorMessage': null,
-      });
+      exportData.add(
+          buildRow(dataset, 'gemini', report, stopwatch.elapsedMilliseconds));
+
+      ex.addMapping(dataset.id, svc.lastHeaders ?? [], svc.lastMappings,
+          stopwatch.elapsedMilliseconds);
+      ex.addCells(
+        suite: 'real',
+        datasetId: dataset.id,
+        category: dataset.edgeCaseCategory,
+        mapper: 'gemini',
+        gt: dataset.toFieldMaps(),
+        pred: aligned,
+        fields: kTargetSchemaFields,
+        match: evaluator.isMatch,
+      );
+      ex.addLatency(
+          'real', dataset.id, 'gemini', stopwatch.elapsedMilliseconds);
 
       print(report.toReadableSummary());
     }, timeout: const Timeout(Duration(minutes: 3)));
@@ -111,86 +152,74 @@ void main() {
         elapsed: stopwatch.elapsed,
       );
 
-      exportData.add({
-        'datasetId': dataset.id,
-        'category': dataset.edgeCaseCategory,
-        'mapper': 'ruleBased',
-        'rowsCompared': report.totalRows,
-        'fieldsExpected': report.fieldResults.fold<int>(
-            0, (s, f) => s + f.tp + f.fn),
-        'fieldsPredicted': report.fieldResults.fold<int>(
-            0, (s, f) => s + f.tp + f.fp),
-        'fieldsCorrect':
-            report.fieldResults.fold<int>(0, (s, f) => s + f.tp),
-        'precision': double.parse(report.microPrecision.toStringAsFixed(4)),
-        'recall': double.parse(report.microRecall.toStringAsFixed(4)),
-        'f1Score': double.parse(report.microF1.toStringAsFixed(4)),
-        'f1Percentage': '${(report.microF1 * 100).toStringAsFixed(1)}%',
-        'elapsedMs': stopwatch.elapsedMilliseconds,
-        'status': 'OK',
-        'errorMessage': null,
-      });
+      exportData.add(buildRow(
+          dataset, 'ruleBased', report, stopwatch.elapsedMilliseconds));
+
+      ex.addCells(
+        suite: 'real',
+        datasetId: dataset.id,
+        category: dataset.edgeCaseCategory,
+        mapper: 'ruleBased',
+        gt: dataset.toFieldMaps(),
+        pred: aligned,
+        fields: kTargetSchemaFields,
+        match: evaluator.isMatch,
+      );
+      ex.addLatency(
+          'real', dataset.id, 'ruleBased', stopwatch.elapsedMilliseconds);
 
       print(report.toReadableSummary());
     });
   }
 
-  // 🆕 Export ke 3 format setelah semua test selesai
+  // Export setelah semua test selesai
   tearDownAll(() async {
     if (exportData.isEmpty) {
       print('\n⚠️ Tidak ada data untuk diekspor.');
       return;
     }
 
+    await ex.flush(); // out/cells_*.csv, out/latency_*.csv, out/mappings_*.json
+
     final timestamp = DateTime.now()
         .toIso8601String()
         .replaceAll(':', '-')
         .split('.')
         .first;
+    final tag = '${ex.gtVariant}_${ex.runId}_$timestamp';
 
-    // 1. Export ke JSON
-    final jsonFile = File('real_data_results_$timestamp.json');
+    final jsonFile = File('real_data_results_$tag.json');
     await jsonFile.writeAsString(
       const JsonEncoder.withIndent('  ').convert(exportData),
     );
     print('\n📄 JSON: ${jsonFile.absolute.path}');
 
-    // 2. Export ke CSV
-    final csvFile = File('real_data_results_$timestamp.csv');
+    final csvFile = File('real_data_results_$tag.csv');
     await csvFile.writeAsString(_generateCsv(exportData));
     print('📊 CSV:  ${csvFile.absolute.path}');
 
-    // 3. Export ke HTML Report
-    final htmlFile = File('real_data_report_$timestamp.html');
+    final htmlFile = File('real_data_report_$tag.html');
     await htmlFile.writeAsString(_generateHtmlReport(exportData, mappersToRun));
     print('🌐 HTML: ${htmlFile.absolute.path}');
 
-    // 4. Cetak ringkasan akhir
     _printSummary(exportData);
   });
 }
 
 // ============================================================================
-// 🆕 FUNGSI EXPORT
+// FUNGSI EXPORT
 // ============================================================================
 
-/// Generate CSV dari data hasil test
 String _generateCsv(List<Map<String, dynamic>> data) {
   final buffer = StringBuffer();
   final headers = data.first.keys.toList();
-
-  // Header
   buffer.writeln(headers.map(_escapeCsv).join(','));
-
-  // Rows
   for (final row in data) {
     buffer.writeln(headers.map((h) => _escapeCsv(row[h])).join(','));
   }
-
   return buffer.toString();
 }
 
-/// Escape nilai untuk CSV (handle koma, quote, newline)
 String _escapeCsv(dynamic value) {
   if (value == null) return '""';
   final str = value.toString();
@@ -200,17 +229,19 @@ String _escapeCsv(dynamic value) {
   return str;
 }
 
-/// Generate HTML Report yang cantik dan profesional
 String _generateHtmlReport(
     List<Map<String, dynamic>> data, List<MapperKind> mappers) {
-  final avgF1 = data.map((e) => (e['f1Score'] as num).toDouble()).reduce((a, b) => a + b) /
-      data.length;
+  final avgF1 =
+      data.map((e) => (e['f1Score'] as num).toDouble()).reduce((a, b) => a + b) /
+          data.length;
   final totalCorrect =
       data.fold<int>(0, (sum, e) => sum + (e['fieldsCorrect'] as int));
   final totalExpected =
       data.fold<int>(0, (sum, e) => sum + (e['fieldsExpected'] as int));
   final perfectCount = data.where((e) => (e['f1Score'] as num) == 1.0).length;
   final errorCount = data.where((e) => e['status'] == 'ERROR').length;
+  final variant = data.first['gtVariant'];
+  final runId = data.first['runId'];
 
   final rows = data.map((row) {
     final f1 = (row['f1Score'] as num).toDouble() * 100;
@@ -273,7 +304,6 @@ String _generateHtmlReport(
       border-left: 4px solid #3b82f6;
     }
     .summary-card.highlight { border-left-color: #16a34a; }
-    .summary-card.warning { border-left-color: #ca8a04; }
     .summary-card.danger { border-left-color: #dc2626; }
     .summary-card .label {
       font-size: 0.85em;
@@ -282,16 +312,8 @@ String _generateHtmlReport(
       letter-spacing: 0.5px;
       margin-bottom: 8px;
     }
-    .summary-card .value {
-      font-size: 2em;
-      font-weight: 700;
-      color: #0f172a;
-    }
-    .summary-card .sub {
-      font-size: 0.85em;
-      color: #64748b;
-      margin-top: 4px;
-    }
+    .summary-card .value { font-size: 2em; font-weight: 700; color: #0f172a; }
+    .summary-card .sub { font-size: 0.85em; color: #64748b; margin-top: 4px; }
     .section {
       background: white;
       border-radius: 12px;
@@ -306,14 +328,8 @@ String _generateHtmlReport(
       padding-bottom: 12px;
       border-bottom: 2px solid #e2e8f0;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 0.9em;
-    }
-    thead {
-      background: #f1f5f9;
-    }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+    thead { background: #f1f5f9; }
     th {
       padding: 12px 14px;
       text-align: left;
@@ -323,18 +339,11 @@ String _generateHtmlReport(
       font-size: 0.75em;
       letter-spacing: 0.5px;
     }
-    td {
-      padding: 14px;
-      border-bottom: 1px solid #e2e8f0;
-    }
+    td { padding: 14px; border-bottom: 1px solid #e2e8f0; }
     tr:hover { background: #f8fafc; }
     td.num { text-align: right; font-variant-numeric: tabular-nums; }
     th.num { text-align: right; }
-    .f1-cell {
-      text-align: center;
-      border-radius: 6px;
-      font-variant-numeric: tabular-nums;
-    }
+    .f1-cell { text-align: center; border-radius: 6px; font-variant-numeric: tabular-nums; }
     code {
       background: #f1f5f9;
       padding: 2px 8px;
@@ -342,13 +351,7 @@ String _generateHtmlReport(
       font-size: 0.85em;
       color: #475569;
     }
-    footer {
-      text-align: center;
-      color: #64748b;
-      font-size: 0.85em;
-      margin-top: 40px;
-      padding: 20px;
-    }
+    footer { text-align: center; color: #64748b; font-size: 0.85em; margin-top: 40px; padding: 20px; }
     @media print {
       body { background: white; padding: 0; }
       .section, .summary-card { box-shadow: none; border: 1px solid #e2e8f0; }
@@ -360,7 +363,7 @@ String _generateHtmlReport(
     <header>
       <h1>📊 Real Data Batch Test Report</h1>
       <p>Strusa CSV Mapper Evaluation (Data Riil OrderKuota &amp; AgenPulsa) • Generated: ${DateTime.now().toString().split('.').first}</p>
-      <p>Mappers Tested: ${mappers.map((m) => m.name).join(', ')}</p>
+      <p>Mappers Tested: ${mappers.map((m) => m.name).join(', ')} • GT variant: $variant • Run: $runId</p>
     </header>
 
     <div class="summary-grid">
@@ -417,10 +420,10 @@ String _generateHtmlReport(
 </html>''';
 }
 
-/// Cetak ringkasan statistik di terminal
 void _printSummary(List<Map<String, dynamic>> data) {
-  final avgF1 = data.map((e) => (e['f1Score'] as num).toDouble()).reduce((a, b) => a + b) /
-      data.length;
+  final avgF1 =
+      data.map((e) => (e['f1Score'] as num).toDouble()).reduce((a, b) => a + b) /
+          data.length;
   final perfectCount = data.where((e) => (e['f1Score'] as num) == 1.0).length;
   final errorCount = data.where((e) => e['status'] == 'ERROR').length;
 

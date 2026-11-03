@@ -88,6 +88,8 @@ class MappingEvaluatorService {
     return trimmed.isEmpty ? null : trimmed;
   }
 
+    bool isMatch(String field, String gt, String pred) => _isMatch(field, gt, pred);
+
   bool _isMatch(String field, String gt, String pred) {
     if (_numericFields.contains(field)) {
       final gtNum = _parseNumeric(gt);

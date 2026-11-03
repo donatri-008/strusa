@@ -1,0 +1,85 @@
+gtVariant,runId,datasetId,category,mapper,rowsCompared,fieldsExpected,fieldsPredicted,fieldsCorrect,precision,recall,f1Score,f1Percentage,elapsedMs,status,errorMessage
+base,run2,ec01_missing_columns,missing_columns,gemini,3,21,21,21,1.0,1.0,1.0,100.0%,1565,OK,""
+base,run2,ec01_missing_columns,missing_columns,ruleBased,3,21,21,21,1.0,1.0,1.0,100.0%,18,OK,""
+base,run2,ec02_empty_values,empty_values,gemini,4,37,37,36,0.973,0.973,0.973,97.3%,1489,OK,""
+base,run2,ec02_empty_values,empty_values,ruleBased,4,37,37,37,1.0,1.0,1.0,100.0%,4,OK,""
+base,run2,ec03_inconsistent_dates,inconsistent_date_formats,gemini,5,50,50,50,1.0,1.0,1.0,100.0%,1177,OK,""
+base,run2,ec03_inconsistent_dates,inconsistent_date_formats,ruleBased,5,50,51,50,0.9804,1.0,0.9901,99.0%,13,OK,""
+base,run2,ec04_currency_formatting,currency_formatting,gemini,4,40,40,40,1.0,1.0,1.0,100.0%,1015,OK,""
+base,run2,ec04_currency_formatting,currency_formatting,ruleBased,4,40,40,40,1.0,1.0,1.0,100.0%,3,OK,""
+base,run2,ec05_non_standard_status,non_standard_status_vocabulary,gemini,5,50,50,48,0.96,0.96,0.96,96.0%,1155,OK,""
+base,run2,ec05_non_standard_status,non_standard_status_vocabulary,ruleBased,5,50,50,50,1.0,1.0,1.0,100.0%,5,OK,""
+base,run2,ec06_duplicate_headers,duplicate_ambiguous_headers,gemini,3,24,21,12,0.5714,0.5,0.5333,53.3%,982,OK,""
+base,run2,ec06_duplicate_headers,duplicate_ambiguous_headers,ruleBased,3,24,27,24,0.8889,1.0,0.9412,94.1%,7,OK,""
+base,run2,ec07_whitespace_casing,whitespace_and_casing,gemini,0,0,0,0,0.0,0.0,0.0,0.0%,364,ERROR,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.
+Please retry in 42.977855874s.
+#0      parseGenerateContentResponse (package:google_generative_ai/src/api.dart:582:54)
+#1      StackZoneSpecification._registerUnaryCallback.<anonymous closure>.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:127:36)
+#2      StackZoneSpecification._run (package:stack_trace/src/stack_zone_specification.dart:207:15)
+#3      StackZoneSpecification._registerUnaryCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:127:24)
+#4      _rootRunUnary (dart:async/zone_root.dart:48:47)
+#5      _CustomZone.runUnary (dart:async/zone.dart:816:35)
+<asynchronous suspension>
+#6      AIGeminiService.mapCsvToFieldMaps (package:strusa/services/ai_gemini_service.dart:135:22)
+<asynchronous suspension>
+#7      _runOne (file:///D:/DONA/Konter/strusa/test/edge_case_batch_test.dart:196:25)
+<asynchronous suspension>
+#8      main.<anonymous closure>.<anonymous closure> (file:///D:/DONA/Konter/strusa/test/edge_case_batch_test.dart:82:28)
+<asynchronous suspension>
+#9      Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:15)
+<asynchronous suspension>
+#10     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#11     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+"
+base,run2,ec07_whitespace_casing,whitespace_and_casing,ruleBased,3,30,30,30,1.0,1.0,1.0,100.0%,4,OK,""
+base,run2,ec08_merged_fields,merged_composite_fields,gemini,0,0,0,0,0.0,0.0,0.0,0.0%,374,ERROR,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.
+Please retry in 42.517141797s.
+#0      parseGenerateContentResponse (package:google_generative_ai/src/api.dart:582:54)
+#1      StackZoneSpecification._registerUnaryCallback.<anonymous closure>.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:127:36)
+#2      StackZoneSpecification._run (package:stack_trace/src/stack_zone_specification.dart:207:15)
+#3      StackZoneSpecification._registerUnaryCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:127:24)
+#4      _rootRunUnary (dart:async/zone_root.dart:48:47)
+#5      _CustomZone.runUnary (dart:async/zone.dart:816:35)
+<asynchronous suspension>
+#6      AIGeminiService.mapCsvToFieldMaps (package:strusa/services/ai_gemini_service.dart:135:22)
+<asynchronous suspension>
+#7      _runOne (file:///D:/DONA/Konter/strusa/test/edge_case_batch_test.dart:196:25)
+<asynchronous suspension>
+#8      main.<anonymous closure>.<anonymous closure> (file:///D:/DONA/Konter/strusa/test/edge_case_batch_test.dart:82:28)
+<asynchronous suspension>
+#9      Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:15)
+<asynchronous suspension>
+#10     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#11     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+"
+base,run2,ec08_merged_fields,merged_composite_fields,ruleBased,4,45,45,45,1.0,1.0,1.0,100.0%,2,OK,""
+base,run2,ec09_platform_schema_variation,platform_schema_variation,gemini,0,0,0,0,0.0,0.0,0.0,0.0%,316,ERROR,"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite, description: Generate content requests per minute limit exceeded on Free Tier. See https://ai.google.dev/gemini-api/docs/rate-limits.
+Please retry in 42.167942314s.
+#0      parseGenerateContentResponse (package:google_generative_ai/src/api.dart:582:54)
+#1      StackZoneSpecification._registerUnaryCallback.<anonymous closure>.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:127:36)
+#2      StackZoneSpecification._run (package:stack_trace/src/stack_zone_specification.dart:207:15)
+#3      StackZoneSpecification._registerUnaryCallback.<anonymous closure> (package:stack_trace/src/stack_zone_specification.dart:127:24)
+#4      _rootRunUnary (dart:async/zone_root.dart:48:47)
+#5      _CustomZone.runUnary (dart:async/zone.dart:816:35)
+<asynchronous suspension>
+#6      AIGeminiService.mapCsvToFieldMaps (package:strusa/services/ai_gemini_service.dart:135:22)
+<asynchronous suspension>
+#7      _runOne (file:///D:/DONA/Konter/strusa/test/edge_case_batch_test.dart:196:25)
+<asynchronous suspension>
+#8      main.<anonymous closure>.<anonymous closure> (file:///D:/DONA/Konter/strusa/test/edge_case_batch_test.dart:82:28)
+<asynchronous suspension>
+#9      Declarer.test.<anonymous closure>.<anonymous closure> (package:test_api/src/backend/declarer.dart:253:15)
+<asynchronous suspension>
+#10     Declarer.test.<anonymous closure> (package:test_api/src/backend/declarer.dart:250:11)
+<asynchronous suspension>
+#11     Invoker._waitForOutstandingCallbacks.<anonymous closure> (package:test_api/src/backend/invoker.dart:318:9)
+<asynchronous suspension>
+"
+base,run2,ec09_platform_schema_variation,platform_schema_variation,ruleBased,4,47,47,47,1.0,1.0,1.0,100.0%,2,OK,""
